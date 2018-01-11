@@ -1,0 +1,35 @@
+{
+  "name": "koutla-swiss",
+  "version": "0.0.1",
+  "description": "A rewrite of Kouto Swiss in pure javascript",
+  "keywords": [
+    "Stylus",
+    "CSS",
+    "framework",
+    "polyfill",
+    "grid",
+    "vendors",
+    "responsive",
+    "reset",
+    "utility"
+  ],
+  "author": {
+    "name": "leny",
+    "email": "info@flatland.be",
+    "url": "http://leny.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/leny/koutla-swiss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leny/koutla-swiss/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/leny/koutla-swiss/blob/master/LICENSE"
+    }
+  ],
+  "main": "lib/koutla-swiss.js"
+}
