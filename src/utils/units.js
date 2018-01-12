@@ -6,4 +6,16 @@
  * started at 12/01/2018
  */
 
-export const rem = iValue => `${iValue}rem`;
+const checkNumber = mValue => {
+    if (isNaN(+mValue)) {
+        throw new TypeError("Expect a Number");
+    }
+    return true;
+};
+
+const checkZero = iValue => {
+    return iValue === 0 ? "0" : false;
+};
+
+export const rem = (iValue = 0) =>
+    checkNumber(iValue) && (checkZero(iValue) || `${iValue}rem`);
