@@ -22,6 +22,9 @@
     "type": "git",
     "url": "git://github.com/leny/koutla-swiss.git"
   },
+  "files": [
+    "lib"
+  ],
   "bugs": {
     "url": "https://github.com/leny/koutla-swiss/issues"
   },
@@ -31,5 +34,22 @@
       "url": "https://github.com/leny/koutla-swiss/blob/master/LICENSE"
     }
   ],
-  "main": "lib/koutla-swiss.js"
+  "main": "lib/index.js",
+  "scripts": {
+    "pretest": "npm run lint && npm run build",
+    "test": "npx mocha --compilers js:babel-core/register",
+    "lint": "npx eslint --fix src test",
+    "build": "npx babel src -d lib",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.15.0",
+    "eslint-plugin-prettier": "^2.4.0",
+    "mocha": "^4.1.0",
+    "prettier": "^1.10.2"
+  }
 }
