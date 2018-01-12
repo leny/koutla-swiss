@@ -73,7 +73,6 @@ module.exports = {
 
         "no-alert": WARNING,
         "no-array-constructor": ERROR,
-        "no-bitwise": ERROR,
         "no-caller": ERROR,
         "no-catch-shadow": ERROR,
         "no-class-assign": ERROR,
