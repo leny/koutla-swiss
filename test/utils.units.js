@@ -9,6 +9,7 @@
 import assert from "assert";
 
 import {rem, em, px} from "../lib/utils";
+import {rem, em, px, ex} from "../lib/utils";
 
 describe("Units", () => {
     describe("rem()", () => {
@@ -52,6 +53,28 @@ describe("Units", () => {
 
         it("Should throw if the given value is not a number", () => {
             assert.throws(() => em("yeah"), TypeError);
+        });
+    });
+
+    describe("ex()", () => {
+        it("Should return a correct ex value when a number is given", () => {
+            assert.strictEqual(ex(1), "1ex");
+            assert.strictEqual(ex(0.2), "0.2ex");
+            assert.strictEqual(ex(1.2), "1.2ex");
+            assert.strictEqual(ex(1 / 4), "0.25ex");
+            assert.strictEqual(ex(1 / 3), "0.3333333333333333ex");
+        });
+
+        it("Should return an unit-less zero when zero is given", () => {
+            assert.strictEqual(ex(0), "0");
+        });
+
+        it("Should return an unit-less zero when nothing is given", () => {
+            assert.strictEqual(ex(), "0");
+        });
+
+        it("Should throw if the given value is not a number", () => {
+            assert.throws(() => ex("yeah"), TypeError);
         });
     });
 
