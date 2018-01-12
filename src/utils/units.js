@@ -17,5 +17,7 @@ const checkZero = iValue => {
     return iValue === 0 ? "0" : false;
 };
 
-export const rem = (iValue = 0) =>
-    checkNumber(iValue) && (checkZero(iValue) || `${iValue}rem`);
+const unit = (sUnit, iValue = 0) =>
+    checkNumber(iValue) && (checkZero(iValue) || `${iValue}${sUnit}`);
+
+export const rem = iValue => unit("rem", iValue);
