@@ -8,8 +8,7 @@
 
 import assert from "assert";
 
-import {rem, em, px} from "../lib/utils";
-import {rem, em, px, ex} from "../lib/utils";
+import {rem, em, px, ex, vw, vh, vmin, vmax} from "../lib/utils";
 
 describe("Units", () => {
     describe("rem()", () => {
@@ -75,6 +74,94 @@ describe("Units", () => {
 
         it("Should throw if the given value is not a number", () => {
             assert.throws(() => ex("yeah"), TypeError);
+        });
+    });
+
+    describe("vw()", () => {
+        it("Should return a correct vw value when a number is given", () => {
+            assert.strictEqual(vw(1), "1vw");
+            assert.strictEqual(vw(0.2), "0.2vw");
+            assert.strictEqual(vw(1.2), "1.2vw");
+            assert.strictEqual(vw(1 / 4), "0.25vw");
+            assert.strictEqual(vw(1 / 3), "0.3333333333333333vw");
+        });
+
+        it("Should return an unit-less zero when zero is given", () => {
+            assert.strictEqual(vw(0), "0");
+        });
+
+        it("Should return an unit-less zero when nothing is given", () => {
+            assert.strictEqual(vw(), "0");
+        });
+
+        it("Should throw if the given value is not a number", () => {
+            assert.throws(() => vw("yeah"), TypeError);
+        });
+    });
+
+    describe("vh()", () => {
+        it("Should return a correct vh value when a number is given", () => {
+            assert.strictEqual(vh(1), "1vh");
+            assert.strictEqual(vh(0.2), "0.2vh");
+            assert.strictEqual(vh(1.2), "1.2vh");
+            assert.strictEqual(vh(1 / 4), "0.25vh");
+            assert.strictEqual(vh(1 / 3), "0.3333333333333333vh");
+        });
+
+        it("Should return an unit-less zero when zero is given", () => {
+            assert.strictEqual(vh(0), "0");
+        });
+
+        it("Should return an unit-less zero when nothing is given", () => {
+            assert.strictEqual(vh(), "0");
+        });
+
+        it("Should throw if the given value is not a number", () => {
+            assert.throws(() => vh("yeah"), TypeError);
+        });
+    });
+
+    describe("vmin()", () => {
+        it("Should return a correct vmin value when a number is given", () => {
+            assert.strictEqual(vmin(1), "1vmin");
+            assert.strictEqual(vmin(0.2), "0.2vmin");
+            assert.strictEqual(vmin(1.2), "1.2vmin");
+            assert.strictEqual(vmin(1 / 4), "0.25vmin");
+            assert.strictEqual(vmin(1 / 3), "0.3333333333333333vmin");
+        });
+
+        it("Should return an unit-less zero when zero is given", () => {
+            assert.strictEqual(vmin(0), "0");
+        });
+
+        it("Should return an unit-less zero when nothing is given", () => {
+            assert.strictEqual(vmin(), "0");
+        });
+
+        it("Should throw if the given value is not a number", () => {
+            assert.throws(() => vmin("yeah"), TypeError);
+        });
+    });
+
+    describe("vmax()", () => {
+        it("Should return a correct vmax value when a number is given", () => {
+            assert.strictEqual(vmax(1), "1vmax");
+            assert.strictEqual(vmax(0.2), "0.2vmax");
+            assert.strictEqual(vmax(1.2), "1.2vmax");
+            assert.strictEqual(vmax(1 / 4), "0.25vmax");
+            assert.strictEqual(vmax(1 / 3), "0.3333333333333333vmax");
+        });
+
+        it("Should return an unit-less zero when zero is given", () => {
+            assert.strictEqual(vmax(0), "0");
+        });
+
+        it("Should return an unit-less zero when nothing is given", () => {
+            assert.strictEqual(vmax(), "0");
+        });
+
+        it("Should throw if the given value is not a number", () => {
+            assert.throws(() => vmax("yeah"), TypeError);
         });
     });
 
