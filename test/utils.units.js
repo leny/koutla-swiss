@@ -16,6 +16,8 @@ describe("Units", () => {
             assert.strictEqual(rem(1), "1rem");
             assert.strictEqual(rem(0.2), "0.2rem");
             assert.strictEqual(rem(1.2), "1.2rem");
+            assert.strictEqual(rem(1 / 4), "0.25rem");
+            assert.strictEqual(rem(1 / 3), "0.3333333333333333rem");
         });
 
         it("Should return an unit-less zero when zero is given", () => {
