@@ -30,3 +30,6 @@ export const vmin = iValue => unit("vmin", iValue);
 export const vmax = iValue => unit("vmax", iValue);
 
 export const px = (iValue = 0) => unit("px", Math.floor(iValue));
+
+export const percent = (iValue = 0, bAbsolute) =>
+    unit("%", iValue * (bAbsolute ? 1 : 100));
