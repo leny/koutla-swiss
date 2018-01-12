@@ -8,7 +8,7 @@
 
 import assert from "assert";
 
-import {rem, em} from "../lib/utils";
+import {rem, em, px} from "../lib/utils";
 
 describe("Units", () => {
     describe("rem()", () => {
@@ -52,6 +52,31 @@ describe("Units", () => {
 
         it("Should throw if the given value is not a number", () => {
             assert.throws(() => em("yeah"), TypeError);
+        });
+    });
+
+    describe("px()", () => {
+        it("Should return a correct px value when a number is given", () => {
+            assert.strictEqual(px(1), "1px");
+            assert.strictEqual(px(2), "2px");
+        });
+
+        it("Should return an unit-less zero when zero is given", () => {
+            assert.strictEqual(px(0), "0");
+        });
+
+        it("Should return a floored px value when a decimal number is given", () => {
+            assert.strictEqual(px(1.2), "1px");
+            assert.strictEqual(px(2.7), "2px");
+            assert.strictEqual(px(0.7), "0");
+        });
+
+        it("Should return an unit-less zero when nothing is given", () => {
+            assert.strictEqual(px(), "0");
+        });
+
+        it("Should throw if the given value is not a number", () => {
+            assert.throws(() => px("yeah"), TypeError);
         });
     });
 });
