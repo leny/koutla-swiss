@@ -7,3 +7,5 @@
  */
 
 export * from "./utils/units";
+
+export * from "./mixins";
