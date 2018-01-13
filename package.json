@@ -38,6 +38,7 @@
   "scripts": {
     "pretest": "npm run lint && npm run build",
     "test": "npx mocha --require babel-core/register",
+    "test:coverage": "npx nyc mocha --require babel-core/register",
     "lint": "npx eslint --fix src test",
     "build": "npx babel src -d lib",
     "prepublish": "npm run build"
@@ -51,6 +52,7 @@
     "eslint": "^4.15.0",
     "eslint-plugin-prettier": "^2.4.0",
     "mocha": "^4.1.0",
+    "nyc": "^11.4.1",
     "prettier": "^1.10.2"
   },
   "dependencies": {
