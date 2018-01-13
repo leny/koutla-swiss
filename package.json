@@ -51,5 +51,8 @@
     "eslint-plugin-prettier": "^2.4.0",
     "mocha": "^4.1.0",
     "prettier": "^1.10.2"
+  },
+  "dependencies": {
+    "css-color-names": "^0.0.4"
   }
 }
