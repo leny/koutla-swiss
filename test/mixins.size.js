@@ -30,7 +30,7 @@ describe("Size Mixins", () => {
             assert.deepEqual(size(0), {width: "0", height: "0"});
         });
 
-        it("Should return 0 when no param is given", () => {
+        it("Should return 0 when no param are given", () => {
             assert.deepEqual(size(), {width: "0", height: "0"});
         });
     });
