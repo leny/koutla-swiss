@@ -16,6 +16,33 @@ const isValidRGBInt = mValue => {
     return !(isNaN(iValue) || iValue % 1 !== 0 || (iValue < 0 || iValue > 255));
 };
 
+const isValidAlphaNumber = mValue => {
+    const iValue = +mValue;
+
+    return !(isNaN(iValue) || (iValue < 0 || iValue > 1));
+};
+
+const getRGBValuesFromColor = sColor => {
+    let sColorName, sHexColor, aColorParts;
+
+    if (
+        Object.keys(cssColors).includes(
+            (sColorName = `${sColor}`.toLowerCase().trim()),
+        )
+    ) {
+        sHexColor = cssColors[sColorName];
+    } else if (HEX_COLOR.test(sColor)) {
+        sHexColor = sColor;
+    } else {
+        throw new TypeError("Invalid color");
+    }
+
+    (aColorParts = sHexColor.match(HEX_COLOR)).shift();
+    return aColorParts.map(sValue =>
+        parseInt(sValue.length === 1 ? `${sValue}${sValue}` : sValue, 16),
+    );
+};
+
 export const rgb = (...aParts) => {
     if (aParts.length === 3) {
         if (aParts.every(isValidRGBInt)) {
@@ -24,26 +51,33 @@ export const rgb = (...aParts) => {
     }
 
     if (aParts.length === 1) {
-        let sColorName, sHexColor, aColorParts;
+        return `rgb(${getRGBValuesFromColor(aParts[0]).join(",")})`;
+    }
 
+    throw new TypeError("Invalid arguments format");
+};
+
+export const rgba = (...aParts) => {
+    if (aParts.length === 4) {
         if (
-            Object.keys(cssColors).includes(
-                (sColorName = `${aParts[0]}`.toLowerCase().trim()),
-            )
+            aParts.every((iValue, iIndex) => {
+                return iIndex < 3
+                    ? isValidRGBInt(iValue)
+                    : isValidAlphaNumber(iValue);
+            })
         ) {
-            sHexColor = cssColors[sColorName];
-        } else if (HEX_COLOR.test(aParts[0])) {
-            sHexColor = aParts[0];
-        } else {
-            throw new TypeError("Invalid color");
+            return `rgba(${aParts.join(",")})`;
+        }
+    }
+
+    if (aParts.length === 2) {
+        let aColorParts = getRGBValuesFromColor(aParts[0]);
+
+        if (!isValidAlphaNumber(aParts[1])) {
+            throw new TypeError("Invalid alpha value");
         }
 
-        (aColorParts = sHexColor.match(HEX_COLOR)).shift();
-        aColorParts = aColorParts.map(sValue =>
-            parseInt(sValue.length === 1 ? `${sValue}${sValue}` : sValue, 16),
-        );
-
-        return `rgb(${aColorParts.join(",")})`;
+        return `rgba(${aColorParts.join(",")},${aParts[1]})`;
     }
 
     throw new TypeError("Invalid arguments format");
