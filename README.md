@@ -1,6 +1,6 @@
 # koutla swiss
 
-[![NPM version](https://badge.fury.io/js/kouto-swiss.svg)](http://badge.fury.io/js/koutla-swiss) [![Build Status](http://img.shields.io/travis/leny/koutla-swiss.svg)](https://travis-ci.org/leny/koutla-swiss) ![Dependency Status](https://david-dm.org/leny/koutla-swiss.svg) ![Downloads counter](http://img.shields.io/npm/dm/koutla-swiss.svg)
+[![NPM version](https://badge.fury.io/js/koutla-swiss.svg)](http://badge.fury.io/js/koutla-swiss) [![Build Status](http://img.shields.io/travis/leny/koutla-swiss.svg)](https://travis-ci.org/leny/koutla-swiss) ![Dependency Status](https://david-dm.org/leny/koutla-swiss.svg) ![Downloads counter](http://img.shields.io/npm/dm/koutla-swiss.svg)
 
 > A rewrite of [Kouto Swiss](https://kouto-swiss.io) in pure javascript
 
