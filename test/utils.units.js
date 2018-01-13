@@ -10,7 +10,7 @@ import assert from "assert";
 
 import {rem, em, px, ex, vw, vh, vmin, vmax, percent} from "../lib/utils";
 
-describe("Units", () => {
+describe("Units Utils", () => {
     describe("rem()", () => {
         it("Should return a correct rem value when a number is given", () => {
             assert.strictEqual(rem(1), "1rem");

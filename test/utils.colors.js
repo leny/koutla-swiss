@@ -10,7 +10,7 @@ import assert from "assert";
 
 import {rgb, rgba} from "../lib/utils";
 
-describe("Colors", () => {
+describe("Colors Utils", () => {
     describe("rgb()", () => {
         it("Should return a correct rgb value when a valid color name is given", () => {
             assert.strictEqual(rgb("black"), "rgb(0,0,0)");

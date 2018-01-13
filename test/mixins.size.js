@@ -10,7 +10,7 @@ import assert from "assert";
 
 import {size} from "../lib/mixins";
 
-describe("Mixins", () => {
+describe("Size Mixins", () => {
     describe("size()", () => {
         it("Should return width & height when two params are given", () => {
             assert.deepEqual(size("1rem", "0.5rem"), {
