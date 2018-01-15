@@ -6,6 +6,6 @@
  * started at 12/01/2018
  */
 
-export * from "./utils/units";
+export * from "./utils";
 
 export * from "./mixins";
