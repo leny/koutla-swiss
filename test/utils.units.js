@@ -192,20 +192,20 @@ describe("Units Utils", () => {
 
     describe("percent()", () => {
         it("Should return a correct % value when a number is given", () => {
-            assert.strictEqual(percent(0.125), "12.5%");
-            assert.strictEqual(percent(1 / 4), "25%");
-            assert.strictEqual(percent(1), "100%");
-            assert.strictEqual(percent(1 / 3), "33.33333333333333%");
+            assert.strictEqual(percent(12.5), "12.5%");
+            assert.strictEqual(percent(100 / 4), "25%");
+            assert.strictEqual(percent(100), "100%");
+            assert.strictEqual(percent(100 / 3), "33.333333333333336%"); // Well, f*ck you.
         });
 
-        it("Should return a correct % value when a number is given with the absolute boolean flag", () => {
-            assert.strictEqual(percent(1, true), "1%");
-            assert.strictEqual(percent(50, true), "50%");
-            assert.strictEqual(percent(12.5, true), "12.5%");
-            assert.strictEqual(percent(0.125, true), "0.125%");
-            assert.strictEqual(percent(1 / 4, true), "0.25%");
-            assert.strictEqual(percent(100, true), "100%");
-            assert.strictEqual(percent(100 / 3, true), "33.333333333333336%"); // Well, f**k you, javascript ;)
+        it("Should return a correct % value when a number is given with the decimal boolean flag", () => {
+            assert.strictEqual(percent(0.01, true), "1%");
+            assert.strictEqual(percent(0.5, true), "50%");
+            assert.strictEqual(percent(0.125, true), "12.5%");
+            assert.strictEqual(percent(12.5, true), "1250%");
+            assert.strictEqual(percent(1 / 4, true), "25%");
+            assert.strictEqual(percent(1, true), "100%");
+            assert.strictEqual(percent(1 / 3, true), "33.33333333333333%");
         });
 
         it("Should return an unit-less zero when zero is given", () => {

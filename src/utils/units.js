@@ -31,5 +31,5 @@ export const vmax = iValue => unit("vmax", iValue);
 
 export const px = (iValue = 0) => unit("px", Math.floor(iValue));
 
-export const percent = (iValue = 0, bAbsolute) =>
-    unit("%", iValue * (bAbsolute ? 1 : 100));
+export const percent = (iValue = 0, bDecimal) =>
+    unit("%", iValue * (bDecimal ? 100 : 1));
