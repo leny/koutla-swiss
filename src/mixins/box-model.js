@@ -6,10 +6,8 @@
  * started at 26/01/2018
  */
 
-const _concatProp = (sProp, aValues) => {
-    return aValues.length ? {[sProp]: aValues.join(" ")} : {};
-};
+import {concatProp} from "../commons/utils";
 
-export const margin = (...aArgs) => _concatProp("margin", aArgs);
+export const margin = (...aArgs) => concatProp("margin", aArgs);
 
-export const padding = (...aArgs) => _concatProp("padding", aArgs);
+export const padding = (...aArgs) => concatProp("padding", aArgs);
