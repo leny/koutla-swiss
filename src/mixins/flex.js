@@ -6,6 +6,8 @@
  * started at 13/01/2018
  */
 
+import {concatProp} from "../commons/utils";
+
 export const FLEX_DIRECTION_ROW = "row";
 export const FLEX_DIRECTION_ROW_REVERSE = "row-reverse";
 export const FLEX_DIRECTION_COLUMN = "column";
@@ -47,3 +49,5 @@ export const flexbox = (sDirection, sMainAxis, sSecondAxis, sWrap) => {
 export const flexrow = (...aArgs) => flexbox(FLEX_DIRECTION_ROW, ...aArgs);
 export const flexcolumn = (...aArgs) =>
     flexbox(FLEX_DIRECTION_COLUMN, ...aArgs);
+
+export const flex = (...aArgs) => concatProp("flex", aArgs);

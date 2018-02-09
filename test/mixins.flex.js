@@ -18,6 +18,7 @@ import {
     FLEX_ALIGN_SELF_END,
     flexrow,
     flexcolumn,
+    flex,
 } from "../lib/mixins";
 
 describe("Flex Mixins", () => {
@@ -171,6 +172,23 @@ describe("Flex Mixins", () => {
                     flexWrap: "wrap",
                 },
             );
+        });
+    });
+
+    describe("flex()", () => {
+        it("Should concatenate given arguments into a flex property", () => {
+            assert.deepEqual(flex(1, 0, "auto"), {flex: "1 0 auto"});
+            assert.deepEqual(flex(1, 0, 0), {flex: "1 0 0"});
+            assert.deepEqual(flex(1, 0), {
+                flex: "1 0",
+            });
+            assert.deepEqual(flex(1), {
+                flex: "1",
+            });
+        });
+
+        it("Should return nothing when no arguments are given", () => {
+            assert.deepEqual(flex(), {});
         });
     });
 });
