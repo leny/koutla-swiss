@@ -1,4 +1,4 @@
-/* referencefitness/client
+/* leny/koutla-swiss
  *
  * /src/commons/utils.js - Common utils for koutla
  *
