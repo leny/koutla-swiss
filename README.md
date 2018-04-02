@@ -24,6 +24,10 @@ $ npm install --save-dev koutla-swiss
 
 _TODO_
 
+## Todo
+
+- Mixin for `transform`
+
 ## Release History
 
 * **2018-01-13:** version `0.1.0`
