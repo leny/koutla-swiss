@@ -27,6 +27,7 @@ _TODO_
 ## Todo
 
 - Mixin for `transform`
+- Allow `position` to receive an object like `{top,right,left,bottom}` as argument
 
 ## Release History
 
