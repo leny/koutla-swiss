@@ -34,6 +34,14 @@ export const position = (sType, ...aArgs) => {
         return oPosition;
     }
 
+    // check object type, cf. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Description
+    if (aArgs[0] === Object(aArgs[0])) {
+        return {
+            ...oPosition,
+            ...aArgs[0],
+        };
+    }
+
     aPositionArgs = aArgs.map(mValue => `${mValue}`);
 
     switch (aPositionArgs.length) {
