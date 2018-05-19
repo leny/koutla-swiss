@@ -119,6 +119,54 @@ describe("Position Mixins", () => {
                 },
             );
         });
+
+        it("Should use top, left, bottom and/or right values from second value if an object is given", () => {
+            assert.deepEqual(
+                position(POSITION_RELATIVE, {top: "2rem", right: "3rem"}),
+                {position: "relative", top: "2rem", right: "3rem"},
+            );
+            assert.deepEqual(
+                position(POSITION_ABSOLUTE, {bottom: "2rem", left: "3rem"}),
+                {position: "absolute", bottom: "2rem", left: "3rem"},
+            );
+            assert.deepEqual(
+                position(POSITION_STATIC, {
+                    top: 0,
+                    right: "100%",
+                    bottom: "2rem",
+                    left: "3rem",
+                }),
+                {
+                    position: "static",
+                    top: "0",
+                    right: "100%",
+                    bottom: "2rem",
+                    left: "3rem",
+                },
+            );
+        });
+
+        it("Should priorise the object values if an object is given as second value", () => {
+            assert.deepEqual(
+                position(
+                    POSITION_RELATIVE,
+                    {top: "2rem", right: "3rem"},
+                    "2rem",
+                    0,
+                ),
+                {position: "relative", top: "2rem", right: "3rem"},
+            );
+            assert.deepEqual(
+                position(
+                    POSITION_ABSOLUTE,
+                    {bottom: "2rem", left: "3rem"},
+                    "3rem",
+                    0,
+                    "100%",
+                ),
+                {position: "absolute", bottom: "2rem", left: "3rem"},
+            );
+        });
     });
 
     describe("relative()", () => {
@@ -152,6 +200,19 @@ describe("Position Mixins", () => {
                 bottom: "100%",
                 left: "3px",
             });
+            assert.deepEqual(relative({top: "1rem", bottom: "100%"}), {
+                position: "relative",
+                top: "1rem",
+                bottom: "100%",
+            });
+            assert.deepEqual(
+                relative({bottom: "1rem", left: "100%"}, "2rem", 0),
+                {
+                    position: "relative",
+                    bottom: "1rem",
+                    left: "100%",
+                },
+            );
         });
     });
 
@@ -186,6 +247,19 @@ describe("Position Mixins", () => {
                 bottom: "100%",
                 left: "3px",
             });
+            assert.deepEqual(absolute({top: "1rem", bottom: "100%"}), {
+                position: "absolute",
+                top: "1rem",
+                bottom: "100%",
+            });
+            assert.deepEqual(
+                absolute({bottom: "1rem", left: "100%"}, "2rem", 0),
+                {
+                    position: "absolute",
+                    bottom: "1rem",
+                    left: "100%",
+                },
+            );
         });
     });
 
@@ -219,6 +293,16 @@ describe("Position Mixins", () => {
                 right: "0",
                 bottom: "100%",
                 left: "3px",
+            });
+            assert.deepEqual(fixed({top: "1rem", bottom: "100%"}), {
+                position: "fixed",
+                top: "1rem",
+                bottom: "100%",
+            });
+            assert.deepEqual(fixed({bottom: "1rem", left: "100%"}, "2rem", 0), {
+                position: "fixed",
+                bottom: "1rem",
+                left: "100%",
             });
         });
     });
@@ -254,6 +338,19 @@ describe("Position Mixins", () => {
                 bottom: "100%",
                 left: "3px",
             });
+            assert.deepEqual(sticky({top: "1rem", bottom: "100%"}), {
+                position: "sticky",
+                top: "1rem",
+                bottom: "100%",
+            });
+            assert.deepEqual(
+                sticky({bottom: "1rem", left: "100%"}, "2rem", 0),
+                {
+                    position: "sticky",
+                    bottom: "1rem",
+                    left: "100%",
+                },
+            );
         });
     });
 });
