@@ -22,7 +22,38 @@ $ npm install --save-dev koutla-swiss
 
 ## Usage
 
-_TODO_
+**koutla-swiss** is a serie of useful, functional utilities to make _CSS-in-JS_ (with librairies like [glamor](https://github.com/threepointone/glamor)).
+
+All the documented functions are accessibles from the root of the lib, like `import {px, padding} from "koutla-swiss";`.
+
+### Units
+
+#### `rem`, `em`, `ex`, `cap`, `ic`, `lh`, `rlh`, `vw`, `vh`, `vi`, `vb`, `vmin`, `vmax`, `px`
+
+> **Signature:** `unit(value :number = 0) :string`
+
+Simply accept a number as parameter and return a string with the suffixed unit. If the given parameter is `0`, only a _unitless_ zero is returned.
+
+```javascript
+
+rem(1.2); // -> "1.2rem"
+px(23); // -> "23px"
+vh(0); // -> 0
+
+```
+
+#### `percent`
+
+> **Signature:** `percent(value :number = 0, isDecimal :boolean = false) :string`
+
+Accept a number and return a string with percent unit. If the second parameter is `true`, treat the value as a decimal value between `0` and `1` to compute value.
+
+```javascript
+percent(15); // -> "15%"
+percent(100); // -> "100%"
+percent(0.5, true); // -> "50%"
+
+```
 
 ## Todo
 
