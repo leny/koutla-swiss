@@ -55,6 +55,70 @@ percent(0.5, true); // -> "50%"
 
 ```
 
+### Media Queries
+
+#### `mq()`
+
+> **Signature:** `mq(query :string, props: object) :object`
+
+Returns the media query as property of an object, with declared css properties as value.
+
+```javascript
+mq("min-width: 960px", {color: "red"}); // -> {"@media(min-width: 960px)": {color: "red"}}
+```
+
+### Colors
+
+#### `rgb()`
+
+> **Signature:** `rgb(value :string) :string` or `rgb(red :number, green :number, blue :number) :string`
+
+Returns an rgb valid value from : 
+
+- a [CSS color name](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value),
+- a hexadecimal color string
+- three numbers (in `0 -> 255` range) for red, green and blue value
+
+```javascript
+rgb("blue"); // -> "rgb(0,0,255)"
+rgb("Olive"); // -> "rgb(128,128,0)"
+rgb("#1e90ff"); // -> "rgb(30,144,255)"
+rgb(128, 128, 0); // -> "rgb(128,128,0)"
+```
+
+#### `rgba()`
+
+> **Signature:** `rgba(value :string, alpha :number) :string` or `rgba(red :number, green :number, blue :number, alpha :number) :string`
+
+Returns an rgba valid value from : 
+
+- a [CSS color name](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value),
+- a hexadecimal color string
+- three numbers (in `0 -> 255` range) for red, green and blue value
+- an alpha number (in `0 -> 1` range) for alpha value
+
+```javascript
+rgb("blue", 0); // -> "rgba(0,0,255,0)"
+rgb("Olive", 0.33); // -> "rgba(128,128,0,0.33)"
+rgb("#1e90ff", 1); // -> "rgba(30,144,255,1)"
+rgb(128, 128, 0, 1); // -> "rgba(128,128,0,1)"
+```
+
+### Size
+
+#### `size()`, `minSize()`, `maxSize()`
+
+> **Signature:** `size(value :any) :object` or `size(width :any, height :any) :object`
+
+Returns an object with `width` and `height` (or `minWidth`/`minHeight`, `maxWidth`/`maxHeight`).  
+If only one parameter is given, it will be used for the two properties.
+
+```javascript
+size("100%", "5rem"); // -> {width: "100%", height: "5rem"}
+size("100%"); // -> {width: "100%", height: "100%"}
+size(); // -> {width: "0", height: "0"}
+```
+
 ## Todo
 
 - Mixin for `transform`
