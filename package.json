@@ -56,6 +56,7 @@
     "prettier": "^1.10.2"
   },
   "dependencies": {
-    "css-color-names": "^0.0.4"
+    "css-color-names": "^0.0.4",
+    "lodash.frompairs": "^4.0.1"
   }
 }

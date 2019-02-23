@@ -119,6 +119,12 @@ size("100%"); // -> {width: "100%", height: "100%"}
 size(); // -> {width: "0", height: "0"}
 ```
 
+### !important
+
+#### `important()`
+
+Wrap any mixin/util with `important()` to add `!important` to the targetted rules.
+
 ## Todo
 
 - Mixin for `transform`
