@@ -2,15 +2,11 @@
 
 [![NPM version](https://badge.fury.io/js/koutla-swiss.svg)](http://badge.fury.io/js/koutla-swiss) [![Build Status](http://img.shields.io/travis/leny/koutla-swiss.svg)](https://travis-ci.org/leny/koutla-swiss) ![Dependency Status](https://david-dm.org/leny/koutla-swiss.svg) ![Downloads counter](http://img.shields.io/npm/dm/koutla-swiss.svg)
 
-> A rewrite of [Kouto Swiss](https://kouto-swiss.io) in pure javascript
+> 🎨 CSS-in-JS toolkit, inspired by Kouto-Swiss
 
 * * *
 
-**koutla swiss** is a rewrite of **kouto swiss** (a CSS framework for Stylus) in pure javascript, to be used within _css-in-js_ tools like **glamor**
-
-* * *
-
-> **NOTE:** This project is a pure draft right now.
+**koutla swiss** is a rewrite of **kouto swiss** (a CSS framework for Stylus) in pure javascript, to be used within _css-in-js_ tools like **glamor** or **emotion**
 
 * * *
 
@@ -26,9 +22,11 @@ $ npm install --save-dev koutla-swiss
 
 All the documented functions are accessibles from the root of the lib, like `import {px, padding} from "koutla-swiss";`.
 
-### Units
+### Utils
 
-#### `rem`, `em`, `ex`, `cap`, `ic`, `lh`, `rlh`, `vw`, `vh`, `vi`, `vb`, `vmin`, `vmax`, `px`
+#### Units
+
+##### `rem`, `em`, `ex`, `vw`, `vh`, `vi`, `vb`, `vmin`, `vmax`, `px`, `cap`, `ic`, `lh`, `rlh`, `fr`, `ch`, `cm`, `mm`, `Q`, `pc`, `pt`, `inch`, `deg`, `grad`, `rad`, `turn`, `s`, `ms`, `Hz`, `kHz`, `dpi`, `dpcm`, `dppx`
 
 > **Signature:** `unit(value :number = 0) :string`
 
@@ -42,7 +40,7 @@ vh(0); // -> 0
 
 ```
 
-#### `percent`
+##### `percent`
 
 > **Signature:** `percent(value :number = 0, isDecimal :boolean = false) :string`
 
@@ -55,9 +53,9 @@ percent(0.5, true); // -> "50%"
 
 ```
 
-### Media Queries
+#### Media Queries
 
-#### `mq()`
+##### `mq()`
 
 > **Signature:** `mq(query :string, props: object) :object`
 
@@ -67,9 +65,9 @@ Returns the media query as property of an object, with declared css properties a
 mq("min-width: 960px", {color: "red"}); // -> {"@media(min-width: 960px)": {color: "red"}}
 ```
 
-### Colors
+#### Colors
 
-#### `rgb()`
+##### `rgb()`
 
 > **Signature:** `rgb(value :string) :string` or `rgb(red :number, green :number, blue :number) :string`
 
@@ -86,7 +84,7 @@ rgb("#1e90ff"); // -> "rgb(30,144,255)"
 rgb(128, 128, 0); // -> "rgb(128,128,0)"
 ```
 
-#### `rgba()`
+##### `rgba()`
 
 > **Signature:** `rgba(value :string, alpha :number) :string` or `rgba(red :number, green :number, blue :number, alpha :number) :string`
 
@@ -104,9 +102,19 @@ rgb("#1e90ff", 1); // -> "rgba(30,144,255,1)"
 rgb(128, 128, 0, 1); // -> "rgba(128,128,0,1)"
 ```
 
-### Size
+#### !important
 
-#### `size()`, `minSize()`, `maxSize()`
+##### `important()`
+
+Wrap any mixin/util with `important()` to add `!important` to the targetted rules.
+
+* * *
+
+### Mixins
+
+#### Size
+
+##### `size()`, `minSize()`, `maxSize()`
 
 > **Signature:** `size(value :any) :object` or `size(width :any, height :any) :object`
 
@@ -119,20 +127,7 @@ size("100%"); // -> {width: "100%", height: "100%"}
 size(); // -> {width: "0", height: "0"}
 ```
 
-### !important
-
-#### `important()`
-
-Wrap any mixin/util with `important()` to add `!important` to the targetted rules.
-
-## Todo
-
-- Mixin for `transform`
-
-## Release History
-
-* **2018-01-13:** version `0.1.0`
-* **2018-01-12:** starting project
+* * *
 
 ## License
 
