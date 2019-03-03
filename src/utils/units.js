@@ -6,6 +6,8 @@
  * started at 12/01/2018
  */
 
+import {selfFunction} from "../commons/utils";
+
 const checkNumber = mValue => {
     if (isNaN(+mValue)) {
         throw new TypeError("Expect a Number");
@@ -64,3 +66,9 @@ export const fr = unit("fr");
 
 export const percent = (iValue = 0, bDecimal) =>
     unit("%")(iValue * (bDecimal ? 100 : 1));
+
+export const calc = selfFunction("calc", " ");
+export const attr = selfFunction("attr");
+export const clamp = selfFunction("clamp", ", ", 3, 3);
+export const min = selfFunction("min", ", ", 2);
+export const max = selfFunction("max", ", ", 2);

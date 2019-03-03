@@ -73,7 +73,7 @@ describe("Units Utils", () => {
     });
 
     describe("percent()", () => {
-        const percent = unitsMethods.percent;
+        const {percent} = unitsMethods;
 
         it("Should return a correct % value when a number is given", () => {
             assert.strictEqual(percent(12.5), "12.5%");
@@ -104,6 +104,80 @@ describe("Units Utils", () => {
 
         it("Should throw if the given value is not a number", () => {
             assert.throws(() => percent("yeah"), TypeError);
+        });
+    });
+
+    describe("calc()", () => {
+        const {calc} = unitsMethods;
+
+        it(`Should return a correct calc method with any value given, concatenated`, () => {
+            assert.strictEqual(calc(1 + 3), "calc(4)");
+            assert.strictEqual(calc("2px + 120%"), "calc(2px + 120%)");
+            assert.strictEqual(calc("1rem", "-", "20%"), "calc(1rem - 20%)");
+        });
+
+        it("Should throw if no value is given", () => {
+            assert.throws(() => calc(), TypeError);
+        });
+    });
+
+    describe("attr()", () => {
+        const {attr} = unitsMethods;
+
+        it(`Should return a correct attr method with any value given, concatenated`, () => {
+            assert.strictEqual(attr("data-count"), "attr(data-count)");
+            assert.strictEqual(
+                attr("data-count number"),
+                "attr(data-count number)",
+            );
+            assert.strictEqual(
+                attr("data-name", `"unknown"`),
+                `attr(data-name, "unknown")`,
+            );
+        });
+
+        it("Should throw if no value is given", () => {
+            assert.throws(() => attr(), TypeError);
+        });
+    });
+
+    ["min", "max"].forEach(name => {
+        const method = unitsMethods[name];
+
+        describe(`${name}()`, () => {
+            it(`Should return a correct ${name} method with any value given, concatenated`, () => {
+                assert.strictEqual(method(1, 2), `${name}(1, 2)`);
+                assert.strictEqual(method("1rem", "20%"), `${name}(1rem, 20%)`);
+            });
+
+            it("Should throw if no value is given", () => {
+                assert.throws(() => method(), TypeError);
+            });
+
+            it("Should throw if wrong amount of values is given", () => {
+                assert.throws(() => method(1), TypeError);
+            });
+        });
+    });
+
+    const {clamp} = unitsMethods;
+
+    describe(`clamp()`, () => {
+        it(`Should return a correct clamp method with any value given, concatenated`, () => {
+            assert.strictEqual(clamp(1, 2, 3), "clamp(1, 2, 3)");
+            assert.strictEqual(
+                clamp("1rem", "20%", "2px"),
+                `clamp(1rem, 20%, 2px)`,
+            );
+        });
+
+        it("Should throw if no value is given", () => {
+            assert.throws(() => clamp(), TypeError);
+        });
+
+        it("Should throw if wrong amount of values is given", () => {
+            assert.throws(() => clamp(1), TypeError);
+            assert.throws(() => clamp(1, 2, 3, 4), TypeError);
         });
     });
 });
