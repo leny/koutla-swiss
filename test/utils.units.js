@@ -11,32 +11,51 @@ import assert from "assert";
 import * as unitsMethods from "../lib/utils/units";
 
 describe("Units Utils", () => {
-    [
-        "rem",
-        "em",
-        "ex",
-        "vw",
-        "vh",
-        "vi",
-        "vb",
-        "vmin",
-        "vmax",
-        "px",
-        "cap",
-        "ic",
-        "lh",
-        "rlh",
-    ].forEach(sUnit => {
-        const unit = unitsMethods[sUnit];
+    Object.entries({
+        rem: "rem",
+        em: "em",
+        ex: "ex",
+        vw: "vw",
+        vh: "vh",
+        vi: "vi",
+        vb: "vb",
+        vmin: "vmin",
+        vmax: "vmax",
+        px: "px",
+        cap: "cap",
+        ic: "ic",
+        lh: "lh",
+        rlh: "rlh",
+        fr: "fr",
+        ch: "ch",
+        cm: "cm",
+        mm: "mm",
+        Q: "Q",
+        pc: "pc",
+        pt: "pt",
+        inch: "in",
+        deg: "deg",
+        grad: "grad",
+        rad: "rad",
+        turn: "turn",
+        s: "s",
+        ms: "ms",
+        Hz: "Hz",
+        kHz: "kHz",
+        dpi: "dpi",
+        dpcm: "dpcm",
+        dppx: "dppx",
+    }).forEach(([name, value]) => {
+        const unit = unitsMethods[name];
 
-        describe(`${sUnit}()`, () => {
-            it(`Should return a correct ${sUnit} value when a number is given`, () => {
-                assert.strictEqual(unit(1), `1${sUnit}`);
-                assert.strictEqual(unit(-1), `-1${sUnit}`);
-                assert.strictEqual(unit(0.2), `0.2${sUnit}`);
-                assert.strictEqual(unit(1.2), `1.2${sUnit}`);
-                assert.strictEqual(unit(1 / 4), `0.25${sUnit}`);
-                assert.strictEqual(unit(1 / 3), `0.3333333333333333${sUnit}`);
+        describe(`${name}()`, () => {
+            it(`Should return a correct ${name} value when a number is given`, () => {
+                assert.strictEqual(unit(1), `1${value}`);
+                assert.strictEqual(unit(-1), `-1${value}`);
+                assert.strictEqual(unit(0.2), `0.2${value}`);
+                assert.strictEqual(unit(1.2), `1.2${value}`);
+                assert.strictEqual(unit(1 / 4), `0.25${value}`);
+                assert.strictEqual(unit(1 / 3), `0.3333333333333333${value}`);
             });
 
             it("Should return an unit-less zero when zero is given", () => {
