@@ -1,0 +1,3673 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/commons/utils.js",
+    "content": "/* leny/koutla-swiss\n *\n * /src/commons/utils.js - Common utils for koutla\n *\n * coded by leny@flatLand!\n * started at 09/02/2018\n */\n\nexport const concatProp = (prop, glue = \" \") => (...args) => {\n    return args.length ? {[prop]: args.join(glue)} : {};\n};\n\nexport const selfFunction = (\n    name,\n    glue = \", \",\n    minArgs = 1,\n    maxArgs = Infinity,\n    quoted = false,\n) => (...args) => {\n    if (args.length < minArgs || args.length > maxArgs) {\n        throw new TypeError(`Wrong numbers of arguments in ${name}()`);\n    }\n    const quote = quoted ? '\"' : \"\";\n\n    return `${name}(${quote}${args.join(glue)}${quote})`;\n};\n",
+    "static": true,
+    "longname": "/Users/leny/Works/leny/koutla-swiss/src/commons/utils.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "function",
+    "name": "concatProp",
+    "memberof": "src/commons/utils.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/commons/utils.js~concatProp",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/commons/utils.js",
+    "importStyle": "{concatProp}",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "params": [
+      {
+        "name": "prop",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "glue",
+        "optional": true,
+        "types": [
+          "string"
+        ],
+        "defaultRaw": " ",
+        "defaultValue": " "
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 50,
+    "kind": "function",
+    "name": "selfFunction",
+    "memberof": "src/commons/utils.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/commons/utils.js~selfFunction",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/commons/utils.js",
+    "importStyle": "{selfFunction}",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "params": [
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "glue",
+        "optional": true,
+        "types": [
+          "string"
+        ],
+        "defaultRaw": ", ",
+        "defaultValue": ", "
+      },
+      {
+        "name": "minArgs",
+        "optional": true,
+        "types": [
+          "number"
+        ],
+        "defaultRaw": 1,
+        "defaultValue": "1"
+      },
+      {
+        "name": "maxArgs",
+        "optional": true,
+        "types": [
+          "*"
+        ],
+        "defaultRaw": "Infinity",
+        "defaultValue": "Infinity"
+      },
+      {
+        "name": "quoted",
+        "optional": true,
+        "types": [
+          "boolean"
+        ],
+        "defaultRaw": false,
+        "defaultValue": "false"
+      }
+    ],
+    "return": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 51,
+    "kind": "file",
+    "name": "src/index.js",
+    "content": "/* leny/koutla-swiss\n *\n * ~/index.js - Main entry point\n *\n * coded by leny@flatLand!\n * started at 12/01/2018\n */\n\nexport * from \"./utils\";\n\nexport * from \"./mixins\";\n",
+    "static": true,
+    "longname": "/Users/leny/Works/leny/koutla-swiss/src/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 52,
+    "kind": "file",
+    "name": "src/mixins/background.js",
+    "content": "/* leny/koutla-swiss\n *\n * ~/mixins/background.js - Background Mixins\n *\n * coded by leny@flatLand!\n * started at 03/02/2019\n */\n\nimport {concatProp, selfFunction} from \"../commons/utils\";\n\nexport const background = concatProp(\"background\");\n\nexport const linearGradient = selfFunction(\"linear-gradient\");\nexport const radialGradient = selfFunction(\"radial-gradient\");\nexport const repeatingLinearGradient = selfFunction(\n    \"repeating-linear-gradient\",\n);\nexport const repeatingRadialGradient = selfFunction(\n    \"repeating-radial-gradient\",\n);\nexport const conicGradient = selfFunction(\"conic-gradient\");\n\nexport const url = selfFunction(\"url\", \"\", 1, 1, true);\n",
+    "static": true,
+    "longname": "/Users/leny/Works/leny/koutla-swiss/src/mixins/background.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 53,
+    "kind": "variable",
+    "name": "background",
+    "memberof": "src/mixins/background.js",
+    "static": true,
+    "longname": "src/mixins/background.js~background",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/background.js",
+    "importStyle": "{background}",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "variable",
+    "name": "linearGradient",
+    "memberof": "src/mixins/background.js",
+    "static": true,
+    "longname": "src/mixins/background.js~linearGradient",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/background.js",
+    "importStyle": "{linearGradient}",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "variable",
+    "name": "radialGradient",
+    "memberof": "src/mixins/background.js",
+    "static": true,
+    "longname": "src/mixins/background.js~radialGradient",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/background.js",
+    "importStyle": "{radialGradient}",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "variable",
+    "name": "repeatingLinearGradient",
+    "memberof": "src/mixins/background.js",
+    "static": true,
+    "longname": "src/mixins/background.js~repeatingLinearGradient",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/background.js",
+    "importStyle": "{repeatingLinearGradient}",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "variable",
+    "name": "repeatingRadialGradient",
+    "memberof": "src/mixins/background.js",
+    "static": true,
+    "longname": "src/mixins/background.js~repeatingRadialGradient",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/background.js",
+    "importStyle": "{repeatingRadialGradient}",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "variable",
+    "name": "conicGradient",
+    "memberof": "src/mixins/background.js",
+    "static": true,
+    "longname": "src/mixins/background.js~conicGradient",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/background.js",
+    "importStyle": "{conicGradient}",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 59,
+    "kind": "variable",
+    "name": "url",
+    "memberof": "src/mixins/background.js",
+    "static": true,
+    "longname": "src/mixins/background.js~url",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/background.js",
+    "importStyle": "{url}",
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 60,
+    "kind": "file",
+    "name": "src/mixins/borders.js",
+    "content": "/* leny/koutla-swiss\n *\n * ~/mixins/borders.js - Border Mixins\n *\n * coded by leny@flatLand!\n * started at 09/02/2018\n */\n\nimport {concatProp} from \"../commons/utils\";\n\nexport const border = concatProp(\"border\");\n\nexport const borderTop = concatProp(\"borderTop\");\nexport const borderRight = concatProp(\"borderRight\");\nexport const borderBottom = concatProp(\"borderBottom\");\nexport const borderLeft = concatProp(\"borderLeft\");\n\nexport const borderRadius = concatProp(\"borderRadius\");\n",
+    "static": true,
+    "longname": "/Users/leny/Works/leny/koutla-swiss/src/mixins/borders.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 61,
+    "kind": "variable",
+    "name": "border",
+    "memberof": "src/mixins/borders.js",
+    "static": true,
+    "longname": "src/mixins/borders.js~border",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/borders.js",
+    "importStyle": "{border}",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "variable",
+    "name": "borderTop",
+    "memberof": "src/mixins/borders.js",
+    "static": true,
+    "longname": "src/mixins/borders.js~borderTop",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/borders.js",
+    "importStyle": "{borderTop}",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 63,
+    "kind": "variable",
+    "name": "borderRight",
+    "memberof": "src/mixins/borders.js",
+    "static": true,
+    "longname": "src/mixins/borders.js~borderRight",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/borders.js",
+    "importStyle": "{borderRight}",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 64,
+    "kind": "variable",
+    "name": "borderBottom",
+    "memberof": "src/mixins/borders.js",
+    "static": true,
+    "longname": "src/mixins/borders.js~borderBottom",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/borders.js",
+    "importStyle": "{borderBottom}",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 65,
+    "kind": "variable",
+    "name": "borderLeft",
+    "memberof": "src/mixins/borders.js",
+    "static": true,
+    "longname": "src/mixins/borders.js~borderLeft",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/borders.js",
+    "importStyle": "{borderLeft}",
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 66,
+    "kind": "variable",
+    "name": "borderRadius",
+    "memberof": "src/mixins/borders.js",
+    "static": true,
+    "longname": "src/mixins/borders.js~borderRadius",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/borders.js",
+    "importStyle": "{borderRadius}",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 67,
+    "kind": "file",
+    "name": "src/mixins/box-model.js",
+    "content": "/* leny/koutla-swiss\n *\n * ~/mixins/box-model.js - Box-model properties mixins\n *\n * coded by leny@flatLand!\n * started at 26/01/2018\n */\n\nimport {concatProp} from \"../commons/utils\";\n\nexport const margin = concatProp(\"margin\");\n\nexport const padding = concatProp(\"padding\");\n",
+    "static": true,
+    "longname": "/Users/leny/Works/leny/koutla-swiss/src/mixins/box-model.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 68,
+    "kind": "variable",
+    "name": "margin",
+    "memberof": "src/mixins/box-model.js",
+    "static": true,
+    "longname": "src/mixins/box-model.js~margin",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/box-model.js",
+    "importStyle": "{margin}",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "variable",
+    "name": "padding",
+    "memberof": "src/mixins/box-model.js",
+    "static": true,
+    "longname": "src/mixins/box-model.js~padding",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/box-model.js",
+    "importStyle": "{padding}",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 70,
+    "kind": "file",
+    "name": "src/mixins/filter.js",
+    "content": "/* leny/koutla-swiss\n *\n * ~/mixins/filter.js - Filter Mixins\n *\n * coded by leny@flatLand!\n * started at 03/02/2019\n */\n\nimport {concatProp, selfFunction} from \"../commons/utils\";\n\nexport const filter = (...args) =>\n    concatProp(\"filter\")(...(args.length ? args : [\"none\"]));\n\nexport const blur = selfFunction(\"blur\");\nexport const brightness = selfFunction(\"brightness\");\nexport const contrast = selfFunction(\"contrast\");\nexport const dropShadow = selfFunction(\"drop-shadow\");\nexport const grayscale = selfFunction(\"grayscale\");\nexport const hueRotate = selfFunction(\"hue-rotate\");\nexport const invert = selfFunction(\"invert\");\nexport const opacity = selfFunction(\"opacity\");\nexport const saturate = selfFunction(\"saturate\");\nexport const sepia = selfFunction(\"sepia\");\n",
+    "static": true,
+    "longname": "/Users/leny/Works/leny/koutla-swiss/src/mixins/filter.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 71,
+    "kind": "function",
+    "name": "filter",
+    "memberof": "src/mixins/filter.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/mixins/filter.js~filter",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/filter.js",
+    "importStyle": "{filter}",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "params": [
+      {
+        "name": "args",
+        "types": [
+          "...*"
+        ],
+        "spread": true
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 72,
+    "kind": "variable",
+    "name": "blur",
+    "memberof": "src/mixins/filter.js",
+    "static": true,
+    "longname": "src/mixins/filter.js~blur",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/filter.js",
+    "importStyle": "{blur}",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 73,
+    "kind": "variable",
+    "name": "brightness",
+    "memberof": "src/mixins/filter.js",
+    "static": true,
+    "longname": "src/mixins/filter.js~brightness",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/filter.js",
+    "importStyle": "{brightness}",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 74,
+    "kind": "variable",
+    "name": "contrast",
+    "memberof": "src/mixins/filter.js",
+    "static": true,
+    "longname": "src/mixins/filter.js~contrast",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/filter.js",
+    "importStyle": "{contrast}",
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 75,
+    "kind": "variable",
+    "name": "dropShadow",
+    "memberof": "src/mixins/filter.js",
+    "static": true,
+    "longname": "src/mixins/filter.js~dropShadow",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/filter.js",
+    "importStyle": "{dropShadow}",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 76,
+    "kind": "variable",
+    "name": "grayscale",
+    "memberof": "src/mixins/filter.js",
+    "static": true,
+    "longname": "src/mixins/filter.js~grayscale",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/filter.js",
+    "importStyle": "{grayscale}",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 77,
+    "kind": "variable",
+    "name": "hueRotate",
+    "memberof": "src/mixins/filter.js",
+    "static": true,
+    "longname": "src/mixins/filter.js~hueRotate",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/filter.js",
+    "importStyle": "{hueRotate}",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 78,
+    "kind": "variable",
+    "name": "invert",
+    "memberof": "src/mixins/filter.js",
+    "static": true,
+    "longname": "src/mixins/filter.js~invert",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/filter.js",
+    "importStyle": "{invert}",
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 79,
+    "kind": "variable",
+    "name": "opacity",
+    "memberof": "src/mixins/filter.js",
+    "static": true,
+    "longname": "src/mixins/filter.js~opacity",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/filter.js",
+    "importStyle": "{opacity}",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 80,
+    "kind": "variable",
+    "name": "saturate",
+    "memberof": "src/mixins/filter.js",
+    "static": true,
+    "longname": "src/mixins/filter.js~saturate",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/filter.js",
+    "importStyle": "{saturate}",
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 81,
+    "kind": "variable",
+    "name": "sepia",
+    "memberof": "src/mixins/filter.js",
+    "static": true,
+    "longname": "src/mixins/filter.js~sepia",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/filter.js",
+    "importStyle": "{sepia}",
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 82,
+    "kind": "file",
+    "name": "src/mixins/flex.js",
+    "content": "/* leny/koutla-swiss\n *\n * ~/mixins/flex.js - Flex Mixins\n *\n * coded by leny@flatLand!\n * started at 13/01/2018\n */\n\nimport {concatProp} from \"../commons/utils\";\n\nexport const FLEX_DIRECTION_ROW = \"row\";\nexport const FLEX_DIRECTION_ROW_REVERSE = \"row-reverse\";\nexport const FLEX_DIRECTION_COLUMN = \"column\";\nexport const FLEX_DIRECTION_COLUMN_REVERS = \"column-reverse\";\n\nexport const FLEX_WRAP = \"wrap\";\nexport const FLEX_NOWRAP = \"nowrap\";\nexport const FLEX_WRAP_REVERSE = \"wrap-reverse\";\n\nexport const FLEX_ALIGN_CENTER = \"center\";\nexport const FLEX_ALIGN_START = \"start\";\nexport const FLEX_ALIGN_END = \"end\";\nexport const FLEX_ALIGN_FLEX_START = \"flex-start\";\nexport const FLEX_ALIGN_FLEX_END = \"flex-end\";\nexport const FLEX_ALIGN_LEFT = \"left\";\nexport const FLEX_ALIGN_RIGHT = \"right\";\nexport const FLEX_ALIGN_BASELINE = \"baseline\";\nexport const FLEX_ALIGN_SPACE_BETWEEN = \"space-between\";\nexport const FLEX_ALIGN_SPACE_AROUND = \"space-around\";\nexport const FLEX_ALIGN_SPACE_EVENLY = \"space-evenly\";\nexport const FLEX_ALIGN_NORMAL = \"normal\";\nexport const FLEX_ALIGN_STRETCH = \"stretch\";\nexport const FLEX_ALIGN_SELF_START = \"self-start\";\nexport const FLEX_ALIGN_SELF_END = \"self-end\";\n\nexport const flexbox = (sDirection, sMainAxis, sSecondAxis, sWrap) => {\n    let oFlexStyles = {\n        display: \"flex\",\n    };\n\n    sDirection && (oFlexStyles.flexDirection = sDirection);\n    sWrap && (oFlexStyles.flexWrap = sWrap);\n    sMainAxis && (oFlexStyles.justifyContent = sMainAxis);\n    sSecondAxis && (oFlexStyles.alignItems = sSecondAxis);\n\n    return oFlexStyles;\n};\n\nexport const flexrow = (...aArgs) => flexbox(FLEX_DIRECTION_ROW, ...aArgs);\nexport const flexcolumn = (...aArgs) =>\n    flexbox(FLEX_DIRECTION_COLUMN, ...aArgs);\n\nexport const flex = concatProp(\"flex\");\n",
+    "static": true,
+    "longname": "/Users/leny/Works/leny/koutla-swiss/src/mixins/flex.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 83,
+    "kind": "variable",
+    "name": "FLEX_DIRECTION_ROW",
+    "memberof": "src/mixins/flex.js",
+    "static": true,
+    "longname": "src/mixins/flex.js~FLEX_DIRECTION_ROW",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{FLEX_DIRECTION_ROW}",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 84,
+    "kind": "variable",
+    "name": "FLEX_DIRECTION_ROW_REVERSE",
+    "memberof": "src/mixins/flex.js",
+    "static": true,
+    "longname": "src/mixins/flex.js~FLEX_DIRECTION_ROW_REVERSE",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{FLEX_DIRECTION_ROW_REVERSE}",
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 85,
+    "kind": "variable",
+    "name": "FLEX_DIRECTION_COLUMN",
+    "memberof": "src/mixins/flex.js",
+    "static": true,
+    "longname": "src/mixins/flex.js~FLEX_DIRECTION_COLUMN",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{FLEX_DIRECTION_COLUMN}",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 86,
+    "kind": "variable",
+    "name": "FLEX_DIRECTION_COLUMN_REVERS",
+    "memberof": "src/mixins/flex.js",
+    "static": true,
+    "longname": "src/mixins/flex.js~FLEX_DIRECTION_COLUMN_REVERS",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{FLEX_DIRECTION_COLUMN_REVERS}",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 87,
+    "kind": "variable",
+    "name": "FLEX_WRAP",
+    "memberof": "src/mixins/flex.js",
+    "static": true,
+    "longname": "src/mixins/flex.js~FLEX_WRAP",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{FLEX_WRAP}",
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 88,
+    "kind": "variable",
+    "name": "FLEX_NOWRAP",
+    "memberof": "src/mixins/flex.js",
+    "static": true,
+    "longname": "src/mixins/flex.js~FLEX_NOWRAP",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{FLEX_NOWRAP}",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 89,
+    "kind": "variable",
+    "name": "FLEX_WRAP_REVERSE",
+    "memberof": "src/mixins/flex.js",
+    "static": true,
+    "longname": "src/mixins/flex.js~FLEX_WRAP_REVERSE",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{FLEX_WRAP_REVERSE}",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 90,
+    "kind": "variable",
+    "name": "FLEX_ALIGN_CENTER",
+    "memberof": "src/mixins/flex.js",
+    "static": true,
+    "longname": "src/mixins/flex.js~FLEX_ALIGN_CENTER",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{FLEX_ALIGN_CENTER}",
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 91,
+    "kind": "variable",
+    "name": "FLEX_ALIGN_START",
+    "memberof": "src/mixins/flex.js",
+    "static": true,
+    "longname": "src/mixins/flex.js~FLEX_ALIGN_START",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{FLEX_ALIGN_START}",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 92,
+    "kind": "variable",
+    "name": "FLEX_ALIGN_END",
+    "memberof": "src/mixins/flex.js",
+    "static": true,
+    "longname": "src/mixins/flex.js~FLEX_ALIGN_END",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{FLEX_ALIGN_END}",
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 93,
+    "kind": "variable",
+    "name": "FLEX_ALIGN_FLEX_START",
+    "memberof": "src/mixins/flex.js",
+    "static": true,
+    "longname": "src/mixins/flex.js~FLEX_ALIGN_FLEX_START",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{FLEX_ALIGN_FLEX_START}",
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 94,
+    "kind": "variable",
+    "name": "FLEX_ALIGN_FLEX_END",
+    "memberof": "src/mixins/flex.js",
+    "static": true,
+    "longname": "src/mixins/flex.js~FLEX_ALIGN_FLEX_END",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{FLEX_ALIGN_FLEX_END}",
+    "description": null,
+    "lineNumber": 24,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 95,
+    "kind": "variable",
+    "name": "FLEX_ALIGN_LEFT",
+    "memberof": "src/mixins/flex.js",
+    "static": true,
+    "longname": "src/mixins/flex.js~FLEX_ALIGN_LEFT",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{FLEX_ALIGN_LEFT}",
+    "description": null,
+    "lineNumber": 25,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 96,
+    "kind": "variable",
+    "name": "FLEX_ALIGN_RIGHT",
+    "memberof": "src/mixins/flex.js",
+    "static": true,
+    "longname": "src/mixins/flex.js~FLEX_ALIGN_RIGHT",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{FLEX_ALIGN_RIGHT}",
+    "description": null,
+    "lineNumber": 26,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 97,
+    "kind": "variable",
+    "name": "FLEX_ALIGN_BASELINE",
+    "memberof": "src/mixins/flex.js",
+    "static": true,
+    "longname": "src/mixins/flex.js~FLEX_ALIGN_BASELINE",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{FLEX_ALIGN_BASELINE}",
+    "description": null,
+    "lineNumber": 27,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 98,
+    "kind": "variable",
+    "name": "FLEX_ALIGN_SPACE_BETWEEN",
+    "memberof": "src/mixins/flex.js",
+    "static": true,
+    "longname": "src/mixins/flex.js~FLEX_ALIGN_SPACE_BETWEEN",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{FLEX_ALIGN_SPACE_BETWEEN}",
+    "description": null,
+    "lineNumber": 28,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 99,
+    "kind": "variable",
+    "name": "FLEX_ALIGN_SPACE_AROUND",
+    "memberof": "src/mixins/flex.js",
+    "static": true,
+    "longname": "src/mixins/flex.js~FLEX_ALIGN_SPACE_AROUND",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{FLEX_ALIGN_SPACE_AROUND}",
+    "description": null,
+    "lineNumber": 29,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 100,
+    "kind": "variable",
+    "name": "FLEX_ALIGN_SPACE_EVENLY",
+    "memberof": "src/mixins/flex.js",
+    "static": true,
+    "longname": "src/mixins/flex.js~FLEX_ALIGN_SPACE_EVENLY",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{FLEX_ALIGN_SPACE_EVENLY}",
+    "description": null,
+    "lineNumber": 30,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 101,
+    "kind": "variable",
+    "name": "FLEX_ALIGN_NORMAL",
+    "memberof": "src/mixins/flex.js",
+    "static": true,
+    "longname": "src/mixins/flex.js~FLEX_ALIGN_NORMAL",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{FLEX_ALIGN_NORMAL}",
+    "description": null,
+    "lineNumber": 31,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 102,
+    "kind": "variable",
+    "name": "FLEX_ALIGN_STRETCH",
+    "memberof": "src/mixins/flex.js",
+    "static": true,
+    "longname": "src/mixins/flex.js~FLEX_ALIGN_STRETCH",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{FLEX_ALIGN_STRETCH}",
+    "description": null,
+    "lineNumber": 32,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 103,
+    "kind": "variable",
+    "name": "FLEX_ALIGN_SELF_START",
+    "memberof": "src/mixins/flex.js",
+    "static": true,
+    "longname": "src/mixins/flex.js~FLEX_ALIGN_SELF_START",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{FLEX_ALIGN_SELF_START}",
+    "description": null,
+    "lineNumber": 33,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 104,
+    "kind": "variable",
+    "name": "FLEX_ALIGN_SELF_END",
+    "memberof": "src/mixins/flex.js",
+    "static": true,
+    "longname": "src/mixins/flex.js~FLEX_ALIGN_SELF_END",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{FLEX_ALIGN_SELF_END}",
+    "description": null,
+    "lineNumber": 34,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 105,
+    "kind": "function",
+    "name": "flexbox",
+    "memberof": "src/mixins/flex.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/mixins/flex.js~flexbox",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{flexbox}",
+    "description": null,
+    "lineNumber": 36,
+    "undocument": true,
+    "params": [
+      {
+        "name": "sDirection",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "sMainAxis",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "sSecondAxis",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "sWrap",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 106,
+    "kind": "function",
+    "name": "flexrow",
+    "memberof": "src/mixins/flex.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/mixins/flex.js~flexrow",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{flexrow}",
+    "description": null,
+    "lineNumber": 49,
+    "undocument": true,
+    "params": [
+      {
+        "name": "aArgs",
+        "types": [
+          "...*"
+        ],
+        "spread": true
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 107,
+    "kind": "function",
+    "name": "flexcolumn",
+    "memberof": "src/mixins/flex.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/mixins/flex.js~flexcolumn",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{flexcolumn}",
+    "description": null,
+    "lineNumber": 50,
+    "undocument": true,
+    "params": [
+      {
+        "name": "aArgs",
+        "types": [
+          "...*"
+        ],
+        "spread": true
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 108,
+    "kind": "variable",
+    "name": "flex",
+    "memberof": "src/mixins/flex.js",
+    "static": true,
+    "longname": "src/mixins/flex.js~flex",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/flex.js",
+    "importStyle": "{flex}",
+    "description": null,
+    "lineNumber": 53,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 109,
+    "kind": "file",
+    "name": "src/mixins/index.js",
+    "content": "/* leny/koutla-swiss\n *\n * ~/mixins/index.js - Mixins index\n *\n * coded by leny@flatLand!\n * started at 13/01/2018\n */\n\nexport * from \"./size\";\nexport * from \"./position\";\nexport * from \"./flex\";\nexport * from \"./box-model\";\nexport * from \"./borders\";\nexport * from \"./transform\";\nexport * from \"./background\";\nexport * from \"./filter\";\n",
+    "static": true,
+    "longname": "/Users/leny/Works/leny/koutla-swiss/src/mixins/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 110,
+    "kind": "file",
+    "name": "src/mixins/size.js",
+    "content": "/* leny/koutla-swiss\n *\n * ~/mixins/size.js - Size mixin\n *\n * coded by leny@flatLand!\n * started at 13/01/2018\n */\n\nconst _size = (iWidth, iHeight, sPrefix = \"\") => ({\n    [`${sPrefix}${sPrefix !== \"\" ? \"Width\" : \"width\"}`]: iWidth,\n    [`${sPrefix}${sPrefix !== \"\" ? \"Height\" : \"height\"}`]: iHeight,\n});\n\nexport const size = (mWidth = 0, mHeight = mWidth) => _size(mWidth, mHeight);\n\nexport const minSize = (mWidth = 0, mHeight = mWidth) =>\n    _size(mWidth, mHeight, \"min\");\n\nexport const maxSize = (mWidth = 0, mHeight = mWidth) =>\n    _size(mWidth, mHeight, \"max\");\n",
+    "static": true,
+    "longname": "/Users/leny/Works/leny/koutla-swiss/src/mixins/size.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 111,
+    "kind": "function",
+    "name": "_size",
+    "memberof": "src/mixins/size.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/mixins/size.js~_size",
+    "access": "private",
+    "export": false,
+    "importPath": "koutla-swiss/src/mixins/size.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "params": [
+      {
+        "name": "iWidth",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "iHeight",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "sPrefix",
+        "optional": true,
+        "types": [
+          "string"
+        ],
+        "defaultRaw": "",
+        "defaultValue": ""
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 112,
+    "kind": "function",
+    "name": "size",
+    "memberof": "src/mixins/size.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/mixins/size.js~size",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/size.js",
+    "importStyle": "{size}",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "params": [
+      {
+        "name": "mWidth",
+        "optional": true,
+        "types": [
+          "number"
+        ],
+        "defaultRaw": 0,
+        "defaultValue": "0"
+      },
+      {
+        "name": "mHeight",
+        "optional": true,
+        "types": [
+          "*"
+        ],
+        "defaultRaw": "mWidth",
+        "defaultValue": "mWidth"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 113,
+    "kind": "function",
+    "name": "minSize",
+    "memberof": "src/mixins/size.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/mixins/size.js~minSize",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/size.js",
+    "importStyle": "{minSize}",
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "params": [
+      {
+        "name": "mWidth",
+        "optional": true,
+        "types": [
+          "number"
+        ],
+        "defaultRaw": 0,
+        "defaultValue": "0"
+      },
+      {
+        "name": "mHeight",
+        "optional": true,
+        "types": [
+          "*"
+        ],
+        "defaultRaw": "mWidth",
+        "defaultValue": "mWidth"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 114,
+    "kind": "function",
+    "name": "maxSize",
+    "memberof": "src/mixins/size.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/mixins/size.js~maxSize",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/size.js",
+    "importStyle": "{maxSize}",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "params": [
+      {
+        "name": "mWidth",
+        "optional": true,
+        "types": [
+          "number"
+        ],
+        "defaultRaw": 0,
+        "defaultValue": "0"
+      },
+      {
+        "name": "mHeight",
+        "optional": true,
+        "types": [
+          "*"
+        ],
+        "defaultRaw": "mWidth",
+        "defaultValue": "mWidth"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 115,
+    "kind": "file",
+    "name": "src/mixins/transform.js",
+    "content": "/* leny/koutla-swiss\n *\n * ~/mixins/transform.js - Transform Mixins\n *\n * coded by leny@flatLand!\n * started at 03/02/2019\n */\n\nimport {concatProp, selfFunction} from \"../commons/utils\";\n\nexport const transform = (...args) =>\n    concatProp(\"transform\")(...(args.length ? args : [\"none\"]));\n\nexport const matrix = selfFunction(\"matrix\");\nexport const matrix3d = selfFunction(\"matrix3d\");\nexport const perspective = selfFunction(\"perspective\");\nexport const rotate = selfFunction(\"rotate\");\nexport const rotate3d = selfFunction(\"rotate3d\");\nexport const rotateX = selfFunction(\"rotateX\");\nexport const rotateY = selfFunction(\"rotateY\");\nexport const rotateZ = selfFunction(\"rotateZ\");\nexport const scale = selfFunction(\"scale\");\nexport const scale3d = selfFunction(\"scale3d\");\nexport const scaleX = selfFunction(\"scaleX\");\nexport const scaleY = selfFunction(\"scaleY\");\nexport const scaleZ = selfFunction(\"scaleZ\");\nexport const skew = selfFunction(\"skew\");\nexport const skewX = selfFunction(\"skewX\");\nexport const skewY = selfFunction(\"skewY\");\nexport const translate = selfFunction(\"translate\");\nexport const translate3d = selfFunction(\"translate3d\");\nexport const translateX = selfFunction(\"translateX\");\nexport const translateY = selfFunction(\"translateY\");\nexport const translateZ = selfFunction(\"translateZ\");\n",
+    "static": true,
+    "longname": "/Users/leny/Works/leny/koutla-swiss/src/mixins/transform.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 116,
+    "kind": "function",
+    "name": "transform",
+    "memberof": "src/mixins/transform.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/mixins/transform.js~transform",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/transform.js",
+    "importStyle": "{transform}",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "params": [
+      {
+        "name": "args",
+        "types": [
+          "...*"
+        ],
+        "spread": true
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 117,
+    "kind": "variable",
+    "name": "matrix",
+    "memberof": "src/mixins/transform.js",
+    "static": true,
+    "longname": "src/mixins/transform.js~matrix",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/transform.js",
+    "importStyle": "{matrix}",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 118,
+    "kind": "variable",
+    "name": "matrix3d",
+    "memberof": "src/mixins/transform.js",
+    "static": true,
+    "longname": "src/mixins/transform.js~matrix3d",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/transform.js",
+    "importStyle": "{matrix3d}",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 119,
+    "kind": "variable",
+    "name": "perspective",
+    "memberof": "src/mixins/transform.js",
+    "static": true,
+    "longname": "src/mixins/transform.js~perspective",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/transform.js",
+    "importStyle": "{perspective}",
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 120,
+    "kind": "variable",
+    "name": "rotate",
+    "memberof": "src/mixins/transform.js",
+    "static": true,
+    "longname": "src/mixins/transform.js~rotate",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/transform.js",
+    "importStyle": "{rotate}",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 121,
+    "kind": "variable",
+    "name": "rotate3d",
+    "memberof": "src/mixins/transform.js",
+    "static": true,
+    "longname": "src/mixins/transform.js~rotate3d",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/transform.js",
+    "importStyle": "{rotate3d}",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 122,
+    "kind": "variable",
+    "name": "rotateX",
+    "memberof": "src/mixins/transform.js",
+    "static": true,
+    "longname": "src/mixins/transform.js~rotateX",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/transform.js",
+    "importStyle": "{rotateX}",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 123,
+    "kind": "variable",
+    "name": "rotateY",
+    "memberof": "src/mixins/transform.js",
+    "static": true,
+    "longname": "src/mixins/transform.js~rotateY",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/transform.js",
+    "importStyle": "{rotateY}",
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 124,
+    "kind": "variable",
+    "name": "rotateZ",
+    "memberof": "src/mixins/transform.js",
+    "static": true,
+    "longname": "src/mixins/transform.js~rotateZ",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/transform.js",
+    "importStyle": "{rotateZ}",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 125,
+    "kind": "variable",
+    "name": "scale",
+    "memberof": "src/mixins/transform.js",
+    "static": true,
+    "longname": "src/mixins/transform.js~scale",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/transform.js",
+    "importStyle": "{scale}",
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 126,
+    "kind": "variable",
+    "name": "scale3d",
+    "memberof": "src/mixins/transform.js",
+    "static": true,
+    "longname": "src/mixins/transform.js~scale3d",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/transform.js",
+    "importStyle": "{scale3d}",
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 127,
+    "kind": "variable",
+    "name": "scaleX",
+    "memberof": "src/mixins/transform.js",
+    "static": true,
+    "longname": "src/mixins/transform.js~scaleX",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/transform.js",
+    "importStyle": "{scaleX}",
+    "description": null,
+    "lineNumber": 24,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 128,
+    "kind": "variable",
+    "name": "scaleY",
+    "memberof": "src/mixins/transform.js",
+    "static": true,
+    "longname": "src/mixins/transform.js~scaleY",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/transform.js",
+    "importStyle": "{scaleY}",
+    "description": null,
+    "lineNumber": 25,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 129,
+    "kind": "variable",
+    "name": "scaleZ",
+    "memberof": "src/mixins/transform.js",
+    "static": true,
+    "longname": "src/mixins/transform.js~scaleZ",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/transform.js",
+    "importStyle": "{scaleZ}",
+    "description": null,
+    "lineNumber": 26,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 130,
+    "kind": "variable",
+    "name": "skew",
+    "memberof": "src/mixins/transform.js",
+    "static": true,
+    "longname": "src/mixins/transform.js~skew",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/transform.js",
+    "importStyle": "{skew}",
+    "description": null,
+    "lineNumber": 27,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 131,
+    "kind": "variable",
+    "name": "skewX",
+    "memberof": "src/mixins/transform.js",
+    "static": true,
+    "longname": "src/mixins/transform.js~skewX",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/transform.js",
+    "importStyle": "{skewX}",
+    "description": null,
+    "lineNumber": 28,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 132,
+    "kind": "variable",
+    "name": "skewY",
+    "memberof": "src/mixins/transform.js",
+    "static": true,
+    "longname": "src/mixins/transform.js~skewY",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/transform.js",
+    "importStyle": "{skewY}",
+    "description": null,
+    "lineNumber": 29,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 133,
+    "kind": "variable",
+    "name": "translate",
+    "memberof": "src/mixins/transform.js",
+    "static": true,
+    "longname": "src/mixins/transform.js~translate",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/transform.js",
+    "importStyle": "{translate}",
+    "description": null,
+    "lineNumber": 30,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 134,
+    "kind": "variable",
+    "name": "translate3d",
+    "memberof": "src/mixins/transform.js",
+    "static": true,
+    "longname": "src/mixins/transform.js~translate3d",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/transform.js",
+    "importStyle": "{translate3d}",
+    "description": null,
+    "lineNumber": 31,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 135,
+    "kind": "variable",
+    "name": "translateX",
+    "memberof": "src/mixins/transform.js",
+    "static": true,
+    "longname": "src/mixins/transform.js~translateX",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/transform.js",
+    "importStyle": "{translateX}",
+    "description": null,
+    "lineNumber": 32,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 136,
+    "kind": "variable",
+    "name": "translateY",
+    "memberof": "src/mixins/transform.js",
+    "static": true,
+    "longname": "src/mixins/transform.js~translateY",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/transform.js",
+    "importStyle": "{translateY}",
+    "description": null,
+    "lineNumber": 33,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 137,
+    "kind": "variable",
+    "name": "translateZ",
+    "memberof": "src/mixins/transform.js",
+    "static": true,
+    "longname": "src/mixins/transform.js~translateZ",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/transform.js",
+    "importStyle": "{translateZ}",
+    "description": null,
+    "lineNumber": 34,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 138,
+    "kind": "file",
+    "name": "src/utils/colors.js",
+    "content": "/* leny/koutla-swiss\n *\n * ~/utils/colors.js - Colors utils\n *\n * coded by leny@flatLand!\n * started at 12/01/2018\n */\n\nimport cssColors from \"css-color-names\";\n\nconst HEX_COLOR = /^#((?:[0-9a-f](?=[0-9a-f]{2}\\b))|(?:[0-9a-f]{2}(?=[0-9a-f]{4}\\b)))((?:[0-9a-f](?=[0-9a-f]{1}\\b))|(?:[0-9a-f]{2}(?=[0-9a-f]{2}\\b)))([0-9a-f]{1,2})\\b/i;\n\nconst isValidRGBInt = mValue => {\n    const iValue = +mValue;\n\n    return !(isNaN(iValue) || iValue % 1 !== 0 || (iValue < 0 || iValue > 255));\n};\n\nconst isValidAlphaNumber = mValue => {\n    const iValue = +mValue;\n\n    return !(isNaN(iValue) || (iValue < 0 || iValue > 1));\n};\n\nconst getRGBValuesFromColor = sColor => {\n    let sColorName, sHexColor, aColorParts;\n\n    if (\n        Object.keys(cssColors).includes(\n            (sColorName = `${sColor}`.toLowerCase().trim()),\n        )\n    ) {\n        sHexColor = cssColors[sColorName];\n    } else if (HEX_COLOR.test(sColor)) {\n        sHexColor = sColor;\n    } else {\n        throw new TypeError(\"Invalid color\");\n    }\n\n    (aColorParts = sHexColor.match(HEX_COLOR)).shift();\n    return aColorParts.map(sValue =>\n        parseInt(sValue.length === 1 ? `${sValue}${sValue}` : sValue, 16),\n    );\n};\n\nexport const rgb = (...aParts) => {\n    if (aParts.length === 3) {\n        if (aParts.every(isValidRGBInt)) {\n            return `rgb(${aParts.join(\",\")})`;\n        }\n    }\n\n    if (aParts.length === 1) {\n        return `rgb(${getRGBValuesFromColor(aParts[0]).join(\",\")})`;\n    }\n\n    throw new TypeError(\"Invalid arguments format\");\n};\n\nexport const rgba = (...aParts) => {\n    if (aParts.length === 4) {\n        if (\n            aParts.every((iValue, iIndex) => {\n                return iIndex < 3\n                    ? isValidRGBInt(iValue)\n                    : isValidAlphaNumber(iValue);\n            })\n        ) {\n            return `rgba(${aParts.join(\",\")})`;\n        }\n    }\n\n    if (aParts.length === 2) {\n        let aColorParts = getRGBValuesFromColor(aParts[0]);\n\n        if (!isValidAlphaNumber(aParts[1])) {\n            throw new TypeError(\"Invalid alpha value\");\n        }\n\n        return `rgba(${aColorParts.join(\",\")},${aParts[1]})`;\n    }\n\n    throw new TypeError(\"Invalid arguments format\");\n};\n",
+    "static": true,
+    "longname": "/Users/leny/Works/leny/koutla-swiss/src/utils/colors.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 139,
+    "kind": "variable",
+    "name": "HEX_COLOR",
+    "memberof": "src/utils/colors.js",
+    "static": true,
+    "longname": "src/utils/colors.js~HEX_COLOR",
+    "access": "public",
+    "export": false,
+    "importPath": "koutla-swiss/src/utils/colors.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "undefined"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 140,
+    "kind": "function",
+    "name": "isValidRGBInt",
+    "memberof": "src/utils/colors.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/colors.js~isValidRGBInt",
+    "access": "public",
+    "export": false,
+    "importPath": "koutla-swiss/src/utils/colors.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "params": [
+      {
+        "name": "mValue",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 141,
+    "kind": "function",
+    "name": "isValidAlphaNumber",
+    "memberof": "src/utils/colors.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/colors.js~isValidAlphaNumber",
+    "access": "public",
+    "export": false,
+    "importPath": "koutla-swiss/src/utils/colors.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "params": [
+      {
+        "name": "mValue",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 142,
+    "kind": "function",
+    "name": "getRGBValuesFromColor",
+    "memberof": "src/utils/colors.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/colors.js~getRGBValuesFromColor",
+    "access": "public",
+    "export": false,
+    "importPath": "koutla-swiss/src/utils/colors.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 25,
+    "undocument": true,
+    "params": [
+      {
+        "name": "sColor",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 143,
+    "kind": "function",
+    "name": "rgb",
+    "memberof": "src/utils/colors.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/colors.js~rgb",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/colors.js",
+    "importStyle": "{rgb}",
+    "description": null,
+    "lineNumber": 46,
+    "undocument": true,
+    "params": [
+      {
+        "name": "aParts",
+        "types": [
+          "...*"
+        ],
+        "spread": true
+      }
+    ],
+    "return": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 144,
+    "kind": "function",
+    "name": "rgba",
+    "memberof": "src/utils/colors.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/colors.js~rgba",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/colors.js",
+    "importStyle": "{rgba}",
+    "description": null,
+    "lineNumber": 60,
+    "undocument": true,
+    "params": [
+      {
+        "name": "aParts",
+        "types": [
+          "...*"
+        ],
+        "spread": true
+      }
+    ],
+    "return": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 145,
+    "kind": "file",
+    "name": "src/utils/important.js",
+    "content": "/* leny/koutla-swiss\n *\n * ~/utils/important.js - !important util\n *\n * coded by leny@flatLand!\n * started at 23/02/2019\n */\n\nimport fromEntries from \"lodash.frompairs\";\n\nexport const important = target => {\n    if (typeof target === \"string\") {\n        return `${target} !important`;\n    }\n    return fromEntries(\n        Object.entries(target).map(([key, value]) => [\n            key,\n            `${value} !important`,\n        ]),\n    );\n};\n",
+    "static": true,
+    "longname": "/Users/leny/Works/leny/koutla-swiss/src/utils/important.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 146,
+    "kind": "function",
+    "name": "important",
+    "memberof": "src/utils/important.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/important.js~important",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/important.js",
+    "importStyle": "{important}",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "params": [
+      {
+        "name": "target",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 147,
+    "kind": "file",
+    "name": "src/utils/index.js",
+    "content": "/* leny/koutla-swiss\n *\n * ~/utils/index.js - Utils index\n *\n * coded by leny@flatLand!\n * started at 12/01/2018\n */\n\nexport * from \"./units\";\n\nexport * from \"./colors\";\n\nexport * from \"./media\";\n\nexport * from \"./important\";\n",
+    "static": true,
+    "longname": "/Users/leny/Works/leny/koutla-swiss/src/utils/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 148,
+    "kind": "file",
+    "name": "src/utils/media.js",
+    "content": "/* leny/koutla-swiss\n *\n * ~/utils/media.js - MediaQueries utils\n *\n * coded by leny@flatLand!\n * started at 13/01/2018\n */\n\nexport const mq = (sQuery, oProperties = {}) => {\n    if (typeof sQuery !== \"string\") {\n        throw new TypeError(\"Invalid query type\");\n    }\n\n    return {\n        [`@media(${sQuery})`]: oProperties,\n    };\n};\n",
+    "static": true,
+    "longname": "/Users/leny/Works/leny/koutla-swiss/src/utils/media.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 149,
+    "kind": "function",
+    "name": "mq",
+    "memberof": "src/utils/media.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/media.js~mq",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/media.js",
+    "importStyle": "{mq}",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "params": [
+      {
+        "name": "sQuery",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "oProperties",
+        "optional": true,
+        "types": [
+          "{}"
+        ],
+        "defaultRaw": {},
+        "defaultValue": "{}"
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"undefined\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 150,
+    "kind": "file",
+    "name": "src/utils/units.js",
+    "content": "/* leny/koutla-swiss\n *\n * ~/utils/units.js - Units utils\n *\n * coded by leny@flatLand!\n * started at 12/01/2018\n */\n\nimport {selfFunction} from \"../commons/utils\";\n\nconst checkNumber = mValue => {\n    if (isNaN(+mValue)) {\n        throw new TypeError(\"Expect a Number\");\n    }\n    return true;\n};\n\nconst checkZero = iValue => {\n    return iValue === 0 ? \"0\" : false;\n};\n\nconst unit = sUnit => (iValue = 0) =>\n    checkNumber(iValue) && (checkZero(iValue) || `${iValue}${sUnit}`);\n\nexport const rem = unit(\"rem\");\nexport const em = unit(\"em\");\nexport const ex = unit(\"ex\");\nexport const cap = unit(\"cap\");\nexport const ic = unit(\"ic\");\nexport const lh = unit(\"lh\");\nexport const rlh = unit(\"rlh\");\nexport const ch = unit(\"ch\");\n\nexport const vw = unit(\"vw\");\nexport const vh = unit(\"vh\");\nexport const vi = unit(\"vi\");\nexport const vb = unit(\"vb\");\nexport const vmin = unit(\"vmin\");\nexport const vmax = unit(\"vmax\");\n\nexport const cm = unit(\"cm\");\nexport const mm = unit(\"mm\");\nexport const Q = unit(\"Q\");\nexport const inch = unit(\"in\");\nexport const pc = unit(\"pc\");\nexport const pt = unit(\"pt\");\n\nexport const deg = unit(\"deg\");\nexport const grad = unit(\"grad\");\nexport const rad = unit(\"rad\");\nexport const turn = unit(\"turn\");\n\nexport const s = unit(\"s\");\nexport const ms = unit(\"ms\");\n\nexport const Hz = unit(\"Hz\");\nexport const kHz = unit(\"kHz\");\n\nexport const dpi = unit(\"dpi\");\nexport const dpcm = unit(\"dpcm\");\nexport const dppx = unit(\"dppx\");\n\nexport const px = unit(\"px\");\n\nexport const fr = unit(\"fr\");\n\nexport const percent = (iValue = 0, bDecimal) =>\n    unit(\"%\")(iValue * (bDecimal ? 100 : 1));\n\nexport const calc = selfFunction(\"calc\", \" \");\nexport const attr = selfFunction(\"attr\");\nexport const clamp = selfFunction(\"clamp\", \", \", 3, 3);\nexport const min = selfFunction(\"min\", \", \", 2);\nexport const max = selfFunction(\"max\", \", \", 2);\n",
+    "static": true,
+    "longname": "/Users/leny/Works/leny/koutla-swiss/src/utils/units.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 151,
+    "kind": "function",
+    "name": "checkNumber",
+    "memberof": "src/utils/units.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/units.js~checkNumber",
+    "access": "public",
+    "export": false,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "params": [
+      {
+        "name": "mValue",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 152,
+    "kind": "function",
+    "name": "checkZero",
+    "memberof": "src/utils/units.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/units.js~checkZero",
+    "access": "public",
+    "export": false,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "params": [
+      {
+        "name": "iValue",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 153,
+    "kind": "function",
+    "name": "unit",
+    "memberof": "src/utils/units.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/units.js~unit",
+    "access": "public",
+    "export": false,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "params": [
+      {
+        "name": "sUnit",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 154,
+    "kind": "variable",
+    "name": "rem",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~rem",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{rem}",
+    "description": null,
+    "lineNumber": 25,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 155,
+    "kind": "variable",
+    "name": "em",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~em",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{em}",
+    "description": null,
+    "lineNumber": 26,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 156,
+    "kind": "variable",
+    "name": "ex",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~ex",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{ex}",
+    "description": null,
+    "lineNumber": 27,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 157,
+    "kind": "variable",
+    "name": "cap",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~cap",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{cap}",
+    "description": null,
+    "lineNumber": 28,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 158,
+    "kind": "variable",
+    "name": "ic",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~ic",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{ic}",
+    "description": null,
+    "lineNumber": 29,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 159,
+    "kind": "variable",
+    "name": "lh",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~lh",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{lh}",
+    "description": null,
+    "lineNumber": 30,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 160,
+    "kind": "variable",
+    "name": "rlh",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~rlh",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{rlh}",
+    "description": null,
+    "lineNumber": 31,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 161,
+    "kind": "variable",
+    "name": "ch",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~ch",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{ch}",
+    "description": null,
+    "lineNumber": 32,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 162,
+    "kind": "variable",
+    "name": "vw",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~vw",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{vw}",
+    "description": null,
+    "lineNumber": 34,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 163,
+    "kind": "variable",
+    "name": "vh",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~vh",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{vh}",
+    "description": null,
+    "lineNumber": 35,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 164,
+    "kind": "variable",
+    "name": "vi",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~vi",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{vi}",
+    "description": null,
+    "lineNumber": 36,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 165,
+    "kind": "variable",
+    "name": "vb",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~vb",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{vb}",
+    "description": null,
+    "lineNumber": 37,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 166,
+    "kind": "variable",
+    "name": "vmin",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~vmin",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{vmin}",
+    "description": null,
+    "lineNumber": 38,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 167,
+    "kind": "variable",
+    "name": "vmax",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~vmax",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{vmax}",
+    "description": null,
+    "lineNumber": 39,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 168,
+    "kind": "variable",
+    "name": "cm",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~cm",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{cm}",
+    "description": null,
+    "lineNumber": 41,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 169,
+    "kind": "variable",
+    "name": "mm",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~mm",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{mm}",
+    "description": null,
+    "lineNumber": 42,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 170,
+    "kind": "variable",
+    "name": "Q",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~Q",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{Q}",
+    "description": null,
+    "lineNumber": 43,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 171,
+    "kind": "variable",
+    "name": "inch",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~inch",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{inch}",
+    "description": null,
+    "lineNumber": 44,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 172,
+    "kind": "variable",
+    "name": "pc",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~pc",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{pc}",
+    "description": null,
+    "lineNumber": 45,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 173,
+    "kind": "variable",
+    "name": "pt",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~pt",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{pt}",
+    "description": null,
+    "lineNumber": 46,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 174,
+    "kind": "variable",
+    "name": "deg",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~deg",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{deg}",
+    "description": null,
+    "lineNumber": 48,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 175,
+    "kind": "variable",
+    "name": "grad",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~grad",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{grad}",
+    "description": null,
+    "lineNumber": 49,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 176,
+    "kind": "variable",
+    "name": "rad",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~rad",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{rad}",
+    "description": null,
+    "lineNumber": 50,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 177,
+    "kind": "variable",
+    "name": "turn",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~turn",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{turn}",
+    "description": null,
+    "lineNumber": 51,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 178,
+    "kind": "variable",
+    "name": "s",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~s",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{s}",
+    "description": null,
+    "lineNumber": 53,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 179,
+    "kind": "variable",
+    "name": "ms",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~ms",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{ms}",
+    "description": null,
+    "lineNumber": 54,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 180,
+    "kind": "variable",
+    "name": "Hz",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~Hz",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{Hz}",
+    "description": null,
+    "lineNumber": 56,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 181,
+    "kind": "variable",
+    "name": "kHz",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~kHz",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{kHz}",
+    "description": null,
+    "lineNumber": 57,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 182,
+    "kind": "variable",
+    "name": "dpi",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~dpi",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{dpi}",
+    "description": null,
+    "lineNumber": 59,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 183,
+    "kind": "variable",
+    "name": "dpcm",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~dpcm",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{dpcm}",
+    "description": null,
+    "lineNumber": 60,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 184,
+    "kind": "variable",
+    "name": "dppx",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~dppx",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{dppx}",
+    "description": null,
+    "lineNumber": 61,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 185,
+    "kind": "variable",
+    "name": "px",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~px",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{px}",
+    "description": null,
+    "lineNumber": 63,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 186,
+    "kind": "variable",
+    "name": "fr",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~fr",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{fr}",
+    "description": null,
+    "lineNumber": 65,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 187,
+    "kind": "function",
+    "name": "percent",
+    "memberof": "src/utils/units.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/units.js~percent",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{percent}",
+    "description": null,
+    "lineNumber": 67,
+    "undocument": true,
+    "params": [
+      {
+        "name": "iValue",
+        "optional": true,
+        "types": [
+          "number"
+        ],
+        "defaultRaw": 0,
+        "defaultValue": "0"
+      },
+      {
+        "name": "bDecimal",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 188,
+    "kind": "variable",
+    "name": "calc",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~calc",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{calc}",
+    "description": null,
+    "lineNumber": 70,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 189,
+    "kind": "variable",
+    "name": "attr",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~attr",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{attr}",
+    "description": null,
+    "lineNumber": 71,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 190,
+    "kind": "variable",
+    "name": "clamp",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~clamp",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{clamp}",
+    "description": null,
+    "lineNumber": 72,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 191,
+    "kind": "variable",
+    "name": "min",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~min",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{min}",
+    "description": null,
+    "lineNumber": 73,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 192,
+    "kind": "variable",
+    "name": "max",
+    "memberof": "src/utils/units.js",
+    "static": true,
+    "longname": "src/utils/units.js~max",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/utils/units.js",
+    "importStyle": "{max}",
+    "description": null,
+    "lineNumber": 74,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "index",
+    "content": "# koutla swiss\n\n[![NPM version](https://badge.fury.io/js/koutla-swiss.svg)](http://badge.fury.io/js/koutla-swiss) [![Build Status](http://img.shields.io/travis/leny/koutla-swiss.svg)](https://travis-ci.org/leny/koutla-swiss) ![Dependency Status](https://david-dm.org/leny/koutla-swiss.svg) ![Downloads counter](http://img.shields.io/npm/dm/koutla-swiss.svg)\n\n> 🎨 CSS-in-JS toolkit, inspired by Kouto-Swiss\n\n* * *\n\n**koutla swiss** is a rewrite of **kouto swiss** (a CSS framework for Stylus) in pure javascript, to be used within _css-in-js_ tools like **glamor** or **emotion**\n\n* * *\n\n## Installation\n\n```bash\n$ npm install --save-dev koutla-swiss\n```\n\n## Usage\n\n**koutla-swiss** is a serie of useful, functional utilities to make _CSS-in-JS_ (with librairies like [glamor](https://github.com/threepointone/glamor)).\n\nAll the documented functions are accessibles from the root of the lib, like `import {px, padding} from \"koutla-swiss\";`.\n\nDocumentation is generated with [ESDoc](https://doc.esdoc.org) and hosted in [leny.github.io/koutla-swiss](https://leny.github.io/koutla-swiss).\n\n* * *\n\n## License\n\nCopyright (c) 2018 [leny.me](http://leny.me)\nLicensed under the MIT license.\n",
+    "longname": "/Users/leny/Works/leny/koutla-swiss/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"koutla-swiss\",\n  \"version\": \"0.7.0\",\n  \"description\": \"A rewrite of Kouto Swiss in pure javascript\",\n  \"keywords\": [\n    \"Stylus\",\n    \"CSS\",\n    \"framework\",\n    \"polyfill\",\n    \"grid\",\n    \"vendors\",\n    \"responsive\",\n    \"reset\",\n    \"utility\"\n  ],\n  \"author\": {\n    \"name\": \"leny\",\n    \"email\": \"info@flatland.be\",\n    \"url\": \"http://leny.me\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git://github.com/leny/koutla-swiss.git\"\n  },\n  \"files\": [\n    \"lib\"\n  ],\n  \"bugs\": {\n    \"url\": \"https://github.com/leny/koutla-swiss/issues\"\n  },\n  \"licenses\": [\n    {\n      \"type\": \"MIT\",\n      \"url\": \"https://github.com/leny/koutla-swiss/blob/master/LICENSE\"\n    }\n  ],\n  \"main\": \"lib/index.js\",\n  \"scripts\": {\n    \"docs\": \"npx esdoc\",\n    \"pretest\": \"npm run lint && npm run build\",\n    \"test\": \"npx mocha --require @babel/register\",\n    \"test:coverage\": \"npx nyc mocha --require @babel/register\",\n    \"lint\": \"npx eslint --fix src test\",\n    \"build\": \"npx babel src -d lib\",\n    \"prepublish\": \"npm run build\"\n  },\n  \"devDependencies\": {\n    \"@babel/cli\": \"^7.2.3\",\n    \"@babel/core\": \"^7.3.3\",\n    \"@babel/preset-env\": \"^7.3.1\",\n    \"@babel/register\": \"^7.0.0\",\n    \"assert\": \"^1.4.1\",\n    \"babel-eslint\": \"^10.0.1\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"eslint\": \"^5.15.0\",\n    \"eslint-plugin-prettier\": \"^3.0.1\",\n    \"mocha\": \"^6.0.2\",\n    \"nyc\": \"^13.3.0\",\n    \"prettier\": \"^1.10.2\"\n  },\n  \"dependencies\": {\n    \"css-color-names\": \"^1.0.1\",\n    \"lodash.frompairs\": \"^4.0.1\"\n  }\n}\n",
+    "longname": "/Users/leny/Works/leny/koutla-swiss/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]
