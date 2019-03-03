@@ -33,17 +33,14 @@ describe("Transform methods", () => {
         "translateX",
         "translateY",
         "translateZ",
-    ].forEach(sMethod => {
-        const method = transformMethods[sMethod];
+    ].forEach(name => {
+        const method = transformMethods[name];
 
-        describe(`${sMethod}()`, () => {
-            it(`Should return a correct ${sMethod} method with any value given, concatenated`, () => {
-                assert.strictEqual(method(1), `${sMethod}(1)`);
-                assert.strictEqual(method(1, 2, 3), `${sMethod}(1, 2, 3)`);
-                assert.strictEqual(
-                    method("1rem", "20%"),
-                    `${sMethod}(1rem, 20%)`,
-                );
+        describe(`${name}()`, () => {
+            it(`Should return a correct ${name} method with any value given, concatenated`, () => {
+                assert.strictEqual(method(1), `${name}(1)`);
+                assert.strictEqual(method(1, 2, 3), `${name}(1, 2, 3)`);
+                assert.strictEqual(method("1rem", "20%"), `${name}(1rem, 20%)`);
             });
 
             it("Should throw if no value is given", () => {
