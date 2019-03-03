@@ -6,6 +6,9 @@
  * started at 09/02/2018
  */
 
-export const concatProp = (sProp, aValues) => {
+export const concatProp = (sProp, aValues = []) => {
     return aValues.length ? {[sProp]: aValues.join(" ")} : {};
 };
+
+export const selfFunction = (sName, aValues = [], sJoin = ", ") =>
+    `${sName}(${aValues.join(sJoin)})`;
