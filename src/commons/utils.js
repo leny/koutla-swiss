@@ -10,9 +10,17 @@ export const concatProp = (prop, glue = " ") => (...args) => {
     return args.length ? {[prop]: args.join(glue)} : {};
 };
 
-export const selfFunction = (name, glue = ", ") => (...args) => {
-    if (!args.length) {
-        throw new TypeError("Expect at least one argument");
+export const selfFunction = (
+    name,
+    glue = ", ",
+    minArgs = 1,
+    maxArgs = Infinity,
+    quoted = false,
+) => (...args) => {
+    if (args.length < minArgs || args.length > maxArgs) {
+        throw new TypeError(`Wrong numbers of arguments in ${name}()`);
     }
-    return `${name}(${args.join(glue)})`;
+    const quote = quoted ? '"' : "";
+
+    return `${name}(${quote}${args.join(glue)}${quote})`;
 };

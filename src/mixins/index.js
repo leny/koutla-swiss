@@ -12,3 +12,4 @@ export * from "./flex";
 export * from "./box-model";
 export * from "./borders";
 export * from "./transform";
+export * from "./background";
