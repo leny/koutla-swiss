@@ -8,12 +8,8 @@
 
 import {concatProp, selfFunction} from "../commons/utils";
 
-export const transform = (...aArgs) => {
-    if (!aArgs.length) {
-        return {transform: "none"};
-    }
-    return concatProp("transform", aArgs);
-};
+export const transform = (...args) =>
+    concatProp("transform")(...(args.length ? args : ["none"]));
 
 const guardedSelfFunction = name => (...args) => {
     if (!args.length) {

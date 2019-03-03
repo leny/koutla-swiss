@@ -8,6 +8,6 @@
 
 import {concatProp} from "../commons/utils";
 
-export const margin = (...aArgs) => concatProp("margin", aArgs);
+export const margin = concatProp("margin");
 
-export const padding = (...aArgs) => concatProp("padding", aArgs);
+export const padding = concatProp("padding");

@@ -17,25 +17,25 @@ const checkZero = iValue => {
     return iValue === 0 ? "0" : false;
 };
 
-const unit = (sUnit, iValue = 0) =>
+const unit = sUnit => (iValue = 0) =>
     checkNumber(iValue) && (checkZero(iValue) || `${iValue}${sUnit}`);
 
-export const rem = iValue => unit("rem", iValue);
-export const em = iValue => unit("em", iValue);
-export const ex = iValue => unit("ex", iValue);
-export const cap = iValue => unit("cap", iValue);
-export const ic = iValue => unit("ic", iValue);
-export const lh = iValue => unit("lh", iValue);
-export const rlh = iValue => unit("rlh", iValue);
+export const rem = unit("rem");
+export const em = unit("em");
+export const ex = unit("ex");
+export const cap = unit("cap");
+export const ic = unit("ic");
+export const lh = unit("lh");
+export const rlh = unit("rlh");
 
-export const vw = iValue => unit("vw", iValue);
-export const vh = iValue => unit("vh", iValue);
-export const vi = iValue => unit("vi", iValue);
-export const vb = iValue => unit("vb", iValue);
-export const vmin = iValue => unit("vmin", iValue);
-export const vmax = iValue => unit("vmax", iValue);
+export const vw = unit("vw");
+export const vh = unit("vh");
+export const vi = unit("vi");
+export const vb = unit("vb");
+export const vmin = unit("vmin");
+export const vmax = unit("vmax");
 
-export const px = iValue => unit("px", iValue);
+export const px = unit("px");
 
 export const percent = (iValue = 0, bDecimal) =>
-    unit("%", iValue * (bDecimal ? 100 : 1));
+    unit("%")(iValue * (bDecimal ? 100 : 1));

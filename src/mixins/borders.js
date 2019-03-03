@@ -8,11 +8,11 @@
 
 import {concatProp} from "../commons/utils";
 
-export const border = (...aArgs) => concatProp("border", aArgs);
+export const border = concatProp("border");
 
-export const borderTop = (...aArgs) => concatProp("borderTop", aArgs);
-export const borderRight = (...aArgs) => concatProp("borderRight", aArgs);
-export const borderBottom = (...aArgs) => concatProp("borderBottom", aArgs);
-export const borderLeft = (...aArgs) => concatProp("borderLeft", aArgs);
+export const borderTop = concatProp("borderTop");
+export const borderRight = concatProp("borderRight");
+export const borderBottom = concatProp("borderBottom");
+export const borderLeft = concatProp("borderLeft");
 
-export const borderRadius = (...aArgs) => concatProp("borderRadius", aArgs);
+export const borderRadius = concatProp("borderRadius");

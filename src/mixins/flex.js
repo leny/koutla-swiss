@@ -50,4 +50,4 @@ export const flexrow = (...aArgs) => flexbox(FLEX_DIRECTION_ROW, ...aArgs);
 export const flexcolumn = (...aArgs) =>
     flexbox(FLEX_DIRECTION_COLUMN, ...aArgs);
 
-export const flex = (...aArgs) => concatProp("flex", aArgs);
+export const flex = concatProp("flex");
