@@ -15,36 +15,31 @@ export const transform = (...aArgs) => {
     return concatProp("transform", aArgs);
 };
 
-const guardedSelfFunction = (sName, aArgs) => {
-    if (!aArgs.length) {
+const guardedSelfFunction = name => (...args) => {
+    if (!args.length) {
         throw new TypeError("Expect at least one argument");
     }
-    return selfFunction(sName, aArgs);
+    return selfFunction(name)(...args);
 };
 
-export const matrix = (...aArgs) => guardedSelfFunction("matrix", aArgs);
-export const matrix3d = (...aArgs) => guardedSelfFunction("matrix3d", aArgs);
-export const perspective = (...aArgs) =>
-    guardedSelfFunction("perspective", aArgs);
-export const rotate = (...aArgs) => guardedSelfFunction("rotate", aArgs);
-export const rotate3d = (...aArgs) => guardedSelfFunction("rotate3d", aArgs);
-export const rotateX = (...aArgs) => guardedSelfFunction("rotateX", aArgs);
-export const rotateY = (...aArgs) => guardedSelfFunction("rotateY", aArgs);
-export const rotateZ = (...aArgs) => guardedSelfFunction("rotateZ", aArgs);
-export const scale = (...aArgs) => guardedSelfFunction("scale", aArgs);
-export const scale3d = (...aArgs) => guardedSelfFunction("scale3d", aArgs);
-export const scaleX = (...aArgs) => guardedSelfFunction("scaleX", aArgs);
-export const scaleY = (...aArgs) => guardedSelfFunction("scaleY", aArgs);
-export const scaleZ = (...aArgs) => guardedSelfFunction("scaleZ", aArgs);
-export const skew = (...aArgs) => guardedSelfFunction("skew", aArgs);
-export const skewX = (...aArgs) => guardedSelfFunction("skewX", aArgs);
-export const skewY = (...aArgs) => guardedSelfFunction("skewY", aArgs);
-export const translate = (...aArgs) => guardedSelfFunction("translate", aArgs);
-export const translate3d = (...aArgs) =>
-    guardedSelfFunction("translate3d", aArgs);
-export const translateX = (...aArgs) =>
-    guardedSelfFunction("translateX", aArgs);
-export const translateY = (...aArgs) =>
-    guardedSelfFunction("translateY", aArgs);
-export const translateZ = (...aArgs) =>
-    guardedSelfFunction("translateZ", aArgs);
+export const matrix = guardedSelfFunction("matrix");
+export const matrix3d = guardedSelfFunction("matrix3d");
+export const perspective = guardedSelfFunction("perspective");
+export const rotate = guardedSelfFunction("rotate");
+export const rotate3d = guardedSelfFunction("rotate3d");
+export const rotateX = guardedSelfFunction("rotateX");
+export const rotateY = guardedSelfFunction("rotateY");
+export const rotateZ = guardedSelfFunction("rotateZ");
+export const scale = guardedSelfFunction("scale");
+export const scale3d = guardedSelfFunction("scale3d");
+export const scaleX = guardedSelfFunction("scaleX");
+export const scaleY = guardedSelfFunction("scaleY");
+export const scaleZ = guardedSelfFunction("scaleZ");
+export const skew = guardedSelfFunction("skew");
+export const skewX = guardedSelfFunction("skewX");
+export const skewY = guardedSelfFunction("skewY");
+export const translate = guardedSelfFunction("translate");
+export const translate3d = guardedSelfFunction("translate3d");
+export const translateX = guardedSelfFunction("translateX");
+export const translateY = guardedSelfFunction("translateY");
+export const translateZ = guardedSelfFunction("translateZ");
