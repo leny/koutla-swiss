@@ -13,3 +13,4 @@ export * from "./box-model";
 export * from "./borders";
 export * from "./transform";
 export * from "./background";
+export * from "./filter";
