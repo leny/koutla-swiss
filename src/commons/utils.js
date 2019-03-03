@@ -10,5 +10,9 @@ export const concatProp = (prop, glue = " ") => (...args) => {
     return args.length ? {[prop]: args.join(glue)} : {};
 };
 
-export const selfFunction = (name, glue = ", ") => (...args) =>
-    `${name}(${args.join(glue)})`;
+export const selfFunction = (name, glue = ", ") => (...args) => {
+    if (!args.length) {
+        throw new TypeError("Expect at least one argument");
+    }
+    return `${name}(${args.join(glue)})`;
+};

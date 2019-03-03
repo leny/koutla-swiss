@@ -11,31 +11,24 @@ import {concatProp, selfFunction} from "../commons/utils";
 export const transform = (...args) =>
     concatProp("transform")(...(args.length ? args : ["none"]));
 
-const guardedSelfFunction = name => (...args) => {
-    if (!args.length) {
-        throw new TypeError("Expect at least one argument");
-    }
-    return selfFunction(name)(...args);
-};
-
-export const matrix = guardedSelfFunction("matrix");
-export const matrix3d = guardedSelfFunction("matrix3d");
-export const perspective = guardedSelfFunction("perspective");
-export const rotate = guardedSelfFunction("rotate");
-export const rotate3d = guardedSelfFunction("rotate3d");
-export const rotateX = guardedSelfFunction("rotateX");
-export const rotateY = guardedSelfFunction("rotateY");
-export const rotateZ = guardedSelfFunction("rotateZ");
-export const scale = guardedSelfFunction("scale");
-export const scale3d = guardedSelfFunction("scale3d");
-export const scaleX = guardedSelfFunction("scaleX");
-export const scaleY = guardedSelfFunction("scaleY");
-export const scaleZ = guardedSelfFunction("scaleZ");
-export const skew = guardedSelfFunction("skew");
-export const skewX = guardedSelfFunction("skewX");
-export const skewY = guardedSelfFunction("skewY");
-export const translate = guardedSelfFunction("translate");
-export const translate3d = guardedSelfFunction("translate3d");
-export const translateX = guardedSelfFunction("translateX");
-export const translateY = guardedSelfFunction("translateY");
-export const translateZ = guardedSelfFunction("translateZ");
+export const matrix = selfFunction("matrix");
+export const matrix3d = selfFunction("matrix3d");
+export const perspective = selfFunction("perspective");
+export const rotate = selfFunction("rotate");
+export const rotate3d = selfFunction("rotate3d");
+export const rotateX = selfFunction("rotateX");
+export const rotateY = selfFunction("rotateY");
+export const rotateZ = selfFunction("rotateZ");
+export const scale = selfFunction("scale");
+export const scale3d = selfFunction("scale3d");
+export const scaleX = selfFunction("scaleX");
+export const scaleY = selfFunction("scaleY");
+export const scaleZ = selfFunction("scaleZ");
+export const skew = selfFunction("skew");
+export const skewX = selfFunction("skewX");
+export const skewY = selfFunction("skewY");
+export const translate = selfFunction("translate");
+export const translate3d = selfFunction("translate3d");
+export const translateX = selfFunction("translateX");
+export const translateY = selfFunction("translateY");
+export const translateZ = selfFunction("translateZ");
