@@ -8,7 +8,7 @@
 
 import assert from "assert";
 
-import * as unitsMethods from "../lib/utils";
+import * as unitsMethods from "../lib/utils/units";
 
 describe("Units Utils", () => {
     [
