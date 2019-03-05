@@ -50,13 +50,6 @@ describe("Gradient methods", () => {
         it("Should throw if no value is given", () => {
             assert.throws(() => url(), TypeError);
         });
-
-        it("Should throw if more than one value is given", () => {
-            assert.throws(
-                () => url("http://", "placehold.it", "/500"),
-                TypeError,
-            );
-        });
     });
 
     describe("background()", () => {
