@@ -72,7 +72,5 @@ export const url = arg => {
         throw new TypeError(`Wrong numbers of arguments in url()`);
     }
 
-    const quote = '"';
-
-    return `url(${quote}${url}${quote})`;
+    return `url("${arg}")`;
 };
