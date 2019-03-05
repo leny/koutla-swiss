@@ -67,4 +67,4 @@ export const conicGradient = (...args) =>
  * @param {string} arg URL
  * @return {string} `"url(arg)"`
  */
-export const url = arg => selfFunction("url", "", 1, 1, true)(arg);
+export const url = arg => selfFunction("url", "", 1, 1, true)(...[arg]);
