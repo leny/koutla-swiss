@@ -8,8 +8,8 @@
 
 import assert from "assert";
 
+import {size} from "../lib/mixins/size";
 import {
-    size,
     flexbox,
     FLEX_DIRECTION_ROW,
     FLEX_DIRECTION_COLUMN,
@@ -20,7 +20,7 @@ import {
     flexrow,
     flexcolumn,
     flex,
-} from "../lib/mixins";
+} from "../lib/mixins/flex";
 import {important} from "../lib/utils/important";
 import {percent} from "../lib/utils/units";
 
