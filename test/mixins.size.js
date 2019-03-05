@@ -8,7 +8,7 @@
 
 import assert from "assert";
 
-import {size, minSize, maxSize} from "../lib/mixins";
+import {size, minSize, maxSize} from "../lib/mixins/size";
 
 describe("Size Mixins", () => {
     describe("size()", () => {

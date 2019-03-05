@@ -21,7 +21,8 @@ import {
     flexcolumn,
     flex,
 } from "../lib/mixins";
-import {important, percent} from "../lib/utils";
+import {important} from "../lib/utils/important";
+import {percent} from "../lib/utils/units";
 
 describe("!important util", () => {
     describe("important(size())", () => {

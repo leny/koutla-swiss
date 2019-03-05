@@ -8,7 +8,7 @@
 
 import assert from "assert";
 
-import {mq} from "../lib/utils";
+import {mq} from "../lib/utils/media";
 
 describe("MediaQueries Mixins", () => {
     describe("mq()", () => {

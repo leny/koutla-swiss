@@ -8,7 +8,7 @@
 
 import assert from "assert";
 
-import * as borderMethods from "../lib/mixins";
+import * as borderMethods from "../lib/mixins/borders";
 
 describe("Border Mixins", () => {
     [
@@ -17,19 +17,19 @@ describe("Border Mixins", () => {
         "borderRight",
         "borderBottom",
         "borderLeft",
-    ].forEach(sProp => {
-        const method = borderMethods[sProp];
+    ].forEach(name => {
+        const method = borderMethods[name];
 
-        describe(`${sProp}()`, () => {
-            it(`Should concatenate given arguments into a ${sProp} property`, () => {
+        describe(`${name}()`, () => {
+            it(`Should concatenate given arguments into a ${name} property`, () => {
                 assert.deepEqual(method("2rem", "solid", "red"), {
-                    [sProp]: "2rem solid red",
+                    [name]: "2rem solid red",
                 });
                 assert.deepEqual(method("2rem", "dashed"), {
-                    [sProp]: "2rem dashed",
+                    [name]: "2rem dashed",
                 });
                 assert.deepEqual(method("1px"), {
-                    [sProp]: "1px",
+                    [name]: "1px",
                 });
             });
 
