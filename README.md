@@ -6,7 +6,7 @@
 
 * * *
 
-**koutla swiss** is a rewrite of **kouto swiss** (a CSS framework for Stylus) in pure javascript, to be used within _css-in-js_ tools like **glamor** or **emotion**
+**koutla swiss** is a rewrite of [**kouto swiss**](http://kouto-swiss.io) (a CSS framework for Stylus) in pure javascript, to be used within _css-in-js_ tools like [**glamor**](https://github.com/threepointone/glamor) or [**emotion**](https://emotion.sh)
 
 * * *
 
