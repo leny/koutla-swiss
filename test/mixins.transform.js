@@ -65,4 +65,21 @@ describe("Transform methods", () => {
             assert.deepEqual(transform(), {transform: "none"});
         });
     });
+
+    describe("transformOrigin()", () => {
+        const {transformOrigin} = transformMethods;
+
+        it("Should return a correct method when any value is given", () => {
+            assert.deepEqual(transformOrigin(0, "2rem", "3%"), {
+                transformOrigin: "0 2rem 3%",
+            });
+            assert.deepEqual(transformOrigin(0, "2rem"), {
+                transformOrigin: "0 2rem",
+            });
+        });
+
+        it("Should return nothing when no arguments are given", () => {
+            assert.deepEqual(transformOrigin(), {});
+        });
+    });
 });

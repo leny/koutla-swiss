@@ -111,6 +111,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-skewX">skewX</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-skewY">skewY</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-transform">transform</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-transformOrigin">transformOrigin</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-translate">translate</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-translate3d">translate3d</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-translateX">translateX</a></span></span></li>
@@ -229,7 +230,8 @@ export const flexbox = (direction, mainAxis, secondaryAxis, wrap) =&gt; {
  * @param {string} wrap value of the flex-wrap property
  * @return {object} `{display: &quot;flex&quot;, flexDirection: &quot;row&quot;, flexWrap: &quot;...&quot;, justifyContent: &quot;...&quot;, alignItems: &quot;...&quot;}`
  */
-export const flexrow = (mainAxis, secondaryAxis, wrap) =&gt; flexbox(FLEX_DIRECTION_ROW, mainAxis, secondaryAxis, wrap);
+export const flexrow = (mainAxis, secondaryAxis, wrap) =&gt;
+    flexbox(FLEX_DIRECTION_ROW, mainAxis, secondaryAxis, wrap);
 
 /**
  * Mixin to generate a flex column

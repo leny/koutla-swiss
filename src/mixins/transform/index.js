@@ -18,6 +18,15 @@ export const transform = (...args) =>
     concatProp("transform")(...(args.length ? args : ["none"]));
 
 /**
+ * Take all the arguments and return an object with a transformOrigin property
+ * @abstract
+ * @param {...string} args
+ * @return {object} `{transformOrigin: "arg1 arg2 arg..."}`
+ */
+export const transformOrigin = (...args) =>
+    concatProp("transformOrigin")(...args);
+
+/**
  * Take all the arguments and return a string with the appropriate syntax
  * @abstract
  * @param {...string} args

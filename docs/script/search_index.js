@@ -702,6 +702,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "koutla-swiss/src/mixins/transform/index.js~transformorigin",
+    "function/index.html#static-function-transformOrigin",
+    "<span>transformOrigin</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
+    "function"
+  ],
+  [
     "koutla-swiss/src/mixins/transform/index.js~translate3d",
     "function/index.html#static-function-translate3d",
     "<span>translate3d</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",

@@ -1,7 +1,7 @@
 {
-  "coverage": "75.71%",
-  "expectCount": 140,
-  "actualCount": 106,
+  "coverage": "75.88%",
+  "expectCount": 141,
+  "actualCount": 107,
   "files": {
     "src/commons/utils.js": {
       "expectCount": 2,
@@ -73,8 +73,8 @@
       "undocumentLines": []
     },
     "src/mixins/transform/index.js": {
-      "expectCount": 22,
-      "actualCount": 22,
+      "expectCount": 23,
+      "actualCount": 23,
       "undocumentLines": []
     },
     "src/utils/colors/index.js": {

@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 3293,
+  "end": 3297,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 86,
+      "line": 87,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 3293,
+    "end": 3297,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 86,
+        "line": 87,
         "column": 0
       }
     },
@@ -3089,15 +3089,15 @@
       {
         "type": "ExportNamedDeclaration",
         "start": 2434,
-        "end": 2551,
+        "end": 2555,
         "loc": {
           "start": {
             "line": 66,
             "column": 0
           },
           "end": {
-            "line": 66,
-            "column": 117
+            "line": 67,
+            "column": 63
           }
         },
         "specifiers": [],
@@ -3105,30 +3105,30 @@
         "declaration": {
           "type": "VariableDeclaration",
           "start": 2441,
-          "end": 2551,
+          "end": 2555,
           "loc": {
             "start": {
               "line": 66,
               "column": 7
             },
             "end": {
-              "line": 66,
-              "column": 117
+              "line": 67,
+              "column": 63
             }
           },
           "declarations": [
             {
               "type": "VariableDeclarator",
               "start": 2447,
-              "end": 2550,
+              "end": 2554,
               "loc": {
                 "start": {
                   "line": 66,
                   "column": 13
                 },
                 "end": {
-                  "line": 66,
-                  "column": 116
+                  "line": 67,
+                  "column": 62
                 }
               },
               "id": {
@@ -3152,15 +3152,15 @@
               "init": {
                 "type": "ArrowFunctionExpression",
                 "start": 2457,
-                "end": 2550,
+                "end": 2554,
                 "loc": {
                   "start": {
                     "line": 66,
                     "column": 23
                   },
                   "end": {
-                    "line": 66,
-                    "column": 116
+                    "line": 67,
+                    "column": 62
                   }
                 },
                 "id": {
@@ -3239,30 +3239,30 @@
                 ],
                 "body": {
                   "type": "CallExpression",
-                  "start": 2492,
-                  "end": 2550,
+                  "start": 2496,
+                  "end": 2554,
                   "loc": {
                     "start": {
-                      "line": 66,
-                      "column": 58
+                      "line": 67,
+                      "column": 4
                     },
                     "end": {
-                      "line": 66,
-                      "column": 116
+                      "line": 67,
+                      "column": 62
                     }
                   },
                   "callee": {
                     "type": "Identifier",
-                    "start": 2492,
-                    "end": 2499,
+                    "start": 2496,
+                    "end": 2503,
                     "loc": {
                       "start": {
-                        "line": 66,
-                        "column": 58
+                        "line": 67,
+                        "column": 4
                       },
                       "end": {
-                        "line": 66,
-                        "column": 65
+                        "line": 67,
+                        "column": 11
                       },
                       "identifierName": "flexbox"
                     },
@@ -3271,16 +3271,16 @@
                   "arguments": [
                     {
                       "type": "Identifier",
-                      "start": 2500,
-                      "end": 2518,
+                      "start": 2504,
+                      "end": 2522,
                       "loc": {
                         "start": {
-                          "line": 66,
-                          "column": 66
+                          "line": 67,
+                          "column": 12
                         },
                         "end": {
-                          "line": 66,
-                          "column": 84
+                          "line": 67,
+                          "column": 30
                         },
                         "identifierName": "FLEX_DIRECTION_ROW"
                       },
@@ -3288,16 +3288,16 @@
                     },
                     {
                       "type": "Identifier",
-                      "start": 2520,
-                      "end": 2528,
+                      "start": 2524,
+                      "end": 2532,
                       "loc": {
                         "start": {
-                          "line": 66,
-                          "column": 86
+                          "line": 67,
+                          "column": 32
                         },
                         "end": {
-                          "line": 66,
-                          "column": 94
+                          "line": 67,
+                          "column": 40
                         },
                         "identifierName": "mainAxis"
                       },
@@ -3305,16 +3305,16 @@
                     },
                     {
                       "type": "Identifier",
-                      "start": 2530,
-                      "end": 2543,
+                      "start": 2534,
+                      "end": 2547,
                       "loc": {
                         "start": {
-                          "line": 66,
-                          "column": 96
+                          "line": 67,
+                          "column": 42
                         },
                         "end": {
-                          "line": 66,
-                          "column": 109
+                          "line": 67,
+                          "column": 55
                         },
                         "identifierName": "secondaryAxis"
                       },
@@ -3322,16 +3322,16 @@
                     },
                     {
                       "type": "Identifier",
-                      "start": 2545,
-                      "end": 2549,
+                      "start": 2549,
+                      "end": 2553,
                       "loc": {
                         "start": {
-                          "line": 66,
-                          "column": 111
+                          "line": 67,
+                          "column": 57
                         },
                         "end": {
-                          "line": 66,
-                          "column": 115
+                          "line": 67,
+                          "column": 61
                         },
                         "identifierName": "wrap"
                       },
@@ -3366,15 +3366,15 @@
             {
               "type": "CommentBlock",
               "value": "*\n * Mixin to generate a flex column\n * @abstract\n * @param {string} mainAxis alignment of the main axis (justify-content property)\n * @param {string} secondaryAxis alignment of the secondary axis (align-items property)\n * @param {string} wrap value of the flex-wrap property\n * @return {object} `{display: \"flex\", flexDirection: \"column\", flexWrap: \"...\", justifyContent: \"...\", alignItems: \"...\"}`\n ",
-              "start": 2553,
-              "end": 2958,
+              "start": 2557,
+              "end": 2962,
               "loc": {
                 "start": {
-                  "line": 68,
+                  "line": 69,
                   "column": 0
                 },
                 "end": {
-                  "line": 75,
+                  "line": 76,
                   "column": 3
                 }
               }
@@ -3403,15 +3403,15 @@
           {
             "type": "CommentBlock",
             "value": "*\n * Mixin to generate a flex column\n * @abstract\n * @param {string} mainAxis alignment of the main axis (justify-content property)\n * @param {string} secondaryAxis alignment of the secondary axis (align-items property)\n * @param {string} wrap value of the flex-wrap property\n * @return {object} `{display: \"flex\", flexDirection: \"column\", flexWrap: \"...\", justifyContent: \"...\", alignItems: \"...\"}`\n ",
-            "start": 2553,
-            "end": 2958,
+            "start": 2557,
+            "end": 2962,
             "loc": {
               "start": {
-                "line": 68,
+                "line": 69,
                 "column": 0
               },
               "end": {
-                "line": 75,
+                "line": 76,
                 "column": 3
               }
             }
@@ -3420,15 +3420,15 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 2959,
-        "end": 3086,
+        "start": 2963,
+        "end": 3090,
         "loc": {
           "start": {
-            "line": 76,
+            "line": 77,
             "column": 0
           },
           "end": {
-            "line": 77,
+            "line": 78,
             "column": 66
           }
         },
@@ -3436,44 +3436,44 @@
         "source": null,
         "declaration": {
           "type": "VariableDeclaration",
-          "start": 2966,
-          "end": 3086,
+          "start": 2970,
+          "end": 3090,
           "loc": {
             "start": {
-              "line": 76,
+              "line": 77,
               "column": 7
             },
             "end": {
-              "line": 77,
+              "line": 78,
               "column": 66
             }
           },
           "declarations": [
             {
               "type": "VariableDeclarator",
-              "start": 2972,
-              "end": 3085,
+              "start": 2976,
+              "end": 3089,
               "loc": {
                 "start": {
-                  "line": 76,
+                  "line": 77,
                   "column": 13
                 },
                 "end": {
-                  "line": 77,
+                  "line": 78,
                   "column": 65
                 }
               },
               "id": {
                 "type": "Identifier",
-                "start": 2972,
-                "end": 2982,
+                "start": 2976,
+                "end": 2986,
                 "loc": {
                   "start": {
-                    "line": 76,
+                    "line": 77,
                     "column": 13
                   },
                   "end": {
-                    "line": 76,
+                    "line": 77,
                     "column": 23
                   },
                   "identifierName": "flexcolumn"
@@ -3483,29 +3483,29 @@
               },
               "init": {
                 "type": "ArrowFunctionExpression",
-                "start": 2985,
-                "end": 3085,
+                "start": 2989,
+                "end": 3089,
                 "loc": {
                   "start": {
-                    "line": 76,
+                    "line": 77,
                     "column": 26
                   },
                   "end": {
-                    "line": 77,
+                    "line": 78,
                     "column": 65
                   }
                 },
                 "id": {
                   "type": "Identifier",
-                  "start": 2972,
-                  "end": 2982,
+                  "start": 2976,
+                  "end": 2986,
                   "loc": {
                     "start": {
-                      "line": 76,
+                      "line": 77,
                       "column": 13
                     },
                     "end": {
-                      "line": 76,
+                      "line": 77,
                       "column": 23
                     },
                     "identifierName": "flexcolumn"
@@ -3519,15 +3519,15 @@
                 "params": [
                   {
                     "type": "Identifier",
-                    "start": 2986,
-                    "end": 2994,
+                    "start": 2990,
+                    "end": 2998,
                     "loc": {
                       "start": {
-                        "line": 76,
+                        "line": 77,
                         "column": 27
                       },
                       "end": {
-                        "line": 76,
+                        "line": 77,
                         "column": 35
                       },
                       "identifierName": "mainAxis"
@@ -3536,15 +3536,15 @@
                   },
                   {
                     "type": "Identifier",
-                    "start": 2996,
-                    "end": 3009,
+                    "start": 3000,
+                    "end": 3013,
                     "loc": {
                       "start": {
-                        "line": 76,
+                        "line": 77,
                         "column": 37
                       },
                       "end": {
-                        "line": 76,
+                        "line": 77,
                         "column": 50
                       },
                       "identifierName": "secondaryAxis"
@@ -3553,15 +3553,15 @@
                   },
                   {
                     "type": "Identifier",
-                    "start": 3011,
-                    "end": 3015,
+                    "start": 3015,
+                    "end": 3019,
                     "loc": {
                       "start": {
-                        "line": 76,
+                        "line": 77,
                         "column": 52
                       },
                       "end": {
-                        "line": 76,
+                        "line": 77,
                         "column": 56
                       },
                       "identifierName": "wrap"
@@ -3571,29 +3571,29 @@
                 ],
                 "body": {
                   "type": "CallExpression",
-                  "start": 3024,
-                  "end": 3085,
+                  "start": 3028,
+                  "end": 3089,
                   "loc": {
                     "start": {
-                      "line": 77,
+                      "line": 78,
                       "column": 4
                     },
                     "end": {
-                      "line": 77,
+                      "line": 78,
                       "column": 65
                     }
                   },
                   "callee": {
                     "type": "Identifier",
-                    "start": 3024,
-                    "end": 3031,
+                    "start": 3028,
+                    "end": 3035,
                     "loc": {
                       "start": {
-                        "line": 77,
+                        "line": 78,
                         "column": 4
                       },
                       "end": {
-                        "line": 77,
+                        "line": 78,
                         "column": 11
                       },
                       "identifierName": "flexbox"
@@ -3603,15 +3603,15 @@
                   "arguments": [
                     {
                       "type": "Identifier",
-                      "start": 3032,
-                      "end": 3053,
+                      "start": 3036,
+                      "end": 3057,
                       "loc": {
                         "start": {
-                          "line": 77,
+                          "line": 78,
                           "column": 12
                         },
                         "end": {
-                          "line": 77,
+                          "line": 78,
                           "column": 33
                         },
                         "identifierName": "FLEX_DIRECTION_COLUMN"
@@ -3620,15 +3620,15 @@
                     },
                     {
                       "type": "Identifier",
-                      "start": 3055,
-                      "end": 3063,
+                      "start": 3059,
+                      "end": 3067,
                       "loc": {
                         "start": {
-                          "line": 77,
+                          "line": 78,
                           "column": 35
                         },
                         "end": {
-                          "line": 77,
+                          "line": 78,
                           "column": 43
                         },
                         "identifierName": "mainAxis"
@@ -3637,15 +3637,15 @@
                     },
                     {
                       "type": "Identifier",
-                      "start": 3065,
-                      "end": 3078,
+                      "start": 3069,
+                      "end": 3082,
                       "loc": {
                         "start": {
-                          "line": 77,
+                          "line": 78,
                           "column": 45
                         },
                         "end": {
-                          "line": 77,
+                          "line": 78,
                           "column": 58
                         },
                         "identifierName": "secondaryAxis"
@@ -3654,15 +3654,15 @@
                     },
                     {
                       "type": "Identifier",
-                      "start": 3080,
-                      "end": 3084,
+                      "start": 3084,
+                      "end": 3088,
                       "loc": {
                         "start": {
-                          "line": 77,
+                          "line": 78,
                           "column": 60
                         },
                         "end": {
-                          "line": 77,
+                          "line": 78,
                           "column": 64
                         },
                         "identifierName": "wrap"
@@ -3680,15 +3680,15 @@
             {
               "type": "CommentBlock",
               "value": "*\n * Mixin to generate a flex column\n * @abstract\n * @param {string} mainAxis alignment of the main axis (justify-content property)\n * @param {string} secondaryAxis alignment of the secondary axis (align-items property)\n * @param {string} wrap value of the flex-wrap property\n * @return {object} `{display: \"flex\", flexDirection: \"column\", flexWrap: \"...\", justifyContent: \"...\", alignItems: \"...\"}`\n ",
-              "start": 2553,
-              "end": 2958,
+              "start": 2557,
+              "end": 2962,
               "loc": {
                 "start": {
-                  "line": 68,
+                  "line": 69,
                   "column": 0
                 },
                 "end": {
-                  "line": 75,
+                  "line": 76,
                   "column": 3
                 }
               }
@@ -3698,15 +3698,15 @@
             {
               "type": "CommentBlock",
               "value": "*\n * Take all the arguments and return an object with a flex property\n * @abstract\n * @param {...string} args\n * @return {object} `{flex: \"arg1 arg2 arg...\"}`\n ",
-              "start": 3088,
-              "end": 3252,
+              "start": 3092,
+              "end": 3256,
               "loc": {
                 "start": {
-                  "line": 79,
+                  "line": 80,
                   "column": 0
                 },
                 "end": {
-                  "line": 84,
+                  "line": 85,
                   "column": 3
                 }
               }
@@ -3717,15 +3717,15 @@
           {
             "type": "CommentBlock",
             "value": "*\n * Mixin to generate a flex column\n * @abstract\n * @param {string} mainAxis alignment of the main axis (justify-content property)\n * @param {string} secondaryAxis alignment of the secondary axis (align-items property)\n * @param {string} wrap value of the flex-wrap property\n * @return {object} `{display: \"flex\", flexDirection: \"column\", flexWrap: \"...\", justifyContent: \"...\", alignItems: \"...\"}`\n ",
-            "start": 2553,
-            "end": 2958,
+            "start": 2557,
+            "end": 2962,
             "loc": {
               "start": {
-                "line": 68,
+                "line": 69,
                 "column": 0
               },
               "end": {
-                "line": 75,
+                "line": 76,
                 "column": 3
               }
             }
@@ -3735,15 +3735,15 @@
           {
             "type": "CommentBlock",
             "value": "*\n * Take all the arguments and return an object with a flex property\n * @abstract\n * @param {...string} args\n * @return {object} `{flex: \"arg1 arg2 arg...\"}`\n ",
-            "start": 3088,
-            "end": 3252,
+            "start": 3092,
+            "end": 3256,
             "loc": {
               "start": {
-                "line": 79,
+                "line": 80,
                 "column": 0
               },
               "end": {
-                "line": 84,
+                "line": 85,
                 "column": 3
               }
             }
@@ -3752,15 +3752,15 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 3253,
-        "end": 3292,
+        "start": 3257,
+        "end": 3296,
         "loc": {
           "start": {
-            "line": 85,
+            "line": 86,
             "column": 0
           },
           "end": {
-            "line": 85,
+            "line": 86,
             "column": 39
           }
         },
@@ -3768,44 +3768,44 @@
         "source": null,
         "declaration": {
           "type": "VariableDeclaration",
-          "start": 3260,
-          "end": 3292,
+          "start": 3264,
+          "end": 3296,
           "loc": {
             "start": {
-              "line": 85,
+              "line": 86,
               "column": 7
             },
             "end": {
-              "line": 85,
+              "line": 86,
               "column": 39
             }
           },
           "declarations": [
             {
               "type": "VariableDeclarator",
-              "start": 3266,
-              "end": 3291,
+              "start": 3270,
+              "end": 3295,
               "loc": {
                 "start": {
-                  "line": 85,
+                  "line": 86,
                   "column": 13
                 },
                 "end": {
-                  "line": 85,
+                  "line": 86,
                   "column": 38
                 }
               },
               "id": {
                 "type": "Identifier",
-                "start": 3266,
-                "end": 3270,
+                "start": 3270,
+                "end": 3274,
                 "loc": {
                   "start": {
-                    "line": 85,
+                    "line": 86,
                     "column": 13
                   },
                   "end": {
-                    "line": 85,
+                    "line": 86,
                     "column": 17
                   },
                   "identifierName": "flex"
@@ -3815,29 +3815,29 @@
               },
               "init": {
                 "type": "CallExpression",
-                "start": 3273,
-                "end": 3291,
+                "start": 3277,
+                "end": 3295,
                 "loc": {
                   "start": {
-                    "line": 85,
+                    "line": 86,
                     "column": 20
                   },
                   "end": {
-                    "line": 85,
+                    "line": 86,
                     "column": 38
                   }
                 },
                 "callee": {
                   "type": "Identifier",
-                  "start": 3273,
-                  "end": 3283,
+                  "start": 3277,
+                  "end": 3287,
                   "loc": {
                     "start": {
-                      "line": 85,
+                      "line": 86,
                       "column": 20
                     },
                     "end": {
-                      "line": 85,
+                      "line": 86,
                       "column": 30
                     },
                     "identifierName": "concatProp"
@@ -3847,15 +3847,15 @@
                 "arguments": [
                   {
                     "type": "StringLiteral",
-                    "start": 3284,
-                    "end": 3290,
+                    "start": 3288,
+                    "end": 3294,
                     "loc": {
                       "start": {
-                        "line": 85,
+                        "line": 86,
                         "column": 31
                       },
                       "end": {
-                        "line": 85,
+                        "line": 86,
                         "column": 37
                       }
                     },
@@ -3875,15 +3875,15 @@
             {
               "type": "CommentBlock",
               "value": "*\n * Take all the arguments and return an object with a flex property\n * @abstract\n * @param {...string} args\n * @return {object} `{flex: \"arg1 arg2 arg...\"}`\n ",
-              "start": 3088,
-              "end": 3252,
+              "start": 3092,
+              "end": 3256,
               "loc": {
                 "start": {
-                  "line": 79,
+                  "line": 80,
                   "column": 0
                 },
                 "end": {
-                  "line": 84,
+                  "line": 85,
                   "column": 3
                 }
               }
@@ -3895,15 +3895,15 @@
           {
             "type": "CommentBlock",
             "value": "*\n * Take all the arguments and return an object with a flex property\n * @abstract\n * @param {...string} args\n * @return {object} `{flex: \"arg1 arg2 arg...\"}`\n ",
-            "start": 3088,
-            "end": 3252,
+            "start": 3092,
+            "end": 3256,
             "loc": {
               "start": {
-                "line": 79,
+                "line": 80,
                 "column": 0
               },
               "end": {
-                "line": 84,
+                "line": 85,
                 "column": 3
               }
             }
@@ -3965,15 +3965,15 @@
     {
       "type": "CommentBlock",
       "value": "*\n * Mixin to generate a flex column\n * @abstract\n * @param {string} mainAxis alignment of the main axis (justify-content property)\n * @param {string} secondaryAxis alignment of the secondary axis (align-items property)\n * @param {string} wrap value of the flex-wrap property\n * @return {object} `{display: \"flex\", flexDirection: \"column\", flexWrap: \"...\", justifyContent: \"...\", alignItems: \"...\"}`\n ",
-      "start": 2553,
-      "end": 2958,
+      "start": 2557,
+      "end": 2962,
       "loc": {
         "start": {
-          "line": 68,
+          "line": 69,
           "column": 0
         },
         "end": {
-          "line": 75,
+          "line": 76,
           "column": 3
         }
       }
@@ -3981,15 +3981,15 @@
     {
       "type": "CommentBlock",
       "value": "*\n * Take all the arguments and return an object with a flex property\n * @abstract\n * @param {...string} args\n * @return {object} `{flex: \"arg1 arg2 arg...\"}`\n ",
-      "start": 3088,
-      "end": 3252,
+      "start": 3092,
+      "end": 3256,
       "loc": {
         "start": {
-          "line": 79,
+          "line": 80,
           "column": 0
         },
         "end": {
-          "line": 84,
+          "line": 85,
           "column": 3
         }
       }
@@ -9944,16 +9944,16 @@
         "binop": null
       },
       "value": "flexbox",
-      "start": 2492,
-      "end": 2499,
+      "start": 2496,
+      "end": 2503,
       "loc": {
         "start": {
-          "line": 66,
-          "column": 58
+          "line": 67,
+          "column": 4
         },
         "end": {
-          "line": 66,
-          "column": 65
+          "line": 67,
+          "column": 11
         }
       }
     },
@@ -9969,16 +9969,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 2499,
-      "end": 2500,
+      "start": 2503,
+      "end": 2504,
       "loc": {
         "start": {
-          "line": 66,
-          "column": 65
+          "line": 67,
+          "column": 11
         },
         "end": {
-          "line": 66,
-          "column": 66
+          "line": 67,
+          "column": 12
         }
       }
     },
@@ -9995,16 +9995,16 @@
         "binop": null
       },
       "value": "FLEX_DIRECTION_ROW",
-      "start": 2500,
-      "end": 2518,
+      "start": 2504,
+      "end": 2522,
       "loc": {
         "start": {
-          "line": 66,
-          "column": 66
+          "line": 67,
+          "column": 12
         },
         "end": {
-          "line": 66,
-          "column": 84
+          "line": 67,
+          "column": 30
         }
       }
     },
@@ -10021,16 +10021,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 2518,
-      "end": 2519,
+      "start": 2522,
+      "end": 2523,
       "loc": {
         "start": {
-          "line": 66,
-          "column": 84
+          "line": 67,
+          "column": 30
         },
         "end": {
-          "line": 66,
-          "column": 85
+          "line": 67,
+          "column": 31
         }
       }
     },
@@ -10047,16 +10047,16 @@
         "binop": null
       },
       "value": "mainAxis",
-      "start": 2520,
-      "end": 2528,
+      "start": 2524,
+      "end": 2532,
       "loc": {
         "start": {
-          "line": 66,
-          "column": 86
+          "line": 67,
+          "column": 32
         },
         "end": {
-          "line": 66,
-          "column": 94
+          "line": 67,
+          "column": 40
         }
       }
     },
@@ -10073,16 +10073,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 2528,
-      "end": 2529,
+      "start": 2532,
+      "end": 2533,
       "loc": {
         "start": {
-          "line": 66,
-          "column": 94
+          "line": 67,
+          "column": 40
         },
         "end": {
-          "line": 66,
-          "column": 95
+          "line": 67,
+          "column": 41
         }
       }
     },
@@ -10099,16 +10099,16 @@
         "binop": null
       },
       "value": "secondaryAxis",
-      "start": 2530,
-      "end": 2543,
+      "start": 2534,
+      "end": 2547,
       "loc": {
         "start": {
-          "line": 66,
-          "column": 96
+          "line": 67,
+          "column": 42
         },
         "end": {
-          "line": 66,
-          "column": 109
+          "line": 67,
+          "column": 55
         }
       }
     },
@@ -10125,16 +10125,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 2543,
-      "end": 2544,
+      "start": 2547,
+      "end": 2548,
       "loc": {
         "start": {
-          "line": 66,
-          "column": 109
+          "line": 67,
+          "column": 55
         },
         "end": {
-          "line": 66,
-          "column": 110
+          "line": 67,
+          "column": 56
         }
       }
     },
@@ -10151,16 +10151,16 @@
         "binop": null
       },
       "value": "wrap",
-      "start": 2545,
-      "end": 2549,
+      "start": 2549,
+      "end": 2553,
       "loc": {
         "start": {
-          "line": 66,
-          "column": 111
+          "line": 67,
+          "column": 57
         },
         "end": {
-          "line": 66,
-          "column": 115
+          "line": 67,
+          "column": 61
         }
       }
     },
@@ -10176,16 +10176,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 2549,
-      "end": 2550,
+      "start": 2553,
+      "end": 2554,
       "loc": {
         "start": {
-          "line": 66,
-          "column": 115
+          "line": 67,
+          "column": 61
         },
         "end": {
-          "line": 66,
-          "column": 116
+          "line": 67,
+          "column": 62
         }
       }
     },
@@ -10202,31 +10202,31 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 2550,
-      "end": 2551,
+      "start": 2554,
+      "end": 2555,
       "loc": {
         "start": {
-          "line": 66,
-          "column": 116
+          "line": 67,
+          "column": 62
         },
         "end": {
-          "line": 66,
-          "column": 117
+          "line": 67,
+          "column": 63
         }
       }
     },
     {
       "type": "CommentBlock",
       "value": "*\n * Mixin to generate a flex column\n * @abstract\n * @param {string} mainAxis alignment of the main axis (justify-content property)\n * @param {string} secondaryAxis alignment of the secondary axis (align-items property)\n * @param {string} wrap value of the flex-wrap property\n * @return {object} `{display: \"flex\", flexDirection: \"column\", flexWrap: \"...\", justifyContent: \"...\", alignItems: \"...\"}`\n ",
-      "start": 2553,
-      "end": 2958,
+      "start": 2557,
+      "end": 2962,
       "loc": {
         "start": {
-          "line": 68,
+          "line": 69,
           "column": 0
         },
         "end": {
-          "line": 75,
+          "line": 76,
           "column": 3
         }
       }
@@ -10246,15 +10246,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 2959,
-      "end": 2965,
+      "start": 2963,
+      "end": 2969,
       "loc": {
         "start": {
-          "line": 76,
+          "line": 77,
           "column": 0
         },
         "end": {
-          "line": 76,
+          "line": 77,
           "column": 6
         }
       }
@@ -10274,15 +10274,15 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 2966,
-      "end": 2971,
+      "start": 2970,
+      "end": 2975,
       "loc": {
         "start": {
-          "line": 76,
+          "line": 77,
           "column": 7
         },
         "end": {
-          "line": 76,
+          "line": 77,
           "column": 12
         }
       }
@@ -10300,15 +10300,15 @@
         "binop": null
       },
       "value": "flexcolumn",
-      "start": 2972,
-      "end": 2982,
+      "start": 2976,
+      "end": 2986,
       "loc": {
         "start": {
-          "line": 76,
+          "line": 77,
           "column": 13
         },
         "end": {
-          "line": 76,
+          "line": 77,
           "column": 23
         }
       }
@@ -10327,15 +10327,15 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 2983,
-      "end": 2984,
+      "start": 2987,
+      "end": 2988,
       "loc": {
         "start": {
-          "line": 76,
+          "line": 77,
           "column": 24
         },
         "end": {
-          "line": 76,
+          "line": 77,
           "column": 25
         }
       }
@@ -10352,15 +10352,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 2985,
-      "end": 2986,
+      "start": 2989,
+      "end": 2990,
       "loc": {
         "start": {
-          "line": 76,
+          "line": 77,
           "column": 26
         },
         "end": {
-          "line": 76,
+          "line": 77,
           "column": 27
         }
       }
@@ -10378,15 +10378,15 @@
         "binop": null
       },
       "value": "mainAxis",
-      "start": 2986,
-      "end": 2994,
+      "start": 2990,
+      "end": 2998,
       "loc": {
         "start": {
-          "line": 76,
+          "line": 77,
           "column": 27
         },
         "end": {
-          "line": 76,
+          "line": 77,
           "column": 35
         }
       }
@@ -10404,15 +10404,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 2994,
-      "end": 2995,
+      "start": 2998,
+      "end": 2999,
       "loc": {
         "start": {
-          "line": 76,
+          "line": 77,
           "column": 35
         },
         "end": {
-          "line": 76,
+          "line": 77,
           "column": 36
         }
       }
@@ -10430,15 +10430,15 @@
         "binop": null
       },
       "value": "secondaryAxis",
-      "start": 2996,
-      "end": 3009,
+      "start": 3000,
+      "end": 3013,
       "loc": {
         "start": {
-          "line": 76,
+          "line": 77,
           "column": 37
         },
         "end": {
-          "line": 76,
+          "line": 77,
           "column": 50
         }
       }
@@ -10456,15 +10456,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 3009,
-      "end": 3010,
+      "start": 3013,
+      "end": 3014,
       "loc": {
         "start": {
-          "line": 76,
+          "line": 77,
           "column": 50
         },
         "end": {
-          "line": 76,
+          "line": 77,
           "column": 51
         }
       }
@@ -10482,15 +10482,15 @@
         "binop": null
       },
       "value": "wrap",
-      "start": 3011,
-      "end": 3015,
+      "start": 3015,
+      "end": 3019,
       "loc": {
         "start": {
-          "line": 76,
+          "line": 77,
           "column": 52
         },
         "end": {
-          "line": 76,
+          "line": 77,
           "column": 56
         }
       }
@@ -10507,15 +10507,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 3015,
-      "end": 3016,
+      "start": 3019,
+      "end": 3020,
       "loc": {
         "start": {
-          "line": 76,
+          "line": 77,
           "column": 56
         },
         "end": {
-          "line": 76,
+          "line": 77,
           "column": 57
         }
       }
@@ -10533,15 +10533,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 3017,
-      "end": 3019,
+      "start": 3021,
+      "end": 3023,
       "loc": {
         "start": {
-          "line": 76,
+          "line": 77,
           "column": 58
         },
         "end": {
-          "line": 76,
+          "line": 77,
           "column": 60
         }
       }
@@ -10559,15 +10559,15 @@
         "binop": null
       },
       "value": "flexbox",
-      "start": 3024,
-      "end": 3031,
+      "start": 3028,
+      "end": 3035,
       "loc": {
         "start": {
-          "line": 77,
+          "line": 78,
           "column": 4
         },
         "end": {
-          "line": 77,
+          "line": 78,
           "column": 11
         }
       }
@@ -10584,15 +10584,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 3031,
-      "end": 3032,
+      "start": 3035,
+      "end": 3036,
       "loc": {
         "start": {
-          "line": 77,
+          "line": 78,
           "column": 11
         },
         "end": {
-          "line": 77,
+          "line": 78,
           "column": 12
         }
       }
@@ -10610,15 +10610,15 @@
         "binop": null
       },
       "value": "FLEX_DIRECTION_COLUMN",
-      "start": 3032,
-      "end": 3053,
+      "start": 3036,
+      "end": 3057,
       "loc": {
         "start": {
-          "line": 77,
+          "line": 78,
           "column": 12
         },
         "end": {
-          "line": 77,
+          "line": 78,
           "column": 33
         }
       }
@@ -10636,15 +10636,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 3053,
-      "end": 3054,
+      "start": 3057,
+      "end": 3058,
       "loc": {
         "start": {
-          "line": 77,
+          "line": 78,
           "column": 33
         },
         "end": {
-          "line": 77,
+          "line": 78,
           "column": 34
         }
       }
@@ -10662,15 +10662,15 @@
         "binop": null
       },
       "value": "mainAxis",
-      "start": 3055,
-      "end": 3063,
+      "start": 3059,
+      "end": 3067,
       "loc": {
         "start": {
-          "line": 77,
+          "line": 78,
           "column": 35
         },
         "end": {
-          "line": 77,
+          "line": 78,
           "column": 43
         }
       }
@@ -10688,15 +10688,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 3063,
-      "end": 3064,
+      "start": 3067,
+      "end": 3068,
       "loc": {
         "start": {
-          "line": 77,
+          "line": 78,
           "column": 43
         },
         "end": {
-          "line": 77,
+          "line": 78,
           "column": 44
         }
       }
@@ -10714,15 +10714,15 @@
         "binop": null
       },
       "value": "secondaryAxis",
-      "start": 3065,
-      "end": 3078,
+      "start": 3069,
+      "end": 3082,
       "loc": {
         "start": {
-          "line": 77,
+          "line": 78,
           "column": 45
         },
         "end": {
-          "line": 77,
+          "line": 78,
           "column": 58
         }
       }
@@ -10740,15 +10740,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 3078,
-      "end": 3079,
+      "start": 3082,
+      "end": 3083,
       "loc": {
         "start": {
-          "line": 77,
+          "line": 78,
           "column": 58
         },
         "end": {
-          "line": 77,
+          "line": 78,
           "column": 59
         }
       }
@@ -10766,15 +10766,15 @@
         "binop": null
       },
       "value": "wrap",
-      "start": 3080,
-      "end": 3084,
+      "start": 3084,
+      "end": 3088,
       "loc": {
         "start": {
-          "line": 77,
+          "line": 78,
           "column": 60
         },
         "end": {
-          "line": 77,
+          "line": 78,
           "column": 64
         }
       }
@@ -10791,15 +10791,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 3084,
-      "end": 3085,
+      "start": 3088,
+      "end": 3089,
       "loc": {
         "start": {
-          "line": 77,
+          "line": 78,
           "column": 64
         },
         "end": {
-          "line": 77,
+          "line": 78,
           "column": 65
         }
       }
@@ -10817,15 +10817,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 3085,
-      "end": 3086,
+      "start": 3089,
+      "end": 3090,
       "loc": {
         "start": {
-          "line": 77,
+          "line": 78,
           "column": 65
         },
         "end": {
-          "line": 77,
+          "line": 78,
           "column": 66
         }
       }
@@ -10833,15 +10833,15 @@
     {
       "type": "CommentBlock",
       "value": "*\n * Take all the arguments and return an object with a flex property\n * @abstract\n * @param {...string} args\n * @return {object} `{flex: \"arg1 arg2 arg...\"}`\n ",
-      "start": 3088,
-      "end": 3252,
+      "start": 3092,
+      "end": 3256,
       "loc": {
         "start": {
-          "line": 79,
+          "line": 80,
           "column": 0
         },
         "end": {
-          "line": 84,
+          "line": 85,
           "column": 3
         }
       }
@@ -10861,15 +10861,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 3253,
-      "end": 3259,
+      "start": 3257,
+      "end": 3263,
       "loc": {
         "start": {
-          "line": 85,
+          "line": 86,
           "column": 0
         },
         "end": {
-          "line": 85,
+          "line": 86,
           "column": 6
         }
       }
@@ -10889,15 +10889,15 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 3260,
-      "end": 3265,
+      "start": 3264,
+      "end": 3269,
       "loc": {
         "start": {
-          "line": 85,
+          "line": 86,
           "column": 7
         },
         "end": {
-          "line": 85,
+          "line": 86,
           "column": 12
         }
       }
@@ -10915,15 +10915,15 @@
         "binop": null
       },
       "value": "flex",
-      "start": 3266,
-      "end": 3270,
+      "start": 3270,
+      "end": 3274,
       "loc": {
         "start": {
-          "line": 85,
+          "line": 86,
           "column": 13
         },
         "end": {
-          "line": 85,
+          "line": 86,
           "column": 17
         }
       }
@@ -10942,15 +10942,15 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 3271,
-      "end": 3272,
+      "start": 3275,
+      "end": 3276,
       "loc": {
         "start": {
-          "line": 85,
+          "line": 86,
           "column": 18
         },
         "end": {
-          "line": 85,
+          "line": 86,
           "column": 19
         }
       }
@@ -10968,15 +10968,15 @@
         "binop": null
       },
       "value": "concatProp",
-      "start": 3273,
-      "end": 3283,
+      "start": 3277,
+      "end": 3287,
       "loc": {
         "start": {
-          "line": 85,
+          "line": 86,
           "column": 20
         },
         "end": {
-          "line": 85,
+          "line": 86,
           "column": 30
         }
       }
@@ -10993,15 +10993,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 3283,
-      "end": 3284,
+      "start": 3287,
+      "end": 3288,
       "loc": {
         "start": {
-          "line": 85,
+          "line": 86,
           "column": 30
         },
         "end": {
-          "line": 85,
+          "line": 86,
           "column": 31
         }
       }
@@ -11020,15 +11020,15 @@
         "updateContext": null
       },
       "value": "flex",
-      "start": 3284,
-      "end": 3290,
+      "start": 3288,
+      "end": 3294,
       "loc": {
         "start": {
-          "line": 85,
+          "line": 86,
           "column": 31
         },
         "end": {
-          "line": 85,
+          "line": 86,
           "column": 37
         }
       }
@@ -11045,15 +11045,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 3290,
-      "end": 3291,
+      "start": 3294,
+      "end": 3295,
       "loc": {
         "start": {
-          "line": 85,
+          "line": 86,
           "column": 37
         },
         "end": {
-          "line": 85,
+          "line": 86,
           "column": 38
         }
       }
@@ -11071,15 +11071,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 3291,
-      "end": 3292,
+      "start": 3295,
+      "end": 3296,
       "loc": {
         "start": {
-          "line": 85,
+          "line": 86,
           "column": 38
         },
         "end": {
-          "line": 85,
+          "line": 86,
           "column": 39
         }
       }
@@ -11097,15 +11097,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 3293,
-      "end": 3293,
+      "start": 3297,
+      "end": 3297,
       "loc": {
         "start": {
-          "line": 86,
+          "line": 87,
           "column": 0
         },
         "end": {
-          "line": 86,
+          "line": 87,
           "column": 0
         }
       }

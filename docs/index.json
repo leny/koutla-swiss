@@ -694,7 +694,7 @@
     "__docId__": 52,
     "kind": "file",
     "name": "src/mixins/background/index.js",
-    "content": "/* leny/koutla-swiss\n *\n * ~/mixins/background/index.js - Background Mixins\n *\n * coded by leny@flatLand!\n * started at 03/02/2019\n */\n\nimport {concatProp, selfFunction} from \"../../commons/utils\";\n\n/**\n * Take all the arguments and return an object with a background property\n * @abstract\n * @param {...string} args\n * @return {object} `{background: \"arg1 arg2 arg...\"}`\n */\nexport const background = (...args) => concatProp(\"background\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"linear-gradient(arg1, arg2, arg...)\"`\n */\nexport const linearGradient = (...args) =>\n    selfFunction(\"linear-gradient\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"radial-gradient(arg1, arg2, arg...)\"`\n */\nexport const radialGradient = (...args) =>\n    selfFunction(\"radial-gradient\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"repeating-linear-gradient(arg1, arg2, arg...)\"`\n */\nexport const repeatingLinearGradient = (...args) =>\n    selfFunction(\"repeating-linear-gradient\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"repeating-radial-gradient(arg1, arg2, arg...)\"`\n */\nexport const repeatingRadialGradient = (...args) =>\n    selfFunction(\"repeating-radial-gradient\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"conic-gradient(arg1, arg2, arg...)\"`\n */\nexport const conicGradient = (...args)=>selfFunction(\"conic-gradient\")(...args);\n\n/**\n * Take the argument and return a string with the appropriate syntax\n * @abstract\n * @param {string} arg URL\n * @return {string} `\"url(arg)\"`\n */\nexport const url = arg => selfFunction(\"url\", \"\", 1, 1, true)(arg);\n",
+    "content": "/* leny/koutla-swiss\n *\n * ~/mixins/background/index.js - Background Mixins\n *\n * coded by leny@flatLand!\n * started at 03/02/2019\n */\n\nimport {concatProp, selfFunction} from \"../../commons/utils\";\n\n/**\n * Take all the arguments and return an object with a background property\n * @abstract\n * @param {...string} args\n * @return {object} `{background: \"arg1 arg2 arg...\"}`\n */\nexport const background = (...args) => concatProp(\"background\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"linear-gradient(arg1, arg2, arg...)\"`\n */\nexport const linearGradient = (...args) =>\n    selfFunction(\"linear-gradient\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"radial-gradient(arg1, arg2, arg...)\"`\n */\nexport const radialGradient = (...args) =>\n    selfFunction(\"radial-gradient\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"repeating-linear-gradient(arg1, arg2, arg...)\"`\n */\nexport const repeatingLinearGradient = (...args) =>\n    selfFunction(\"repeating-linear-gradient\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"repeating-radial-gradient(arg1, arg2, arg...)\"`\n */\nexport const repeatingRadialGradient = (...args) =>\n    selfFunction(\"repeating-radial-gradient\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"conic-gradient(arg1, arg2, arg...)\"`\n */\nexport const conicGradient = (...args) =>\n    selfFunction(\"conic-gradient\")(...args);\n\n/**\n * Take the argument and return a string with the appropriate syntax\n * @abstract\n * @param {string} arg URL\n * @return {string} `\"url(arg)\"`\n */\nexport const url = arg => {\n    if (!arg) {\n        throw new TypeError(`Wrong numbers of arguments in url()`);\n    }\n\n    return `url(\"${arg}\")`;\n};\n",
     "static": true,
     "longname": "/Users/leny/Works/leny/koutla-swiss/src/mixins/background/index.js",
     "access": "public",
@@ -937,7 +937,7 @@
     "importPath": "koutla-swiss/src/mixins/background/index.js",
     "importStyle": "{url}",
     "description": "Take the argument and return a string with the appropriate syntax",
-    "lineNumber": 69,
+    "lineNumber": 70,
     "params": [
       {
         "nullable": null,
@@ -1282,7 +1282,7 @@
     "__docId__": 70,
     "kind": "file",
     "name": "src/mixins/filter/index.js",
-    "content": "/* leny/koutla-swiss\n *\n * ~/mixins/filter/index.js - Filter Mixins\n *\n * coded by leny@flatLand!\n * started at 03/02/2019\n */\n\nimport {concatProp, selfFunction} from \"../../commons/utils\";\n\n/**\n * Take all the arguments and return an object with a filter property - returns \"none\" value if no argument is given\n * @abstract\n * @param {...string} args\n * @return {object} `{filter: \"arg1 arg2 arg...\"}`\n */\nexport const filter = (...args) =>\n    concatProp(\"filter\")(...(args.length ? args : [\"none\"]));\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"blur(arg1, arg2, arg...)\"`\n */\nexport const blur = (...args) =>selfFunction(\"blur\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"brightness(arg1, arg2, arg...)\"`\n */\nexport const brightness = (...args) =>selfFunction(\"brightness\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"contrast(arg1, arg2, arg...)\"`\n */\nexport const contrast = (...args) =>selfFunction(\"contrast\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"drop-shadow(arg1, arg2, arg...)\"`\n */\nexport const dropShadow = (...args) =>selfFunction(\"drop-shadow\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"grayscale(arg1, arg2, arg...)\"`\n */\nexport const grayscale = (...args) =>selfFunction(\"grayscale\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"hue-rotate(arg1, arg2, arg...)\"`\n */\nexport const hueRotate = (...args) =>selfFunction(\"hue-rotate\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"invert(arg1, arg2, arg...)\"`\n */\nexport const invert = (...args) =>selfFunction(\"invert\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"opacity(arg1, arg2, arg...)\"`\n */\nexport const opacity = (...args) =>selfFunction(\"opacity\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"saturate(arg1, arg2, arg...)\"`\n */\nexport const saturate = (...args) =>selfFunction(\"saturate\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"sepia(arg1, arg2, arg...)\"`\n */\nexport const sepia = (...args) =>selfFunction(\"sepia\")(...args);\n\n",
+    "content": "/* leny/koutla-swiss\n *\n * ~/mixins/filter/index.js - Filter Mixins\n *\n * coded by leny@flatLand!\n * started at 03/02/2019\n */\n\nimport {concatProp, selfFunction} from \"../../commons/utils\";\n\n/**\n * Take all the arguments and return an object with a filter property - returns \"none\" value if no argument is given\n * @abstract\n * @param {...string} args\n * @return {object} `{filter: \"arg1 arg2 arg...\"}`\n */\nexport const filter = (...args) =>\n    concatProp(\"filter\")(...(args.length ? args : [\"none\"]));\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"blur(arg1, arg2, arg...)\"`\n */\nexport const blur = (...args) => selfFunction(\"blur\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"brightness(arg1, arg2, arg...)\"`\n */\nexport const brightness = (...args) => selfFunction(\"brightness\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"contrast(arg1, arg2, arg...)\"`\n */\nexport const contrast = (...args) => selfFunction(\"contrast\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"drop-shadow(arg1, arg2, arg...)\"`\n */\nexport const dropShadow = (...args) => selfFunction(\"drop-shadow\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"grayscale(arg1, arg2, arg...)\"`\n */\nexport const grayscale = (...args) => selfFunction(\"grayscale\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"hue-rotate(arg1, arg2, arg...)\"`\n */\nexport const hueRotate = (...args) => selfFunction(\"hue-rotate\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"invert(arg1, arg2, arg...)\"`\n */\nexport const invert = (...args) => selfFunction(\"invert\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"opacity(arg1, arg2, arg...)\"`\n */\nexport const opacity = (...args) => selfFunction(\"opacity\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"saturate(arg1, arg2, arg...)\"`\n */\nexport const saturate = (...args) => selfFunction(\"saturate\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"sepia(arg1, arg2, arg...)\"`\n */\nexport const sepia = (...args) => selfFunction(\"sepia\")(...args);\n",
     "static": true,
     "longname": "/Users/leny/Works/leny/koutla-swiss/src/mixins/filter/index.js",
     "access": "public",
@@ -1700,7 +1700,7 @@
     "__docId__": 82,
     "kind": "file",
     "name": "src/mixins/flex/index.js",
-    "content": "/* leny/koutla-swiss\n *\n * ~/mixins/flex/index.js - Flex Mixins\n *\n * coded by leny@flatLand!\n * started at 13/01/2018\n */\n\nimport {concatProp} from \"../../commons/utils\";\n\nexport const FLEX_DIRECTION_ROW = \"row\";\nexport const FLEX_DIRECTION_ROW_REVERSE = \"row-reverse\";\nexport const FLEX_DIRECTION_COLUMN = \"column\";\nexport const FLEX_DIRECTION_COLUMN_REVERS = \"column-reverse\";\n\nexport const FLEX_WRAP = \"wrap\";\nexport const FLEX_NOWRAP = \"nowrap\";\nexport const FLEX_WRAP_REVERSE = \"wrap-reverse\";\n\nexport const FLEX_ALIGN_CENTER = \"center\";\nexport const FLEX_ALIGN_START = \"start\";\nexport const FLEX_ALIGN_END = \"end\";\nexport const FLEX_ALIGN_FLEX_START = \"flex-start\";\nexport const FLEX_ALIGN_FLEX_END = \"flex-end\";\nexport const FLEX_ALIGN_LEFT = \"left\";\nexport const FLEX_ALIGN_RIGHT = \"right\";\nexport const FLEX_ALIGN_BASELINE = \"baseline\";\nexport const FLEX_ALIGN_SPACE_BETWEEN = \"space-between\";\nexport const FLEX_ALIGN_SPACE_AROUND = \"space-around\";\nexport const FLEX_ALIGN_SPACE_EVENLY = \"space-evenly\";\nexport const FLEX_ALIGN_NORMAL = \"normal\";\nexport const FLEX_ALIGN_STRETCH = \"stretch\";\nexport const FLEX_ALIGN_SELF_START = \"self-start\";\nexport const FLEX_ALIGN_SELF_END = \"self-end\";\n\n/**\n * Mixin to generate a flex box\n * @abstract\n * @param {string} direction direction of the flex box\n * @param {string} mainAxis alignment of the main axis (justify-content property)\n * @param {string} secondaryAxis alignment of the secondary axis (align-items property)\n * @param {string} wrap value of the flex-wrap property\n * @return {object} `{display: \"flex\", flexDirection: \"...\", flexWrap: \"...\", justifyContent: \"...\", alignItems: \"...\"}`\n */\nexport const flexbox = (direction, mainAxis, secondaryAxis, wrap) => {\n    let oFlexStyles = {\n        display: \"flex\",\n    };\n\n    direction && (oFlexStyles.flexDirection = direction);\n    wrap && (oFlexStyles.flexWrap = wrap);\n    mainAxis && (oFlexStyles.justifyContent = mainAxis);\n    secondaryAxis && (oFlexStyles.alignItems = secondaryAxis);\n\n    return oFlexStyles;\n};\n\n/**\n * Mixin to generate a flex row\n * @abstract\n * @param {string} mainAxis alignment of the main axis (justify-content property)\n * @param {string} secondaryAxis alignment of the secondary axis (align-items property)\n * @param {string} wrap value of the flex-wrap property\n * @return {object} `{display: \"flex\", flexDirection: \"row\", flexWrap: \"...\", justifyContent: \"...\", alignItems: \"...\"}`\n */\nexport const flexrow = (mainAxis, secondaryAxis, wrap) => flexbox(FLEX_DIRECTION_ROW, mainAxis, secondaryAxis, wrap);\n\n/**\n * Mixin to generate a flex column\n * @abstract\n * @param {string} mainAxis alignment of the main axis (justify-content property)\n * @param {string} secondaryAxis alignment of the secondary axis (align-items property)\n * @param {string} wrap value of the flex-wrap property\n * @return {object} `{display: \"flex\", flexDirection: \"column\", flexWrap: \"...\", justifyContent: \"...\", alignItems: \"...\"}`\n */\nexport const flexcolumn = (mainAxis, secondaryAxis, wrap) =>\n    flexbox(FLEX_DIRECTION_COLUMN, mainAxis, secondaryAxis, wrap);\n\n/**\n * Take all the arguments and return an object with a flex property\n * @abstract\n * @param {...string} args\n * @return {object} `{flex: \"arg1 arg2 arg...\"}`\n */\nexport const flex = concatProp(\"flex\");\n",
+    "content": "/* leny/koutla-swiss\n *\n * ~/mixins/flex/index.js - Flex Mixins\n *\n * coded by leny@flatLand!\n * started at 13/01/2018\n */\n\nimport {concatProp} from \"../../commons/utils\";\n\nexport const FLEX_DIRECTION_ROW = \"row\";\nexport const FLEX_DIRECTION_ROW_REVERSE = \"row-reverse\";\nexport const FLEX_DIRECTION_COLUMN = \"column\";\nexport const FLEX_DIRECTION_COLUMN_REVERS = \"column-reverse\";\n\nexport const FLEX_WRAP = \"wrap\";\nexport const FLEX_NOWRAP = \"nowrap\";\nexport const FLEX_WRAP_REVERSE = \"wrap-reverse\";\n\nexport const FLEX_ALIGN_CENTER = \"center\";\nexport const FLEX_ALIGN_START = \"start\";\nexport const FLEX_ALIGN_END = \"end\";\nexport const FLEX_ALIGN_FLEX_START = \"flex-start\";\nexport const FLEX_ALIGN_FLEX_END = \"flex-end\";\nexport const FLEX_ALIGN_LEFT = \"left\";\nexport const FLEX_ALIGN_RIGHT = \"right\";\nexport const FLEX_ALIGN_BASELINE = \"baseline\";\nexport const FLEX_ALIGN_SPACE_BETWEEN = \"space-between\";\nexport const FLEX_ALIGN_SPACE_AROUND = \"space-around\";\nexport const FLEX_ALIGN_SPACE_EVENLY = \"space-evenly\";\nexport const FLEX_ALIGN_NORMAL = \"normal\";\nexport const FLEX_ALIGN_STRETCH = \"stretch\";\nexport const FLEX_ALIGN_SELF_START = \"self-start\";\nexport const FLEX_ALIGN_SELF_END = \"self-end\";\n\n/**\n * Mixin to generate a flex box\n * @abstract\n * @param {string} direction direction of the flex box\n * @param {string} mainAxis alignment of the main axis (justify-content property)\n * @param {string} secondaryAxis alignment of the secondary axis (align-items property)\n * @param {string} wrap value of the flex-wrap property\n * @return {object} `{display: \"flex\", flexDirection: \"...\", flexWrap: \"...\", justifyContent: \"...\", alignItems: \"...\"}`\n */\nexport const flexbox = (direction, mainAxis, secondaryAxis, wrap) => {\n    let oFlexStyles = {\n        display: \"flex\",\n    };\n\n    direction && (oFlexStyles.flexDirection = direction);\n    wrap && (oFlexStyles.flexWrap = wrap);\n    mainAxis && (oFlexStyles.justifyContent = mainAxis);\n    secondaryAxis && (oFlexStyles.alignItems = secondaryAxis);\n\n    return oFlexStyles;\n};\n\n/**\n * Mixin to generate a flex row\n * @abstract\n * @param {string} mainAxis alignment of the main axis (justify-content property)\n * @param {string} secondaryAxis alignment of the secondary axis (align-items property)\n * @param {string} wrap value of the flex-wrap property\n * @return {object} `{display: \"flex\", flexDirection: \"row\", flexWrap: \"...\", justifyContent: \"...\", alignItems: \"...\"}`\n */\nexport const flexrow = (mainAxis, secondaryAxis, wrap) =>\n    flexbox(FLEX_DIRECTION_ROW, mainAxis, secondaryAxis, wrap);\n\n/**\n * Mixin to generate a flex column\n * @abstract\n * @param {string} mainAxis alignment of the main axis (justify-content property)\n * @param {string} secondaryAxis alignment of the secondary axis (align-items property)\n * @param {string} wrap value of the flex-wrap property\n * @return {object} `{display: \"flex\", flexDirection: \"column\", flexWrap: \"...\", justifyContent: \"...\", alignItems: \"...\"}`\n */\nexport const flexcolumn = (mainAxis, secondaryAxis, wrap) =>\n    flexbox(FLEX_DIRECTION_COLUMN, mainAxis, secondaryAxis, wrap);\n\n/**\n * Take all the arguments and return an object with a flex property\n * @abstract\n * @param {...string} args\n * @return {object} `{flex: \"arg1 arg2 arg...\"}`\n */\nexport const flex = concatProp(\"flex\");\n",
     "static": true,
     "longname": "/Users/leny/Works/leny/koutla-swiss/src/mixins/flex/index.js",
     "access": "public",
@@ -2285,7 +2285,7 @@
     "importPath": "koutla-swiss/src/mixins/flex/index.js",
     "importStyle": "{flexcolumn}",
     "description": "Mixin to generate a flex column",
-    "lineNumber": 76,
+    "lineNumber": 77,
     "params": [
       {
         "nullable": null,
@@ -2340,7 +2340,7 @@
     "importPath": "koutla-swiss/src/mixins/flex/index.js",
     "importStyle": "{flex}",
     "description": "Take all the arguments and return an object with a flex property",
-    "lineNumber": 85,
+    "lineNumber": 86,
     "params": [
       {
         "nullable": null,
@@ -2678,7 +2678,7 @@
     "__docId__": 120,
     "kind": "file",
     "name": "src/mixins/size/index.js",
-    "content": "/* leny/koutla-swiss\n *\n * ~/mixins/size/index.js - Size mixin\n *\n * coded by leny@flatLand!\n * started at 13/01/2018\n */\n\n/**\n * @ignore\n */\nconst _size = (width, height, prefix = \"\") => ({\n    [`${prefix}${prefix !== \"\" ? \"Width\" : \"width\"}`]: width,\n    [`${prefix}${prefix !== \"\" ? \"Height\" : \"height\"}`]: height,\n});\n\n/**\n * Mixin to for sizing (width/height)\n * @abstract\n * @param {string|number} width \n * @param {string|number} height - if missing, the value of width will be used \n * @return {object} `{width: \"...\", height: \"...\"}`\n */\nexport const size = (width = 0, height = width) => _size(width, height);\n\n/**\n * Mixin to for minimal sizing (min-width/min-height)\n * @abstract\n * @param {string|number} width \n * @param {string|number} height - if missing, the value of width will be used \n * @return {object} `{minWidth: \"...\", minHeight: \"...\"}`\n */\nexport const minSize = (width = 0, height = width) =>\n    _size(width, height, \"min\");\n\n/**\n * Mixin to for maximal sizing (max-width/max-height)\n * @abstract\n * @param {string|number} width \n * @param {string|number} height - if missing, the value of width will be used \n * @return {object} `{maxWidth: \"...\", maxHeight: \"...\"}`\n */\nexport const maxSize = (width = 0, height = width) =>\n    _size(width, height, \"max\");\n",
+    "content": "/* leny/koutla-swiss\n *\n * ~/mixins/size/index.js - Size mixin\n *\n * coded by leny@flatLand!\n * started at 13/01/2018\n */\n\n/**\n * @ignore\n */\nconst _size = (width, height, prefix = \"\") => ({\n    [`${prefix}${prefix !== \"\" ? \"Width\" : \"width\"}`]: width,\n    [`${prefix}${prefix !== \"\" ? \"Height\" : \"height\"}`]: height,\n});\n\n/**\n * Mixin to for sizing (width/height)\n * @abstract\n * @param {string|number} width\n * @param {string|number} height - if missing, the value of width will be used\n * @return {object} `{width: \"...\", height: \"...\"}`\n */\nexport const size = (width = 0, height = width) => _size(width, height);\n\n/**\n * Mixin to for minimal sizing (min-width/min-height)\n * @abstract\n * @param {string|number} width\n * @param {string|number} height - if missing, the value of width will be used\n * @return {object} `{minWidth: \"...\", minHeight: \"...\"}`\n */\nexport const minSize = (width = 0, height = width) =>\n    _size(width, height, \"min\");\n\n/**\n * Mixin to for maximal sizing (max-width/max-height)\n * @abstract\n * @param {string|number} width\n * @param {string|number} height - if missing, the value of width will be used\n * @return {object} `{maxWidth: \"...\", maxHeight: \"...\"}`\n */\nexport const maxSize = (width = 0, height = width) =>\n    _size(width, height, \"max\");\n",
     "static": true,
     "longname": "/Users/leny/Works/leny/koutla-swiss/src/mixins/size/index.js",
     "access": "public",
@@ -2877,7 +2877,7 @@
     "__docId__": 125,
     "kind": "file",
     "name": "src/mixins/transform/index.js",
-    "content": "/* leny/koutla-swiss\n *\n * ~/mixins/transform/index.js - Transform Mixins\n *\n * coded by leny@flatLand!\n * started at 03/02/2019\n */\n\nimport {concatProp, selfFunction} from \"../../commons/utils\";\n\n/**\n * Take all the arguments and return an object with a transform property - returns \"none\" value if no argument is given\n * @abstract\n * @param {...string} args\n * @return {object} `{transform: \"arg1 arg2 arg...\"}`\n */\nexport const transform = (...args) =>\n    concatProp(\"transform\")(...(args.length ? args : [\"none\"]));\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"matrix(arg1, arg2, arg...)\"`\n */\nexport const matrix = (...args) => selfFunction(\"matrix\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"matrix3d(arg1, arg2, arg...)\"`\n */\nexport const matrix3d = (...args) => selfFunction(\"matrix3d\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"perspective(arg1, arg2, arg...)\"`\n */\nexport const perspective = (...args) => selfFunction(\"perspective\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"rotate(arg1, arg2, arg...)\"`\n */\nexport const rotate = (...args) => selfFunction(\"rotate\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"rotate3d(arg1, arg2, arg...)\"`\n */\nexport const rotate3d = (...args) => selfFunction(\"rotate3d\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"rotateX(arg1, arg2, arg...)\"`\n */\nexport const rotateX = (...args) => selfFunction(\"rotateX\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"rotateY(arg1, arg2, arg...)\"`\n */\nexport const rotateY = (...args) => selfFunction(\"rotateY\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"rotateZ(arg1, arg2, arg...)\"`\n */\nexport const rotateZ = (...args) => selfFunction(\"rotateZ\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"scale(arg1, arg2, arg...)\"`\n */\nexport const scale = (...args) => selfFunction(\"scale\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"scale3d(arg1, arg2, arg...)\"`\n */\nexport const scale3d = (...args) => selfFunction(\"scale3d\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"scaleX(arg1, arg2, arg...)\"`\n */\nexport const scaleX = (...args) => selfFunction(\"scaleX\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"scaleY(arg1, arg2, arg...)\"`\n */\nexport const scaleY = (...args) => selfFunction(\"scaleY\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"scaleZ(arg1, arg2, arg...)\"`\n */\nexport const scaleZ = (...args) => selfFunction(\"scaleZ\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"skew(arg1, arg2, arg...)\"`\n */\nexport const skew = (...args) => selfFunction(\"skew\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"skewX(arg1, arg2, arg...)\"`\n */\nexport const skewX = (...args) => selfFunction(\"skewX\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"skewY(arg1, arg2, arg...)\"`\n */\nexport const skewY = (...args) => selfFunction(\"skewY\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"translate(arg1, arg2, arg...)\"`\n */\nexport const translate = (...args) => selfFunction(\"translate\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"translate3d(arg1, arg2, arg...)\"`\n */\nexport const translate3d = (...args) => selfFunction(\"translate3d\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"translateX(arg1, arg2, arg...)\"`\n */\nexport const translateX = (...args) => selfFunction(\"translateX\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"translateY(arg1, arg2, arg...)\"`\n */\nexport const translateY = (...args) => selfFunction(\"translateY\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"translateZ(arg1, arg2, arg...)\"`\n */\nexport const translateZ = (...args) => selfFunction(\"translateZ\")(...args);\n\n",
+    "content": "/* leny/koutla-swiss\n *\n * ~/mixins/transform/index.js - Transform Mixins\n *\n * coded by leny@flatLand!\n * started at 03/02/2019\n */\n\nimport {concatProp, selfFunction} from \"../../commons/utils\";\n\n/**\n * Take all the arguments and return an object with a transform property - returns \"none\" value if no argument is given\n * @abstract\n * @param {...string} args\n * @return {object} `{transform: \"arg1 arg2 arg...\"}`\n */\nexport const transform = (...args) =>\n    concatProp(\"transform\")(...(args.length ? args : [\"none\"]));\n\n/**\n * Take all the arguments and return an object with a transformOrigin property\n * @abstract\n * @param {...string} args\n * @return {object} `{transformOrigin: \"arg1 arg2 arg...\"}`\n */\nexport const transformOrigin = (...args) =>\n    concatProp(\"transformOrigin\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"matrix(arg1, arg2, arg...)\"`\n */\nexport const matrix = (...args) => selfFunction(\"matrix\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"matrix3d(arg1, arg2, arg...)\"`\n */\nexport const matrix3d = (...args) => selfFunction(\"matrix3d\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"perspective(arg1, arg2, arg...)\"`\n */\nexport const perspective = (...args) => selfFunction(\"perspective\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"rotate(arg1, arg2, arg...)\"`\n */\nexport const rotate = (...args) => selfFunction(\"rotate\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"rotate3d(arg1, arg2, arg...)\"`\n */\nexport const rotate3d = (...args) => selfFunction(\"rotate3d\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"rotateX(arg1, arg2, arg...)\"`\n */\nexport const rotateX = (...args) => selfFunction(\"rotateX\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"rotateY(arg1, arg2, arg...)\"`\n */\nexport const rotateY = (...args) => selfFunction(\"rotateY\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"rotateZ(arg1, arg2, arg...)\"`\n */\nexport const rotateZ = (...args) => selfFunction(\"rotateZ\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"scale(arg1, arg2, arg...)\"`\n */\nexport const scale = (...args) => selfFunction(\"scale\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"scale3d(arg1, arg2, arg...)\"`\n */\nexport const scale3d = (...args) => selfFunction(\"scale3d\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"scaleX(arg1, arg2, arg...)\"`\n */\nexport const scaleX = (...args) => selfFunction(\"scaleX\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"scaleY(arg1, arg2, arg...)\"`\n */\nexport const scaleY = (...args) => selfFunction(\"scaleY\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"scaleZ(arg1, arg2, arg...)\"`\n */\nexport const scaleZ = (...args) => selfFunction(\"scaleZ\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"skew(arg1, arg2, arg...)\"`\n */\nexport const skew = (...args) => selfFunction(\"skew\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"skewX(arg1, arg2, arg...)\"`\n */\nexport const skewX = (...args) => selfFunction(\"skewX\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"skewY(arg1, arg2, arg...)\"`\n */\nexport const skewY = (...args) => selfFunction(\"skewY\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"translate(arg1, arg2, arg...)\"`\n */\nexport const translate = (...args) => selfFunction(\"translate\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"translate3d(arg1, arg2, arg...)\"`\n */\nexport const translate3d = (...args) => selfFunction(\"translate3d\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"translateX(arg1, arg2, arg...)\"`\n */\nexport const translateX = (...args) => selfFunction(\"translateX\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"translateY(arg1, arg2, arg...)\"`\n */\nexport const translateY = (...args) => selfFunction(\"translateY\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"translateZ(arg1, arg2, arg...)\"`\n */\nexport const translateZ = (...args) => selfFunction(\"translateZ\")(...args);\n",
     "static": true,
     "longname": "/Users/leny/Works/leny/koutla-swiss/src/mixins/transform/index.js",
     "access": "public",
@@ -2924,6 +2924,43 @@
   {
     "__docId__": 127,
     "kind": "function",
+    "name": "transformOrigin",
+    "memberof": "src/mixins/transform/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/mixins/transform/index.js~transformOrigin",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/mixins/transform/index.js",
+    "importStyle": "{transformOrigin}",
+    "description": "Take all the arguments and return an object with a transformOrigin property",
+    "lineNumber": 26,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "...string"
+        ],
+        "spread": true,
+        "optional": false,
+        "name": "args",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "object"
+      ],
+      "spread": false,
+      "description": "`{transformOrigin: \"arg1 arg2 arg...\"}`"
+    },
+    "abstract": true
+  },
+  {
+    "__docId__": 128,
+    "kind": "function",
     "name": "matrix",
     "memberof": "src/mixins/transform/index.js",
     "generator": false,
@@ -2935,7 +2972,7 @@
     "importPath": "koutla-swiss/src/mixins/transform/index.js",
     "importStyle": "{matrix}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 26,
+    "lineNumber": 35,
     "params": [
       {
         "nullable": null,
@@ -2959,7 +2996,7 @@
     "abstract": true
   },
   {
-    "__docId__": 128,
+    "__docId__": 129,
     "kind": "function",
     "name": "matrix3d",
     "memberof": "src/mixins/transform/index.js",
@@ -2972,7 +3009,7 @@
     "importPath": "koutla-swiss/src/mixins/transform/index.js",
     "importStyle": "{matrix3d}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 34,
+    "lineNumber": 43,
     "params": [
       {
         "nullable": null,
@@ -2996,7 +3033,7 @@
     "abstract": true
   },
   {
-    "__docId__": 129,
+    "__docId__": 130,
     "kind": "function",
     "name": "perspective",
     "memberof": "src/mixins/transform/index.js",
@@ -3009,7 +3046,7 @@
     "importPath": "koutla-swiss/src/mixins/transform/index.js",
     "importStyle": "{perspective}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 42,
+    "lineNumber": 51,
     "params": [
       {
         "nullable": null,
@@ -3033,7 +3070,7 @@
     "abstract": true
   },
   {
-    "__docId__": 130,
+    "__docId__": 131,
     "kind": "function",
     "name": "rotate",
     "memberof": "src/mixins/transform/index.js",
@@ -3046,7 +3083,7 @@
     "importPath": "koutla-swiss/src/mixins/transform/index.js",
     "importStyle": "{rotate}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 50,
+    "lineNumber": 59,
     "params": [
       {
         "nullable": null,
@@ -3070,7 +3107,7 @@
     "abstract": true
   },
   {
-    "__docId__": 131,
+    "__docId__": 132,
     "kind": "function",
     "name": "rotate3d",
     "memberof": "src/mixins/transform/index.js",
@@ -3083,7 +3120,7 @@
     "importPath": "koutla-swiss/src/mixins/transform/index.js",
     "importStyle": "{rotate3d}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 58,
+    "lineNumber": 67,
     "params": [
       {
         "nullable": null,
@@ -3107,7 +3144,7 @@
     "abstract": true
   },
   {
-    "__docId__": 132,
+    "__docId__": 133,
     "kind": "function",
     "name": "rotateX",
     "memberof": "src/mixins/transform/index.js",
@@ -3120,7 +3157,7 @@
     "importPath": "koutla-swiss/src/mixins/transform/index.js",
     "importStyle": "{rotateX}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 66,
+    "lineNumber": 75,
     "params": [
       {
         "nullable": null,
@@ -3144,7 +3181,7 @@
     "abstract": true
   },
   {
-    "__docId__": 133,
+    "__docId__": 134,
     "kind": "function",
     "name": "rotateY",
     "memberof": "src/mixins/transform/index.js",
@@ -3157,7 +3194,7 @@
     "importPath": "koutla-swiss/src/mixins/transform/index.js",
     "importStyle": "{rotateY}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 74,
+    "lineNumber": 83,
     "params": [
       {
         "nullable": null,
@@ -3181,7 +3218,7 @@
     "abstract": true
   },
   {
-    "__docId__": 134,
+    "__docId__": 135,
     "kind": "function",
     "name": "rotateZ",
     "memberof": "src/mixins/transform/index.js",
@@ -3194,7 +3231,7 @@
     "importPath": "koutla-swiss/src/mixins/transform/index.js",
     "importStyle": "{rotateZ}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 82,
+    "lineNumber": 91,
     "params": [
       {
         "nullable": null,
@@ -3218,7 +3255,7 @@
     "abstract": true
   },
   {
-    "__docId__": 135,
+    "__docId__": 136,
     "kind": "function",
     "name": "scale",
     "memberof": "src/mixins/transform/index.js",
@@ -3231,7 +3268,7 @@
     "importPath": "koutla-swiss/src/mixins/transform/index.js",
     "importStyle": "{scale}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 90,
+    "lineNumber": 99,
     "params": [
       {
         "nullable": null,
@@ -3255,7 +3292,7 @@
     "abstract": true
   },
   {
-    "__docId__": 136,
+    "__docId__": 137,
     "kind": "function",
     "name": "scale3d",
     "memberof": "src/mixins/transform/index.js",
@@ -3268,7 +3305,7 @@
     "importPath": "koutla-swiss/src/mixins/transform/index.js",
     "importStyle": "{scale3d}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 98,
+    "lineNumber": 107,
     "params": [
       {
         "nullable": null,
@@ -3292,7 +3329,7 @@
     "abstract": true
   },
   {
-    "__docId__": 137,
+    "__docId__": 138,
     "kind": "function",
     "name": "scaleX",
     "memberof": "src/mixins/transform/index.js",
@@ -3305,7 +3342,7 @@
     "importPath": "koutla-swiss/src/mixins/transform/index.js",
     "importStyle": "{scaleX}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 106,
+    "lineNumber": 115,
     "params": [
       {
         "nullable": null,
@@ -3329,7 +3366,7 @@
     "abstract": true
   },
   {
-    "__docId__": 138,
+    "__docId__": 139,
     "kind": "function",
     "name": "scaleY",
     "memberof": "src/mixins/transform/index.js",
@@ -3342,7 +3379,7 @@
     "importPath": "koutla-swiss/src/mixins/transform/index.js",
     "importStyle": "{scaleY}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 114,
+    "lineNumber": 123,
     "params": [
       {
         "nullable": null,
@@ -3366,7 +3403,7 @@
     "abstract": true
   },
   {
-    "__docId__": 139,
+    "__docId__": 140,
     "kind": "function",
     "name": "scaleZ",
     "memberof": "src/mixins/transform/index.js",
@@ -3379,7 +3416,7 @@
     "importPath": "koutla-swiss/src/mixins/transform/index.js",
     "importStyle": "{scaleZ}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 122,
+    "lineNumber": 131,
     "params": [
       {
         "nullable": null,
@@ -3403,7 +3440,7 @@
     "abstract": true
   },
   {
-    "__docId__": 140,
+    "__docId__": 141,
     "kind": "function",
     "name": "skew",
     "memberof": "src/mixins/transform/index.js",
@@ -3416,7 +3453,7 @@
     "importPath": "koutla-swiss/src/mixins/transform/index.js",
     "importStyle": "{skew}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 130,
+    "lineNumber": 139,
     "params": [
       {
         "nullable": null,
@@ -3440,7 +3477,7 @@
     "abstract": true
   },
   {
-    "__docId__": 141,
+    "__docId__": 142,
     "kind": "function",
     "name": "skewX",
     "memberof": "src/mixins/transform/index.js",
@@ -3453,7 +3490,7 @@
     "importPath": "koutla-swiss/src/mixins/transform/index.js",
     "importStyle": "{skewX}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 138,
+    "lineNumber": 147,
     "params": [
       {
         "nullable": null,
@@ -3477,7 +3514,7 @@
     "abstract": true
   },
   {
-    "__docId__": 142,
+    "__docId__": 143,
     "kind": "function",
     "name": "skewY",
     "memberof": "src/mixins/transform/index.js",
@@ -3490,7 +3527,7 @@
     "importPath": "koutla-swiss/src/mixins/transform/index.js",
     "importStyle": "{skewY}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 146,
+    "lineNumber": 155,
     "params": [
       {
         "nullable": null,
@@ -3514,7 +3551,7 @@
     "abstract": true
   },
   {
-    "__docId__": 143,
+    "__docId__": 144,
     "kind": "function",
     "name": "translate",
     "memberof": "src/mixins/transform/index.js",
@@ -3527,7 +3564,7 @@
     "importPath": "koutla-swiss/src/mixins/transform/index.js",
     "importStyle": "{translate}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 154,
+    "lineNumber": 163,
     "params": [
       {
         "nullable": null,
@@ -3551,7 +3588,7 @@
     "abstract": true
   },
   {
-    "__docId__": 144,
+    "__docId__": 145,
     "kind": "function",
     "name": "translate3d",
     "memberof": "src/mixins/transform/index.js",
@@ -3564,7 +3601,7 @@
     "importPath": "koutla-swiss/src/mixins/transform/index.js",
     "importStyle": "{translate3d}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 162,
+    "lineNumber": 171,
     "params": [
       {
         "nullable": null,
@@ -3588,7 +3625,7 @@
     "abstract": true
   },
   {
-    "__docId__": 145,
+    "__docId__": 146,
     "kind": "function",
     "name": "translateX",
     "memberof": "src/mixins/transform/index.js",
@@ -3601,7 +3638,7 @@
     "importPath": "koutla-swiss/src/mixins/transform/index.js",
     "importStyle": "{translateX}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 170,
+    "lineNumber": 179,
     "params": [
       {
         "nullable": null,
@@ -3625,7 +3662,7 @@
     "abstract": true
   },
   {
-    "__docId__": 146,
+    "__docId__": 147,
     "kind": "function",
     "name": "translateY",
     "memberof": "src/mixins/transform/index.js",
@@ -3638,7 +3675,7 @@
     "importPath": "koutla-swiss/src/mixins/transform/index.js",
     "importStyle": "{translateY}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 178,
+    "lineNumber": 187,
     "params": [
       {
         "nullable": null,
@@ -3662,7 +3699,7 @@
     "abstract": true
   },
   {
-    "__docId__": 147,
+    "__docId__": 148,
     "kind": "function",
     "name": "translateZ",
     "memberof": "src/mixins/transform/index.js",
@@ -3675,7 +3712,7 @@
     "importPath": "koutla-swiss/src/mixins/transform/index.js",
     "importStyle": "{translateZ}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 186,
+    "lineNumber": 195,
     "params": [
       {
         "nullable": null,
@@ -3699,7 +3736,7 @@
     "abstract": true
   },
   {
-    "__docId__": 148,
+    "__docId__": 149,
     "kind": "file",
     "name": "src/utils/colors/index.js",
     "content": "/* leny/koutla-swiss\n *\n * ~/utils/colors/index.js - Colors utils\n *\n * coded by leny@flatLand!\n * started at 12/01/2018\n */\n\nimport cssColors from \"css-color-names\";\n\nconst HEX_COLOR = /^#((?:[0-9a-f](?=[0-9a-f]{2}\\b))|(?:[0-9a-f]{2}(?=[0-9a-f]{4}\\b)))((?:[0-9a-f](?=[0-9a-f]{1}\\b))|(?:[0-9a-f]{2}(?=[0-9a-f]{2}\\b)))([0-9a-f]{1,2})\\b/i;\n\nconst isValidRGBInt = mValue => {\n    const iValue = +mValue;\n\n    return !(isNaN(iValue) || iValue % 1 !== 0 || (iValue < 0 || iValue > 255));\n};\n\nconst isValidAlphaNumber = mValue => {\n    const iValue = +mValue;\n\n    return !(isNaN(iValue) || (iValue < 0 || iValue > 1));\n};\n\nconst getRGBValuesFromColor = sColor => {\n    let sColorName, sHexColor, aColorParts;\n\n    if (\n        Object.keys(cssColors).includes(\n            (sColorName = `${sColor}`.toLowerCase().trim()),\n        )\n    ) {\n        sHexColor = cssColors[sColorName];\n    } else if (HEX_COLOR.test(sColor)) {\n        sHexColor = sColor;\n    } else {\n        throw new TypeError(\"Invalid color\");\n    }\n\n    (aColorParts = sHexColor.match(HEX_COLOR)).shift();\n    return aColorParts.map(sValue =>\n        parseInt(sValue.length === 1 ? `${sValue}${sValue}` : sValue, 16),\n    );\n};\n\n/**\n * Take all the arguments and return a string with the rgb channels definition\n * @abstract\n * @param {...string|...number} args parts of the color definition (if only one arg is given, it will be converted)\n * @return {string} `\"rgb(arg1, arg2, arg...)\"`\n */\nexport const rgb = (...args) => {\n    if (args.length === 3) {\n        if (args.every(isValidRGBInt)) {\n            return `rgb(${args.join(\",\")})`;\n        }\n    }\n\n    if (args.length === 1) {\n        return `rgb(${getRGBValuesFromColor(args[0]).join(\",\")})`;\n    }\n\n    throw new TypeError(\"Invalid arguments format\");\n};\n\n/**\n * Take all the arguments and return a string with the rgba channels definition\n * @abstract\n * @param {...string|...number} args parts of the color definition (if only one arg is given, it will be converted)\n * @return {string} `\"rgba(arg1, arg2, arg...)\"`\n */\nexport const rgba = (...args) => {\n    if (args.length === 4) {\n        if (\n            args.every((iValue, iIndex) => {\n                return iIndex < 3\n                    ? isValidRGBInt(iValue)\n                    : isValidAlphaNumber(iValue);\n            })\n        ) {\n            return `rgba(${args.join(\",\")})`;\n        }\n    }\n\n    if (args.length === 2) {\n        let aColorParts = getRGBValuesFromColor(args[0]);\n\n        if (!isValidAlphaNumber(args[1])) {\n            throw new TypeError(\"Invalid alpha value\");\n        }\n\n        return `rgba(${aColorParts.join(\",\")},${args[1]})`;\n    }\n\n    throw new TypeError(\"Invalid arguments format\");\n};\n",
@@ -3710,7 +3747,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 149,
+    "__docId__": 150,
     "kind": "variable",
     "name": "HEX_COLOR",
     "memberof": "src/utils/colors/index.js",
@@ -3731,7 +3768,7 @@
     "ignore": true
   },
   {
-    "__docId__": 150,
+    "__docId__": 151,
     "kind": "function",
     "name": "isValidRGBInt",
     "memberof": "src/utils/colors/index.js",
@@ -3762,7 +3799,7 @@
     "ignore": true
   },
   {
-    "__docId__": 151,
+    "__docId__": 152,
     "kind": "function",
     "name": "isValidAlphaNumber",
     "memberof": "src/utils/colors/index.js",
@@ -3793,7 +3830,7 @@
     "ignore": true
   },
   {
-    "__docId__": 152,
+    "__docId__": 153,
     "kind": "function",
     "name": "getRGBValuesFromColor",
     "memberof": "src/utils/colors/index.js",
@@ -3824,7 +3861,7 @@
     "ignore": true
   },
   {
-    "__docId__": 153,
+    "__docId__": 154,
     "kind": "function",
     "name": "rgb",
     "memberof": "src/utils/colors/index.js",
@@ -3862,7 +3899,7 @@
     "abstract": true
   },
   {
-    "__docId__": 154,
+    "__docId__": 155,
     "kind": "function",
     "name": "rgba",
     "memberof": "src/utils/colors/index.js",
@@ -3900,10 +3937,10 @@
     "abstract": true
   },
   {
-    "__docId__": 155,
+    "__docId__": 156,
     "kind": "file",
     "name": "src/utils/important/index.js",
-    "content": "/* leny/koutla-swiss\n *\n * ~/utils/important/index.js - !important util\n *\n * coded by leny@flatLand!\n * started at 23/02/2019\n */\n\nimport fromEntries from \"lodash.frompairs\";\n\n/**\n * Take the given value and add !important to it\n * @abstract\n * @param {string|object} target value to add important to\n * @return {string|object} \n */\nexport const important = target => {\n    if (typeof target === \"string\") {\n        return `${target} !important`;\n    }\n    return fromEntries(\n        Object.entries(target).map(([key, value]) => [\n            key,\n            `${value} !important`,\n        ]),\n    );\n};\n",
+    "content": "/* leny/koutla-swiss\n *\n * ~/utils/important/index.js - !important util\n *\n * coded by leny@flatLand!\n * started at 23/02/2019\n */\n\nimport fromEntries from \"lodash.frompairs\";\n\n/**\n * Take the given value and add !important to it\n * @abstract\n * @param {string|object} target value to add important to\n * @return {string|object}\n */\nexport const important = target => {\n    if (typeof target === \"string\") {\n        return `${target} !important`;\n    }\n    return fromEntries(\n        Object.entries(target).map(([key, value]) => [\n            key,\n            `${value} !important`,\n        ]),\n    );\n};\n",
     "static": true,
     "longname": "/Users/leny/Works/leny/koutla-swiss/src/utils/important/index.js",
     "access": "public",
@@ -3911,7 +3948,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 156,
+    "__docId__": 157,
     "kind": "function",
     "name": "important",
     "memberof": "src/utils/important/index.js",
@@ -3950,7 +3987,7 @@
     "abstract": true
   },
   {
-    "__docId__": 157,
+    "__docId__": 158,
     "kind": "file",
     "name": "src/utils/media/index.js",
     "content": "/* leny/koutla-swiss\n *\n * ~/utils/media/index.js - MediaQueries utils\n *\n * coded by leny@flatLand!\n * started at 13/01/2018\n */\n\n/**\n * Prepare a media query and returns it as an object\n * @abstract\n * @param {string} query media query definition\n * @param {object} props properties related to the media query\n * @return {object} `{\"@media(...)\": {\"prop\": \"...\"}}`\n */\nexport const mq = (query, props = {}) => {\n    if (typeof query !== \"string\") {\n        throw new TypeError(\"Invalid query type\");\n    }\n\n    return {\n        [`@media(${query})`]: props,\n    };\n};\n",
@@ -3961,7 +3998,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 158,
+    "__docId__": 159,
     "kind": "function",
     "name": "mq",
     "memberof": "src/utils/media/index.js",
@@ -4008,10 +4045,10 @@
     "abstract": true
   },
   {
-    "__docId__": 159,
+    "__docId__": 160,
     "kind": "file",
     "name": "src/utils/units/index.js",
-    "content": "/* leny/koutla-swiss\n *\n * ~/utils/units/index.js - Units utils\n *\n * coded by leny@flatLand!\n * started at 12/01/2018\n */\n\nimport {selfFunction} from \"../../commons/utils\";\n\nconst checkNumber = mValue => {\n    if (isNaN(+mValue)) {\n        throw new TypeError(\"Expect a Number\");\n    }\n    return true;\n};\n\nconst checkZero = value => {\n    return value === 0 ? \"0\" : false;\n};\n\nconst unit = unit => (value = 0) =>\n    checkNumber(value) && (checkZero(value) || `${value}${unit}`);\n\n/**\n * Return the value with the rem suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]rem\"`\n */\nexport const rem = value=>unit(\"rem\")(value);\n\n/**\n * Return the value with the em suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]em\"`\n */\nexport const em = value=>unit(\"em\")(value);\n\n/**\n * Return the value with the ex suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]ex\"`\n */\nexport const ex = value=>unit(\"ex\")(value);\n\n/**\n * Return the value with the cap suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]cap\"`\n */\nexport const cap = value=>unit(\"cap\")(value);\n\n/**\n * Return the value with the ic suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]ic\"`\n */\nexport const ic = value=>unit(\"ic\")(value);\n\n/**\n * Return the value with the lh suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]lh\"`\n */\nexport const lh = value=>unit(\"lh\")(value);\n\n/**\n * Return the value with the rlh suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]rlh\"`\n */\nexport const rlh = value=>unit(\"rlh\")(value);\n\n/**\n * Return the value with the ch suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]ch\"`\n */\nexport const ch = value=>unit(\"ch\")(value);\n\n\n/**\n * Return the value with the vw suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]vw\"`\n */\nexport const vw = value=>unit(\"vw\")(value);\n\n/**\n * Return the value with the vh suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]vh\"`\n */\nexport const vh = value=>unit(\"vh\")(value);\n\n/**\n * Return the value with the vi suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]vi\"`\n */\nexport const vi = value=>unit(\"vi\")(value);\n\n/**\n * Return the value with the vb suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]vb\"`\n */\nexport const vb = value=>unit(\"vb\")(value);\n\n/**\n * Return the value with the vmin suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]vmin\"`\n */\nexport const vmin = value=>unit(\"vmin\")(value);\n\n/**\n * Return the value with the vmax suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]vmax\"`\n */\nexport const vmax = value=>unit(\"vmax\")(value);\n\n\n/**\n * Return the value with the cm suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]cm\"`\n */\nexport const cm = value=>unit(\"cm\")(value);\n\n/**\n * Return the value with the mm suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]mm\"`\n */\nexport const mm = value=>unit(\"mm\")(value);\n\n/**\n * Return the value with the Q suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]Q\"`\n */\nexport const Q = value=>unit(\"Q\")(value);\n\n/**\n * Return the value with the in suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]in\"`\n */\nexport const inch = value=>unit(\"in\")(value);\n\n/**\n * Return the value with the pc suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]pc\"`\n */\nexport const pc = value=>unit(\"pc\")(value);\n\n/**\n * Return the value with the pt suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]pt\"`\n */\nexport const pt = value=>unit(\"pt\")(value);\n\n\n/**\n * Return the value with the deg suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]deg\"`\n */\nexport const deg = value=>unit(\"deg\")(value);\n\n/**\n * Return the value with the grad suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]grad\"`\n */\nexport const grad = value=>unit(\"grad\")(value);\n\n/**\n * Return the value with the rad suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]rad\"`\n */\nexport const rad = value=>unit(\"rad\")(value);\n\n/**\n * Return the value with the turn suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]turn\"`\n */\nexport const turn = value=>unit(\"turn\")(value);\n\n\n/**\n * Return the value with the s suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]s\"`\n */\nexport const s = value=>unit(\"s\")(value);\n\n/**\n * Return the value with the ms suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]ms\"`\n */\nexport const ms = value=>unit(\"ms\")(value);\n\n\n/**\n * Return the value with the Hz suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]Hz\"`\n */\nexport const Hz = value=>unit(\"Hz\")(value);\n\n/**\n * Return the value with the kHz suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]kHz\"`\n */\nexport const kHz = value=>unit(\"kHz\")(value);\n\n\n/**\n * Return the value with the dpi suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]dpi\"`\n */\nexport const dpi = value=>unit(\"dpi\")(value);\n\n/**\n * Return the value with the dpcm suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]dpcm\"`\n */\nexport const dpcm = value=>unit(\"dpcm\")(value);\n\n/**\n * Return the value with the dppx suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]dppx\"`\n */\nexport const dppx = value=>unit(\"dppx\")(value);\n\n\n/**\n * Return the value with the px suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]px\"`\n */\nexport const px = value=>unit(\"px\")(value);\n\n\n/**\n * Return the value with the fr suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]fr\"`\n */\nexport const fr = value=>unit(\"fr\")(value);\n\n/**\n * Return the value with the percent suffix\n * @abstract\n * @param {number} value\n * @param {boolean} withDecimal treat the value as a decimal value between 0 and 1\n * @return {string} `\"[value]%\"`\n */\nexport const percent = (value = 0, withDecimal) =>\n    unit(\"%\")(value * (withDecimal ? 100 : 1));\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"calc(arg1, arg2, arg...)\"`\n */\nexport const calc = (...args)=>selfFunction(\"calc\", \" \")(...args)\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"attr(arg1, arg2, arg...)\"`\n */\nexport const attr = (...args)=>selfFunction(\"attr\")(...args)\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"clamp(arg1, arg2, arg...)\"`\n */\nexport const clamp = (...args)=>selfFunction(\"clamp\", \", \", 3, 3)(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"min(arg1, arg2, arg...)\"`\n */\nexport const min = (...args)=>selfFunction(\"min\", \", \", 2)(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"max(arg1, arg2, arg...)\"`\n */\nexport const max = (...args)=>selfFunction(\"max\", \", \", 2)(...args);\n",
+    "content": "/* leny/koutla-swiss\n *\n * ~/utils/units/index.js - Units utils\n *\n * coded by leny@flatLand!\n * started at 12/01/2018\n */\n\nimport {selfFunction} from \"../../commons/utils\";\n\nconst checkNumber = mValue => {\n    if (isNaN(+mValue)) {\n        throw new TypeError(\"Expect a Number\");\n    }\n    return true;\n};\n\nconst checkZero = value => {\n    return value === 0 ? \"0\" : false;\n};\n\nconst unit = suffix => (value = 0) =>\n    checkNumber(value) && (checkZero(value) || `${value}${suffix}`);\n\n/**\n * Return the value with the rem suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]rem\"`\n */\nexport const rem = value => unit(\"rem\")(value);\n\n/**\n * Return the value with the em suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]em\"`\n */\nexport const em = value => unit(\"em\")(value);\n\n/**\n * Return the value with the ex suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]ex\"`\n */\nexport const ex = value => unit(\"ex\")(value);\n\n/**\n * Return the value with the cap suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]cap\"`\n */\nexport const cap = value => unit(\"cap\")(value);\n\n/**\n * Return the value with the ic suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]ic\"`\n */\nexport const ic = value => unit(\"ic\")(value);\n\n/**\n * Return the value with the lh suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]lh\"`\n */\nexport const lh = value => unit(\"lh\")(value);\n\n/**\n * Return the value with the rlh suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]rlh\"`\n */\nexport const rlh = value => unit(\"rlh\")(value);\n\n/**\n * Return the value with the ch suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]ch\"`\n */\nexport const ch = value => unit(\"ch\")(value);\n\n/**\n * Return the value with the vw suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]vw\"`\n */\nexport const vw = value => unit(\"vw\")(value);\n\n/**\n * Return the value with the vh suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]vh\"`\n */\nexport const vh = value => unit(\"vh\")(value);\n\n/**\n * Return the value with the vi suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]vi\"`\n */\nexport const vi = value => unit(\"vi\")(value);\n\n/**\n * Return the value with the vb suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]vb\"`\n */\nexport const vb = value => unit(\"vb\")(value);\n\n/**\n * Return the value with the vmin suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]vmin\"`\n */\nexport const vmin = value => unit(\"vmin\")(value);\n\n/**\n * Return the value with the vmax suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]vmax\"`\n */\nexport const vmax = value => unit(\"vmax\")(value);\n\n/**\n * Return the value with the cm suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]cm\"`\n */\nexport const cm = value => unit(\"cm\")(value);\n\n/**\n * Return the value with the mm suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]mm\"`\n */\nexport const mm = value => unit(\"mm\")(value);\n\n/**\n * Return the value with the Q suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]Q\"`\n */\nexport const Q = value => unit(\"Q\")(value);\n\n/**\n * Return the value with the in suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]in\"`\n */\nexport const inch = value => unit(\"in\")(value);\n\n/**\n * Return the value with the pc suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]pc\"`\n */\nexport const pc = value => unit(\"pc\")(value);\n\n/**\n * Return the value with the pt suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]pt\"`\n */\nexport const pt = value => unit(\"pt\")(value);\n\n/**\n * Return the value with the deg suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]deg\"`\n */\nexport const deg = value => unit(\"deg\")(value);\n\n/**\n * Return the value with the grad suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]grad\"`\n */\nexport const grad = value => unit(\"grad\")(value);\n\n/**\n * Return the value with the rad suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]rad\"`\n */\nexport const rad = value => unit(\"rad\")(value);\n\n/**\n * Return the value with the turn suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]turn\"`\n */\nexport const turn = value => unit(\"turn\")(value);\n\n/**\n * Return the value with the s suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]s\"`\n */\nexport const s = value => unit(\"s\")(value);\n\n/**\n * Return the value with the ms suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]ms\"`\n */\nexport const ms = value => unit(\"ms\")(value);\n\n/**\n * Return the value with the Hz suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]Hz\"`\n */\nexport const Hz = value => unit(\"Hz\")(value);\n\n/**\n * Return the value with the kHz suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]kHz\"`\n */\nexport const kHz = value => unit(\"kHz\")(value);\n\n/**\n * Return the value with the dpi suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]dpi\"`\n */\nexport const dpi = value => unit(\"dpi\")(value);\n\n/**\n * Return the value with the dpcm suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]dpcm\"`\n */\nexport const dpcm = value => unit(\"dpcm\")(value);\n\n/**\n * Return the value with the dppx suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]dppx\"`\n */\nexport const dppx = value => unit(\"dppx\")(value);\n\n/**\n * Return the value with the px suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]px\"`\n */\nexport const px = value => unit(\"px\")(value);\n\n/**\n * Return the value with the fr suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]fr\"`\n */\nexport const fr = value => unit(\"fr\")(value);\n\n/**\n * Return the value with the percent suffix\n * @abstract\n * @param {number} value\n * @param {boolean} withDecimal treat the value as a decimal value between 0 and 1\n * @return {string} `\"[value]%\"`\n */\nexport const percent = (value = 0, withDecimal) =>\n    unit(\"%\")(value * (withDecimal ? 100 : 1));\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"calc(arg1, arg2, arg...)\"`\n */\nexport const calc = (...args) => selfFunction(\"calc\", \" \")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"attr(arg1, arg2, arg...)\"`\n */\nexport const attr = (...args) => selfFunction(\"attr\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"clamp(arg1, arg2, arg...)\"`\n */\nexport const clamp = (...args) => selfFunction(\"clamp\", \", \", 3, 3)(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"min(arg1, arg2, arg...)\"`\n */\nexport const min = (...args) => selfFunction(\"min\", \", \", 2)(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"max(arg1, arg2, arg...)\"`\n */\nexport const max = (...args) => selfFunction(\"max\", \", \", 2)(...args);\n",
     "static": true,
     "longname": "/Users/leny/Works/leny/koutla-swiss/src/utils/units/index.js",
     "access": "public",
@@ -4019,7 +4056,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 160,
+    "__docId__": 161,
     "kind": "function",
     "name": "checkNumber",
     "memberof": "src/utils/units/index.js",
@@ -4050,7 +4087,7 @@
     "ignore": true
   },
   {
-    "__docId__": 161,
+    "__docId__": 162,
     "kind": "function",
     "name": "checkZero",
     "memberof": "src/utils/units/index.js",
@@ -4081,7 +4118,7 @@
     "ignore": true
   },
   {
-    "__docId__": 162,
+    "__docId__": 163,
     "kind": "function",
     "name": "unit",
     "memberof": "src/utils/units/index.js",
@@ -4098,7 +4135,7 @@
     "undocument": true,
     "params": [
       {
-        "name": "unit",
+        "name": "suffix",
         "types": [
           "*"
         ]
@@ -4108,7 +4145,7 @@
     "ignore": true
   },
   {
-    "__docId__": 163,
+    "__docId__": 164,
     "kind": "function",
     "name": "rem",
     "memberof": "src/utils/units/index.js",
@@ -4145,7 +4182,7 @@
     "abstract": true
   },
   {
-    "__docId__": 164,
+    "__docId__": 165,
     "kind": "function",
     "name": "em",
     "memberof": "src/utils/units/index.js",
@@ -4182,7 +4219,7 @@
     "abstract": true
   },
   {
-    "__docId__": 165,
+    "__docId__": 166,
     "kind": "function",
     "name": "ex",
     "memberof": "src/utils/units/index.js",
@@ -4219,7 +4256,7 @@
     "abstract": true
   },
   {
-    "__docId__": 166,
+    "__docId__": 167,
     "kind": "function",
     "name": "cap",
     "memberof": "src/utils/units/index.js",
@@ -4256,7 +4293,7 @@
     "abstract": true
   },
   {
-    "__docId__": 167,
+    "__docId__": 168,
     "kind": "function",
     "name": "ic",
     "memberof": "src/utils/units/index.js",
@@ -4293,7 +4330,7 @@
     "abstract": true
   },
   {
-    "__docId__": 168,
+    "__docId__": 169,
     "kind": "function",
     "name": "lh",
     "memberof": "src/utils/units/index.js",
@@ -4330,7 +4367,7 @@
     "abstract": true
   },
   {
-    "__docId__": 169,
+    "__docId__": 170,
     "kind": "function",
     "name": "rlh",
     "memberof": "src/utils/units/index.js",
@@ -4367,7 +4404,7 @@
     "abstract": true
   },
   {
-    "__docId__": 170,
+    "__docId__": 171,
     "kind": "function",
     "name": "ch",
     "memberof": "src/utils/units/index.js",
@@ -4404,7 +4441,7 @@
     "abstract": true
   },
   {
-    "__docId__": 171,
+    "__docId__": 172,
     "kind": "function",
     "name": "vw",
     "memberof": "src/utils/units/index.js",
@@ -4417,7 +4454,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{vw}",
     "description": "Return the value with the vw suffix",
-    "lineNumber": 96,
+    "lineNumber": 95,
     "params": [
       {
         "nullable": null,
@@ -4441,7 +4478,7 @@
     "abstract": true
   },
   {
-    "__docId__": 172,
+    "__docId__": 173,
     "kind": "function",
     "name": "vh",
     "memberof": "src/utils/units/index.js",
@@ -4454,7 +4491,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{vh}",
     "description": "Return the value with the vh suffix",
-    "lineNumber": 104,
+    "lineNumber": 103,
     "params": [
       {
         "nullable": null,
@@ -4478,7 +4515,7 @@
     "abstract": true
   },
   {
-    "__docId__": 173,
+    "__docId__": 174,
     "kind": "function",
     "name": "vi",
     "memberof": "src/utils/units/index.js",
@@ -4491,7 +4528,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{vi}",
     "description": "Return the value with the vi suffix",
-    "lineNumber": 112,
+    "lineNumber": 111,
     "params": [
       {
         "nullable": null,
@@ -4515,7 +4552,7 @@
     "abstract": true
   },
   {
-    "__docId__": 174,
+    "__docId__": 175,
     "kind": "function",
     "name": "vb",
     "memberof": "src/utils/units/index.js",
@@ -4528,7 +4565,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{vb}",
     "description": "Return the value with the vb suffix",
-    "lineNumber": 120,
+    "lineNumber": 119,
     "params": [
       {
         "nullable": null,
@@ -4552,7 +4589,7 @@
     "abstract": true
   },
   {
-    "__docId__": 175,
+    "__docId__": 176,
     "kind": "function",
     "name": "vmin",
     "memberof": "src/utils/units/index.js",
@@ -4565,7 +4602,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{vmin}",
     "description": "Return the value with the vmin suffix",
-    "lineNumber": 128,
+    "lineNumber": 127,
     "params": [
       {
         "nullable": null,
@@ -4589,7 +4626,7 @@
     "abstract": true
   },
   {
-    "__docId__": 176,
+    "__docId__": 177,
     "kind": "function",
     "name": "vmax",
     "memberof": "src/utils/units/index.js",
@@ -4602,7 +4639,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{vmax}",
     "description": "Return the value with the vmax suffix",
-    "lineNumber": 136,
+    "lineNumber": 135,
     "params": [
       {
         "nullable": null,
@@ -4626,7 +4663,7 @@
     "abstract": true
   },
   {
-    "__docId__": 177,
+    "__docId__": 178,
     "kind": "function",
     "name": "cm",
     "memberof": "src/utils/units/index.js",
@@ -4639,7 +4676,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{cm}",
     "description": "Return the value with the cm suffix",
-    "lineNumber": 145,
+    "lineNumber": 143,
     "params": [
       {
         "nullable": null,
@@ -4663,7 +4700,7 @@
     "abstract": true
   },
   {
-    "__docId__": 178,
+    "__docId__": 179,
     "kind": "function",
     "name": "mm",
     "memberof": "src/utils/units/index.js",
@@ -4676,7 +4713,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{mm}",
     "description": "Return the value with the mm suffix",
-    "lineNumber": 153,
+    "lineNumber": 151,
     "params": [
       {
         "nullable": null,
@@ -4700,7 +4737,7 @@
     "abstract": true
   },
   {
-    "__docId__": 179,
+    "__docId__": 180,
     "kind": "function",
     "name": "Q",
     "memberof": "src/utils/units/index.js",
@@ -4713,7 +4750,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{Q}",
     "description": "Return the value with the Q suffix",
-    "lineNumber": 161,
+    "lineNumber": 159,
     "params": [
       {
         "nullable": null,
@@ -4737,7 +4774,7 @@
     "abstract": true
   },
   {
-    "__docId__": 180,
+    "__docId__": 181,
     "kind": "function",
     "name": "inch",
     "memberof": "src/utils/units/index.js",
@@ -4750,7 +4787,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{inch}",
     "description": "Return the value with the in suffix",
-    "lineNumber": 169,
+    "lineNumber": 167,
     "params": [
       {
         "nullable": null,
@@ -4774,7 +4811,7 @@
     "abstract": true
   },
   {
-    "__docId__": 181,
+    "__docId__": 182,
     "kind": "function",
     "name": "pc",
     "memberof": "src/utils/units/index.js",
@@ -4787,7 +4824,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{pc}",
     "description": "Return the value with the pc suffix",
-    "lineNumber": 177,
+    "lineNumber": 175,
     "params": [
       {
         "nullable": null,
@@ -4811,7 +4848,7 @@
     "abstract": true
   },
   {
-    "__docId__": 182,
+    "__docId__": 183,
     "kind": "function",
     "name": "pt",
     "memberof": "src/utils/units/index.js",
@@ -4824,7 +4861,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{pt}",
     "description": "Return the value with the pt suffix",
-    "lineNumber": 185,
+    "lineNumber": 183,
     "params": [
       {
         "nullable": null,
@@ -4848,7 +4885,7 @@
     "abstract": true
   },
   {
-    "__docId__": 183,
+    "__docId__": 184,
     "kind": "function",
     "name": "deg",
     "memberof": "src/utils/units/index.js",
@@ -4861,7 +4898,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{deg}",
     "description": "Return the value with the deg suffix",
-    "lineNumber": 194,
+    "lineNumber": 191,
     "params": [
       {
         "nullable": null,
@@ -4885,7 +4922,7 @@
     "abstract": true
   },
   {
-    "__docId__": 184,
+    "__docId__": 185,
     "kind": "function",
     "name": "grad",
     "memberof": "src/utils/units/index.js",
@@ -4898,7 +4935,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{grad}",
     "description": "Return the value with the grad suffix",
-    "lineNumber": 202,
+    "lineNumber": 199,
     "params": [
       {
         "nullable": null,
@@ -4922,7 +4959,7 @@
     "abstract": true
   },
   {
-    "__docId__": 185,
+    "__docId__": 186,
     "kind": "function",
     "name": "rad",
     "memberof": "src/utils/units/index.js",
@@ -4935,7 +4972,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{rad}",
     "description": "Return the value with the rad suffix",
-    "lineNumber": 210,
+    "lineNumber": 207,
     "params": [
       {
         "nullable": null,
@@ -4959,7 +4996,7 @@
     "abstract": true
   },
   {
-    "__docId__": 186,
+    "__docId__": 187,
     "kind": "function",
     "name": "turn",
     "memberof": "src/utils/units/index.js",
@@ -4972,7 +5009,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{turn}",
     "description": "Return the value with the turn suffix",
-    "lineNumber": 218,
+    "lineNumber": 215,
     "params": [
       {
         "nullable": null,
@@ -4996,7 +5033,7 @@
     "abstract": true
   },
   {
-    "__docId__": 187,
+    "__docId__": 188,
     "kind": "function",
     "name": "s",
     "memberof": "src/utils/units/index.js",
@@ -5009,7 +5046,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{s}",
     "description": "Return the value with the s suffix",
-    "lineNumber": 227,
+    "lineNumber": 223,
     "params": [
       {
         "nullable": null,
@@ -5033,7 +5070,7 @@
     "abstract": true
   },
   {
-    "__docId__": 188,
+    "__docId__": 189,
     "kind": "function",
     "name": "ms",
     "memberof": "src/utils/units/index.js",
@@ -5046,7 +5083,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{ms}",
     "description": "Return the value with the ms suffix",
-    "lineNumber": 235,
+    "lineNumber": 231,
     "params": [
       {
         "nullable": null,
@@ -5070,7 +5107,7 @@
     "abstract": true
   },
   {
-    "__docId__": 189,
+    "__docId__": 190,
     "kind": "function",
     "name": "Hz",
     "memberof": "src/utils/units/index.js",
@@ -5083,7 +5120,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{Hz}",
     "description": "Return the value with the Hz suffix",
-    "lineNumber": 244,
+    "lineNumber": 239,
     "params": [
       {
         "nullable": null,
@@ -5107,7 +5144,7 @@
     "abstract": true
   },
   {
-    "__docId__": 190,
+    "__docId__": 191,
     "kind": "function",
     "name": "kHz",
     "memberof": "src/utils/units/index.js",
@@ -5120,7 +5157,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{kHz}",
     "description": "Return the value with the kHz suffix",
-    "lineNumber": 252,
+    "lineNumber": 247,
     "params": [
       {
         "nullable": null,
@@ -5144,7 +5181,7 @@
     "abstract": true
   },
   {
-    "__docId__": 191,
+    "__docId__": 192,
     "kind": "function",
     "name": "dpi",
     "memberof": "src/utils/units/index.js",
@@ -5157,7 +5194,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{dpi}",
     "description": "Return the value with the dpi suffix",
-    "lineNumber": 261,
+    "lineNumber": 255,
     "params": [
       {
         "nullable": null,
@@ -5181,7 +5218,7 @@
     "abstract": true
   },
   {
-    "__docId__": 192,
+    "__docId__": 193,
     "kind": "function",
     "name": "dpcm",
     "memberof": "src/utils/units/index.js",
@@ -5194,7 +5231,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{dpcm}",
     "description": "Return the value with the dpcm suffix",
-    "lineNumber": 269,
+    "lineNumber": 263,
     "params": [
       {
         "nullable": null,
@@ -5218,7 +5255,7 @@
     "abstract": true
   },
   {
-    "__docId__": 193,
+    "__docId__": 194,
     "kind": "function",
     "name": "dppx",
     "memberof": "src/utils/units/index.js",
@@ -5231,7 +5268,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{dppx}",
     "description": "Return the value with the dppx suffix",
-    "lineNumber": 277,
+    "lineNumber": 271,
     "params": [
       {
         "nullable": null,
@@ -5255,7 +5292,7 @@
     "abstract": true
   },
   {
-    "__docId__": 194,
+    "__docId__": 195,
     "kind": "function",
     "name": "px",
     "memberof": "src/utils/units/index.js",
@@ -5268,7 +5305,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{px}",
     "description": "Return the value with the px suffix",
-    "lineNumber": 286,
+    "lineNumber": 279,
     "params": [
       {
         "nullable": null,
@@ -5292,7 +5329,7 @@
     "abstract": true
   },
   {
-    "__docId__": 195,
+    "__docId__": 196,
     "kind": "function",
     "name": "fr",
     "memberof": "src/utils/units/index.js",
@@ -5305,7 +5342,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{fr}",
     "description": "Return the value with the fr suffix",
-    "lineNumber": 295,
+    "lineNumber": 287,
     "params": [
       {
         "nullable": null,
@@ -5329,7 +5366,7 @@
     "abstract": true
   },
   {
-    "__docId__": 196,
+    "__docId__": 197,
     "kind": "function",
     "name": "percent",
     "memberof": "src/utils/units/index.js",
@@ -5342,7 +5379,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{percent}",
     "description": "Return the value with the percent suffix",
-    "lineNumber": 304,
+    "lineNumber": 296,
     "params": [
       {
         "nullable": null,
@@ -5376,7 +5413,7 @@
     "abstract": true
   },
   {
-    "__docId__": 197,
+    "__docId__": 198,
     "kind": "function",
     "name": "calc",
     "memberof": "src/utils/units/index.js",
@@ -5389,7 +5426,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{calc}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 313,
+    "lineNumber": 305,
     "params": [
       {
         "nullable": null,
@@ -5413,7 +5450,7 @@
     "abstract": true
   },
   {
-    "__docId__": 198,
+    "__docId__": 199,
     "kind": "function",
     "name": "attr",
     "memberof": "src/utils/units/index.js",
@@ -5426,7 +5463,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{attr}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 321,
+    "lineNumber": 313,
     "params": [
       {
         "nullable": null,
@@ -5450,7 +5487,7 @@
     "abstract": true
   },
   {
-    "__docId__": 199,
+    "__docId__": 200,
     "kind": "function",
     "name": "clamp",
     "memberof": "src/utils/units/index.js",
@@ -5463,7 +5500,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{clamp}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 329,
+    "lineNumber": 321,
     "params": [
       {
         "nullable": null,
@@ -5487,7 +5524,7 @@
     "abstract": true
   },
   {
-    "__docId__": 200,
+    "__docId__": 201,
     "kind": "function",
     "name": "min",
     "memberof": "src/utils/units/index.js",
@@ -5500,7 +5537,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{min}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 337,
+    "lineNumber": 329,
     "params": [
       {
         "nullable": null,
@@ -5524,7 +5561,7 @@
     "abstract": true
   },
   {
-    "__docId__": 201,
+    "__docId__": 202,
     "kind": "function",
     "name": "max",
     "memberof": "src/utils/units/index.js",
@@ -5537,7 +5574,7 @@
     "importPath": "koutla-swiss/src/utils/units/index.js",
     "importStyle": "{max}",
     "description": "Take all the arguments and return a string with the appropriate syntax",
-    "lineNumber": 345,
+    "lineNumber": 337,
     "params": [
       {
         "nullable": null,
@@ -5570,7 +5607,7 @@
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"koutla-swiss\",\n  \"version\": \"0.7.0\",\n  \"description\": \"A rewrite of Kouto Swiss in pure javascript\",\n  \"keywords\": [\n    \"Stylus\",\n    \"CSS\",\n    \"framework\",\n    \"polyfill\",\n    \"grid\",\n    \"vendors\",\n    \"responsive\",\n    \"reset\",\n    \"utility\"\n  ],\n  \"author\": {\n    \"name\": \"leny\",\n    \"email\": \"info@flatland.be\",\n    \"url\": \"http://leny.me\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git://github.com/leny/koutla-swiss.git\"\n  },\n  \"files\": [\n    \"lib\"\n  ],\n  \"bugs\": {\n    \"url\": \"https://github.com/leny/koutla-swiss/issues\"\n  },\n  \"licenses\": [\n    {\n      \"type\": \"MIT\",\n      \"url\": \"https://github.com/leny/koutla-swiss/blob/master/LICENSE\"\n    }\n  ],\n  \"main\": \"lib/index.js\",\n  \"scripts\": {\n    \"docs\": \"npx rimraf ./docs && npx esdoc\",\n    \"pretest\": \"npm run lint && npm run build\",\n    \"test\": \"npx mocha --require @babel/register\",\n    \"test:coverage\": \"npx nyc mocha --require @babel/register\",\n    \"lint\": \"npx eslint --fix src test\",\n    \"build\": \"npx babel src -d lib\",\n    \"prepublish\": \"npm run build\"\n  },\n  \"devDependencies\": {\n    \"@babel/cli\": \"^7.2.3\",\n    \"@babel/core\": \"^7.3.3\",\n    \"@babel/preset-env\": \"^7.3.1\",\n    \"@babel/register\": \"^7.0.0\",\n    \"assert\": \"^1.4.1\",\n    \"babel-eslint\": \"^10.0.1\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"eslint\": \"^5.15.0\",\n    \"eslint-plugin-prettier\": \"^3.0.1\",\n    \"mocha\": \"^6.0.2\",\n    \"nyc\": \"^13.3.0\",\n    \"prettier\": \"^1.10.2\",\n    \"rimraf\": \"^2.6.3\"\n  },\n  \"dependencies\": {\n    \"css-color-names\": \"^1.0.1\",\n    \"lodash.frompairs\": \"^4.0.1\"\n  }\n}\n",
+    "content": "{\n  \"name\": \"koutla-swiss\",\n  \"version\": \"0.8.2\",\n  \"description\": \"A rewrite of Kouto Swiss in pure javascript\",\n  \"keywords\": [\n    \"Stylus\",\n    \"CSS\",\n    \"framework\",\n    \"polyfill\",\n    \"grid\",\n    \"vendors\",\n    \"responsive\",\n    \"reset\",\n    \"utility\"\n  ],\n  \"author\": {\n    \"name\": \"leny\",\n    \"email\": \"info@flatland.be\",\n    \"url\": \"http://leny.me\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git://github.com/leny/koutla-swiss.git\"\n  },\n  \"files\": [\n    \"lib\"\n  ],\n  \"bugs\": {\n    \"url\": \"https://github.com/leny/koutla-swiss/issues\"\n  },\n  \"licenses\": [\n    {\n      \"type\": \"MIT\",\n      \"url\": \"https://github.com/leny/koutla-swiss/blob/master/LICENSE\"\n    }\n  ],\n  \"main\": \"lib/index.js\",\n  \"scripts\": {\n    \"docs\": \"npx rimraf ./docs && npx esdoc\",\n    \"pretest\": \"npm run lint && npm run build\",\n    \"test\": \"npx mocha --require @babel/register\",\n    \"test:coverage\": \"npx nyc mocha --require @babel/register\",\n    \"lint\": \"npx eslint --fix src test\",\n    \"build\": \"npx rimraf lib && npx babel src -d lib\",\n    \"prepublish\": \"npm run build\"\n  },\n  \"devDependencies\": {\n    \"@babel/cli\": \"^7.2.3\",\n    \"@babel/core\": \"^7.3.3\",\n    \"@babel/preset-env\": \"^7.3.1\",\n    \"@babel/register\": \"^7.0.0\",\n    \"assert\": \"^1.4.1\",\n    \"babel-eslint\": \"^10.0.1\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"eslint\": \"^5.15.0\",\n    \"eslint-plugin-prettier\": \"^3.0.1\",\n    \"mocha\": \"^6.0.2\",\n    \"nyc\": \"^13.3.0\",\n    \"prettier\": \"^1.10.2\",\n    \"rimraf\": \"^2.6.3\"\n  },\n  \"dependencies\": {\n    \"css-color-names\": \"^1.0.1\",\n    \"lodash.frompairs\": \"^4.0.1\"\n  }\n}\n",
     "longname": "/Users/leny/Works/leny/koutla-swiss/package.json",
     "name": "package.json",
     "static": true,

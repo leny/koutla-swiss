@@ -111,6 +111,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-skewX">skewX</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-skewY">skewY</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-transform">transform</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-transformOrigin">transformOrigin</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-translate">translate</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-translate3d">translate3d</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-translateX">translateX</a></span></span></li>
@@ -224,7 +225,8 @@ export const repeatingRadialGradient = (...args) =&gt;
  * @param {...string} args
  * @return {string} `&quot;conic-gradient(arg1, arg2, arg...)&quot;`
  */
-export const conicGradient = (...args)=&gt;selfFunction(&quot;conic-gradient&quot;)(...args);
+export const conicGradient = (...args) =&gt;
+    selfFunction(&quot;conic-gradient&quot;)(...args);
 
 /**
  * Take the argument and return a string with the appropriate syntax
@@ -232,7 +234,13 @@ export const conicGradient = (...args)=&gt;selfFunction(&quot;conic-gradient&quo
  * @param {string} arg URL
  * @return {string} `&quot;url(arg)&quot;`
  */
-export const url = arg =&gt; selfFunction(&quot;url&quot;, &quot;&quot;, 1, 1, true)(arg);
+export const url = arg =&gt; {
+    if (!arg) {
+        throw new TypeError(`Wrong numbers of arguments in url()`);
+    }
+
+    return `url(&quot;${arg}&quot;)`;
+};
 </code></pre>
 
 </div>

@@ -111,6 +111,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-skewX">skewX</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-skewY">skewY</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-transform">transform</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-transformOrigin">transformOrigin</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-translate">translate</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-translate3d">translate3d</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-translateX">translateX</a></span></span></li>
@@ -185,8 +186,8 @@ const checkZero = value =&gt; {
     return value === 0 ? &quot;0&quot; : false;
 };
 
-const unit = unit =&gt; (value = 0) =&gt;
-    checkNumber(value) &amp;&amp; (checkZero(value) || `${value}${unit}`);
+const unit = suffix =&gt; (value = 0) =&gt;
+    checkNumber(value) &amp;&amp; (checkZero(value) || `${value}${suffix}`);
 
 /**
  * Return the value with the rem suffix
@@ -194,7 +195,7 @@ const unit = unit =&gt; (value = 0) =&gt;
  * @param {number} value
  * @return {string} `&quot;[value]rem&quot;`
  */
-export const rem = value=&gt;unit(&quot;rem&quot;)(value);
+export const rem = value =&gt; unit(&quot;rem&quot;)(value);
 
 /**
  * Return the value with the em suffix
@@ -202,7 +203,7 @@ export const rem = value=&gt;unit(&quot;rem&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]em&quot;`
  */
-export const em = value=&gt;unit(&quot;em&quot;)(value);
+export const em = value =&gt; unit(&quot;em&quot;)(value);
 
 /**
  * Return the value with the ex suffix
@@ -210,7 +211,7 @@ export const em = value=&gt;unit(&quot;em&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]ex&quot;`
  */
-export const ex = value=&gt;unit(&quot;ex&quot;)(value);
+export const ex = value =&gt; unit(&quot;ex&quot;)(value);
 
 /**
  * Return the value with the cap suffix
@@ -218,7 +219,7 @@ export const ex = value=&gt;unit(&quot;ex&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]cap&quot;`
  */
-export const cap = value=&gt;unit(&quot;cap&quot;)(value);
+export const cap = value =&gt; unit(&quot;cap&quot;)(value);
 
 /**
  * Return the value with the ic suffix
@@ -226,7 +227,7 @@ export const cap = value=&gt;unit(&quot;cap&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]ic&quot;`
  */
-export const ic = value=&gt;unit(&quot;ic&quot;)(value);
+export const ic = value =&gt; unit(&quot;ic&quot;)(value);
 
 /**
  * Return the value with the lh suffix
@@ -234,7 +235,7 @@ export const ic = value=&gt;unit(&quot;ic&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]lh&quot;`
  */
-export const lh = value=&gt;unit(&quot;lh&quot;)(value);
+export const lh = value =&gt; unit(&quot;lh&quot;)(value);
 
 /**
  * Return the value with the rlh suffix
@@ -242,7 +243,7 @@ export const lh = value=&gt;unit(&quot;lh&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]rlh&quot;`
  */
-export const rlh = value=&gt;unit(&quot;rlh&quot;)(value);
+export const rlh = value =&gt; unit(&quot;rlh&quot;)(value);
 
 /**
  * Return the value with the ch suffix
@@ -250,8 +251,7 @@ export const rlh = value=&gt;unit(&quot;rlh&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]ch&quot;`
  */
-export const ch = value=&gt;unit(&quot;ch&quot;)(value);
-
+export const ch = value =&gt; unit(&quot;ch&quot;)(value);
 
 /**
  * Return the value with the vw suffix
@@ -259,7 +259,7 @@ export const ch = value=&gt;unit(&quot;ch&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]vw&quot;`
  */
-export const vw = value=&gt;unit(&quot;vw&quot;)(value);
+export const vw = value =&gt; unit(&quot;vw&quot;)(value);
 
 /**
  * Return the value with the vh suffix
@@ -267,7 +267,7 @@ export const vw = value=&gt;unit(&quot;vw&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]vh&quot;`
  */
-export const vh = value=&gt;unit(&quot;vh&quot;)(value);
+export const vh = value =&gt; unit(&quot;vh&quot;)(value);
 
 /**
  * Return the value with the vi suffix
@@ -275,7 +275,7 @@ export const vh = value=&gt;unit(&quot;vh&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]vi&quot;`
  */
-export const vi = value=&gt;unit(&quot;vi&quot;)(value);
+export const vi = value =&gt; unit(&quot;vi&quot;)(value);
 
 /**
  * Return the value with the vb suffix
@@ -283,7 +283,7 @@ export const vi = value=&gt;unit(&quot;vi&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]vb&quot;`
  */
-export const vb = value=&gt;unit(&quot;vb&quot;)(value);
+export const vb = value =&gt; unit(&quot;vb&quot;)(value);
 
 /**
  * Return the value with the vmin suffix
@@ -291,7 +291,7 @@ export const vb = value=&gt;unit(&quot;vb&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]vmin&quot;`
  */
-export const vmin = value=&gt;unit(&quot;vmin&quot;)(value);
+export const vmin = value =&gt; unit(&quot;vmin&quot;)(value);
 
 /**
  * Return the value with the vmax suffix
@@ -299,8 +299,7 @@ export const vmin = value=&gt;unit(&quot;vmin&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]vmax&quot;`
  */
-export const vmax = value=&gt;unit(&quot;vmax&quot;)(value);
-
+export const vmax = value =&gt; unit(&quot;vmax&quot;)(value);
 
 /**
  * Return the value with the cm suffix
@@ -308,7 +307,7 @@ export const vmax = value=&gt;unit(&quot;vmax&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]cm&quot;`
  */
-export const cm = value=&gt;unit(&quot;cm&quot;)(value);
+export const cm = value =&gt; unit(&quot;cm&quot;)(value);
 
 /**
  * Return the value with the mm suffix
@@ -316,7 +315,7 @@ export const cm = value=&gt;unit(&quot;cm&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]mm&quot;`
  */
-export const mm = value=&gt;unit(&quot;mm&quot;)(value);
+export const mm = value =&gt; unit(&quot;mm&quot;)(value);
 
 /**
  * Return the value with the Q suffix
@@ -324,7 +323,7 @@ export const mm = value=&gt;unit(&quot;mm&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]Q&quot;`
  */
-export const Q = value=&gt;unit(&quot;Q&quot;)(value);
+export const Q = value =&gt; unit(&quot;Q&quot;)(value);
 
 /**
  * Return the value with the in suffix
@@ -332,7 +331,7 @@ export const Q = value=&gt;unit(&quot;Q&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]in&quot;`
  */
-export const inch = value=&gt;unit(&quot;in&quot;)(value);
+export const inch = value =&gt; unit(&quot;in&quot;)(value);
 
 /**
  * Return the value with the pc suffix
@@ -340,7 +339,7 @@ export const inch = value=&gt;unit(&quot;in&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]pc&quot;`
  */
-export const pc = value=&gt;unit(&quot;pc&quot;)(value);
+export const pc = value =&gt; unit(&quot;pc&quot;)(value);
 
 /**
  * Return the value with the pt suffix
@@ -348,8 +347,7 @@ export const pc = value=&gt;unit(&quot;pc&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]pt&quot;`
  */
-export const pt = value=&gt;unit(&quot;pt&quot;)(value);
-
+export const pt = value =&gt; unit(&quot;pt&quot;)(value);
 
 /**
  * Return the value with the deg suffix
@@ -357,7 +355,7 @@ export const pt = value=&gt;unit(&quot;pt&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]deg&quot;`
  */
-export const deg = value=&gt;unit(&quot;deg&quot;)(value);
+export const deg = value =&gt; unit(&quot;deg&quot;)(value);
 
 /**
  * Return the value with the grad suffix
@@ -365,7 +363,7 @@ export const deg = value=&gt;unit(&quot;deg&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]grad&quot;`
  */
-export const grad = value=&gt;unit(&quot;grad&quot;)(value);
+export const grad = value =&gt; unit(&quot;grad&quot;)(value);
 
 /**
  * Return the value with the rad suffix
@@ -373,7 +371,7 @@ export const grad = value=&gt;unit(&quot;grad&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]rad&quot;`
  */
-export const rad = value=&gt;unit(&quot;rad&quot;)(value);
+export const rad = value =&gt; unit(&quot;rad&quot;)(value);
 
 /**
  * Return the value with the turn suffix
@@ -381,8 +379,7 @@ export const rad = value=&gt;unit(&quot;rad&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]turn&quot;`
  */
-export const turn = value=&gt;unit(&quot;turn&quot;)(value);
-
+export const turn = value =&gt; unit(&quot;turn&quot;)(value);
 
 /**
  * Return the value with the s suffix
@@ -390,7 +387,7 @@ export const turn = value=&gt;unit(&quot;turn&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]s&quot;`
  */
-export const s = value=&gt;unit(&quot;s&quot;)(value);
+export const s = value =&gt; unit(&quot;s&quot;)(value);
 
 /**
  * Return the value with the ms suffix
@@ -398,8 +395,7 @@ export const s = value=&gt;unit(&quot;s&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]ms&quot;`
  */
-export const ms = value=&gt;unit(&quot;ms&quot;)(value);
-
+export const ms = value =&gt; unit(&quot;ms&quot;)(value);
 
 /**
  * Return the value with the Hz suffix
@@ -407,7 +403,7 @@ export const ms = value=&gt;unit(&quot;ms&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]Hz&quot;`
  */
-export const Hz = value=&gt;unit(&quot;Hz&quot;)(value);
+export const Hz = value =&gt; unit(&quot;Hz&quot;)(value);
 
 /**
  * Return the value with the kHz suffix
@@ -415,8 +411,7 @@ export const Hz = value=&gt;unit(&quot;Hz&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]kHz&quot;`
  */
-export const kHz = value=&gt;unit(&quot;kHz&quot;)(value);
-
+export const kHz = value =&gt; unit(&quot;kHz&quot;)(value);
 
 /**
  * Return the value with the dpi suffix
@@ -424,7 +419,7 @@ export const kHz = value=&gt;unit(&quot;kHz&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]dpi&quot;`
  */
-export const dpi = value=&gt;unit(&quot;dpi&quot;)(value);
+export const dpi = value =&gt; unit(&quot;dpi&quot;)(value);
 
 /**
  * Return the value with the dpcm suffix
@@ -432,7 +427,7 @@ export const dpi = value=&gt;unit(&quot;dpi&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]dpcm&quot;`
  */
-export const dpcm = value=&gt;unit(&quot;dpcm&quot;)(value);
+export const dpcm = value =&gt; unit(&quot;dpcm&quot;)(value);
 
 /**
  * Return the value with the dppx suffix
@@ -440,8 +435,7 @@ export const dpcm = value=&gt;unit(&quot;dpcm&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]dppx&quot;`
  */
-export const dppx = value=&gt;unit(&quot;dppx&quot;)(value);
-
+export const dppx = value =&gt; unit(&quot;dppx&quot;)(value);
 
 /**
  * Return the value with the px suffix
@@ -449,8 +443,7 @@ export const dppx = value=&gt;unit(&quot;dppx&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]px&quot;`
  */
-export const px = value=&gt;unit(&quot;px&quot;)(value);
-
+export const px = value =&gt; unit(&quot;px&quot;)(value);
 
 /**
  * Return the value with the fr suffix
@@ -458,7 +451,7 @@ export const px = value=&gt;unit(&quot;px&quot;)(value);
  * @param {number} value
  * @return {string} `&quot;[value]fr&quot;`
  */
-export const fr = value=&gt;unit(&quot;fr&quot;)(value);
+export const fr = value =&gt; unit(&quot;fr&quot;)(value);
 
 /**
  * Return the value with the percent suffix
@@ -476,7 +469,7 @@ export const percent = (value = 0, withDecimal) =&gt;
  * @param {...string} args
  * @return {string} `&quot;calc(arg1, arg2, arg...)&quot;`
  */
-export const calc = (...args)=&gt;selfFunction(&quot;calc&quot;, &quot; &quot;)(...args)
+export const calc = (...args) =&gt; selfFunction(&quot;calc&quot;, &quot; &quot;)(...args);
 
 /**
  * Take all the arguments and return a string with the appropriate syntax
@@ -484,7 +477,7 @@ export const calc = (...args)=&gt;selfFunction(&quot;calc&quot;, &quot; &quot;)(
  * @param {...string} args
  * @return {string} `&quot;attr(arg1, arg2, arg...)&quot;`
  */
-export const attr = (...args)=&gt;selfFunction(&quot;attr&quot;)(...args)
+export const attr = (...args) =&gt; selfFunction(&quot;attr&quot;)(...args);
 
 /**
  * Take all the arguments and return a string with the appropriate syntax
@@ -492,7 +485,7 @@ export const attr = (...args)=&gt;selfFunction(&quot;attr&quot;)(...args)
  * @param {...string} args
  * @return {string} `&quot;clamp(arg1, arg2, arg...)&quot;`
  */
-export const clamp = (...args)=&gt;selfFunction(&quot;clamp&quot;, &quot;, &quot;, 3, 3)(...args);
+export const clamp = (...args) =&gt; selfFunction(&quot;clamp&quot;, &quot;, &quot;, 3, 3)(...args);
 
 /**
  * Take all the arguments and return a string with the appropriate syntax
@@ -500,7 +493,7 @@ export const clamp = (...args)=&gt;selfFunction(&quot;clamp&quot;, &quot;, &quot
  * @param {...string} args
  * @return {string} `&quot;min(arg1, arg2, arg...)&quot;`
  */
-export const min = (...args)=&gt;selfFunction(&quot;min&quot;, &quot;, &quot;, 2)(...args);
+export const min = (...args) =&gt; selfFunction(&quot;min&quot;, &quot;, &quot;, 2)(...args);
 
 /**
  * Take all the arguments and return a string with the appropriate syntax
@@ -508,7 +501,7 @@ export const min = (...args)=&gt;selfFunction(&quot;min&quot;, &quot;, &quot;, 2
  * @param {...string} args
  * @return {string} `&quot;max(arg1, arg2, arg...)&quot;`
  */
-export const max = (...args)=&gt;selfFunction(&quot;max&quot;, &quot;, &quot;, 2)(...args);
+export const max = (...args) =&gt; selfFunction(&quot;max&quot;, &quot;, &quot;, 2)(...args);
 </code></pre>
 
 </div>

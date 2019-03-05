@@ -111,6 +111,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-skewX">skewX</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-skewY">skewY</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-transform">transform</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-transformOrigin">transformOrigin</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-translate">translate</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-translate3d">translate3d</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-translateX">translateX</a></span></span></li>
@@ -183,8 +184,8 @@ const _size = (width, height, prefix = &quot;&quot;) =&gt; ({
 /**
  * Mixin to for sizing (width/height)
  * @abstract
- * @param {string|number} width 
- * @param {string|number} height - if missing, the value of width will be used 
+ * @param {string|number} width
+ * @param {string|number} height - if missing, the value of width will be used
  * @return {object} `{width: &quot;...&quot;, height: &quot;...&quot;}`
  */
 export const size = (width = 0, height = width) =&gt; _size(width, height);
@@ -192,8 +193,8 @@ export const size = (width = 0, height = width) =&gt; _size(width, height);
 /**
  * Mixin to for minimal sizing (min-width/min-height)
  * @abstract
- * @param {string|number} width 
- * @param {string|number} height - if missing, the value of width will be used 
+ * @param {string|number} width
+ * @param {string|number} height - if missing, the value of width will be used
  * @return {object} `{minWidth: &quot;...&quot;, minHeight: &quot;...&quot;}`
  */
 export const minSize = (width = 0, height = width) =&gt;
@@ -202,8 +203,8 @@ export const minSize = (width = 0, height = width) =&gt;
 /**
  * Mixin to for maximal sizing (max-width/max-height)
  * @abstract
- * @param {string|number} width 
- * @param {string|number} height - if missing, the value of width will be used 
+ * @param {string|number} width
+ * @param {string|number} height - if missing, the value of width will be used
  * @return {object} `{maxWidth: &quot;...&quot;, maxHeight: &quot;...&quot;}`
  */
 export const maxSize = (width = 0, height = width) =&gt;
