@@ -41,7 +41,7 @@
     "test": "npx mocha --require @babel/register",
     "test:coverage": "npx nyc mocha --require @babel/register",
     "lint": "npx eslint --fix src test",
-    "build": "npx babel src -d lib",
+    "build": "npx rimraf lib && npx babel src -d lib",
     "prepublish": "npm run build"
   },
   "devDependencies": {
