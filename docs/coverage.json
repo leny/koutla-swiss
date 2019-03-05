@@ -1,69 +1,36 @@
 {
-  "coverage": "0%",
-  "expectCount": 130,
-  "actualCount": 0,
+  "coverage": "75.71%",
+  "expectCount": 140,
+  "actualCount": 106,
   "files": {
     "src/commons/utils.js": {
       "expectCount": 2,
-      "actualCount": 0,
-      "undocumentLines": [
-        9,
-        13
-      ]
+      "actualCount": 2,
+      "undocumentLines": []
     },
-    "src/mixins/background.js": {
+    "src/mixins/background/index.js": {
       "expectCount": 7,
-      "actualCount": 0,
-      "undocumentLines": [
-        11,
-        13,
-        14,
-        15,
-        18,
-        21,
-        23
-      ]
+      "actualCount": 7,
+      "undocumentLines": []
     },
-    "src/mixins/borders.js": {
+    "src/mixins/borders/index.js": {
       "expectCount": 6,
-      "actualCount": 0,
-      "undocumentLines": [
-        11,
-        13,
-        14,
-        15,
-        16,
-        18
-      ]
+      "actualCount": 6,
+      "undocumentLines": []
     },
-    "src/mixins/box-model.js": {
+    "src/mixins/box-model/index.js": {
       "expectCount": 2,
-      "actualCount": 0,
-      "undocumentLines": [
-        11,
-        13
-      ]
+      "actualCount": 2,
+      "undocumentLines": []
     },
-    "src/mixins/filter.js": {
+    "src/mixins/filter/index.js": {
       "expectCount": 11,
-      "actualCount": 0,
-      "undocumentLines": [
-        11,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
-        21,
-        22,
-        23
-      ]
+      "actualCount": 11,
+      "undocumentLines": []
     },
-    "src/mixins/flex.js": {
+    "src/mixins/flex/index.js": {
       "expectCount": 26,
-      "actualCount": 0,
+      "actualCount": 4,
       "undocumentLines": [
         11,
         12,
@@ -86,123 +53,57 @@
         31,
         32,
         33,
-        34,
-        36,
-        49,
-        50,
-        53
-      ]
-    },
-    "src/mixins/size.js": {
-      "expectCount": 4,
-      "actualCount": 0,
-      "undocumentLines": [
-        9,
-        14,
-        16,
-        19
-      ]
-    },
-    "src/mixins/transform.js": {
-      "expectCount": 22,
-      "actualCount": 0,
-      "undocumentLines": [
-        11,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
-        21,
-        22,
-        23,
-        24,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        33,
         34
       ]
     },
-    "src/utils/colors.js": {
+    "src/mixins/position/index.js": {
+      "expectCount": 10,
+      "actualCount": 5,
+      "undocumentLines": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    "src/mixins/size/index.js": {
+      "expectCount": 4,
+      "actualCount": 4,
+      "undocumentLines": []
+    },
+    "src/mixins/transform/index.js": {
+      "expectCount": 22,
+      "actualCount": 22,
+      "undocumentLines": []
+    },
+    "src/utils/colors/index.js": {
       "expectCount": 6,
-      "actualCount": 0,
+      "actualCount": 2,
       "undocumentLines": [
         11,
         13,
         19,
-        25,
-        46,
-        60
+        25
       ]
     },
-    "src/utils/important.js": {
+    "src/utils/important/index.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        11
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
-    "src/utils/media.js": {
+    "src/utils/media/index.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        9
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
-    "src/utils/units.js": {
+    "src/utils/units/index.js": {
       "expectCount": 42,
-      "actualCount": 0,
+      "actualCount": 39,
       "undocumentLines": [
         11,
         18,
-        22,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        34,
-        35,
-        36,
-        37,
-        38,
-        39,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46,
-        48,
-        49,
-        50,
-        51,
-        53,
-        54,
-        56,
-        57,
-        59,
-        60,
-        61,
-        63,
-        65,
-        67,
-        70,
-        71,
-        72,
-        73,
-        74
+        22
       ]
     }
   }

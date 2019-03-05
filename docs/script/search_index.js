@@ -1,735 +1,783 @@
 window.esdocSearchIndex = [
   [
-    "koutla-swiss/src/mixins/flex.js~flex_align_baseline",
+    "koutla-swiss/src/mixins/flex/index.js~flex_align_baseline",
     "variable/index.html#static-variable-FLEX_ALIGN_BASELINE",
-    "<span>FLEX_ALIGN_BASELINE</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>FLEX_ALIGN_BASELINE</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flex_align_center",
+    "koutla-swiss/src/mixins/flex/index.js~flex_align_center",
     "variable/index.html#static-variable-FLEX_ALIGN_CENTER",
-    "<span>FLEX_ALIGN_CENTER</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>FLEX_ALIGN_CENTER</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flex_align_end",
+    "koutla-swiss/src/mixins/flex/index.js~flex_align_end",
     "variable/index.html#static-variable-FLEX_ALIGN_END",
-    "<span>FLEX_ALIGN_END</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>FLEX_ALIGN_END</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flex_align_flex_end",
+    "koutla-swiss/src/mixins/flex/index.js~flex_align_flex_end",
     "variable/index.html#static-variable-FLEX_ALIGN_FLEX_END",
-    "<span>FLEX_ALIGN_FLEX_END</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>FLEX_ALIGN_FLEX_END</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flex_align_flex_start",
+    "koutla-swiss/src/mixins/flex/index.js~flex_align_flex_start",
     "variable/index.html#static-variable-FLEX_ALIGN_FLEX_START",
-    "<span>FLEX_ALIGN_FLEX_START</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>FLEX_ALIGN_FLEX_START</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flex_align_left",
+    "koutla-swiss/src/mixins/flex/index.js~flex_align_left",
     "variable/index.html#static-variable-FLEX_ALIGN_LEFT",
-    "<span>FLEX_ALIGN_LEFT</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>FLEX_ALIGN_LEFT</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flex_align_normal",
+    "koutla-swiss/src/mixins/flex/index.js~flex_align_normal",
     "variable/index.html#static-variable-FLEX_ALIGN_NORMAL",
-    "<span>FLEX_ALIGN_NORMAL</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>FLEX_ALIGN_NORMAL</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flex_align_right",
+    "koutla-swiss/src/mixins/flex/index.js~flex_align_right",
     "variable/index.html#static-variable-FLEX_ALIGN_RIGHT",
-    "<span>FLEX_ALIGN_RIGHT</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>FLEX_ALIGN_RIGHT</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flex_align_self_end",
+    "koutla-swiss/src/mixins/flex/index.js~flex_align_self_end",
     "variable/index.html#static-variable-FLEX_ALIGN_SELF_END",
-    "<span>FLEX_ALIGN_SELF_END</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>FLEX_ALIGN_SELF_END</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flex_align_self_start",
+    "koutla-swiss/src/mixins/flex/index.js~flex_align_self_start",
     "variable/index.html#static-variable-FLEX_ALIGN_SELF_START",
-    "<span>FLEX_ALIGN_SELF_START</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>FLEX_ALIGN_SELF_START</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flex_align_space_around",
+    "koutla-swiss/src/mixins/flex/index.js~flex_align_space_around",
     "variable/index.html#static-variable-FLEX_ALIGN_SPACE_AROUND",
-    "<span>FLEX_ALIGN_SPACE_AROUND</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>FLEX_ALIGN_SPACE_AROUND</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flex_align_space_between",
+    "koutla-swiss/src/mixins/flex/index.js~flex_align_space_between",
     "variable/index.html#static-variable-FLEX_ALIGN_SPACE_BETWEEN",
-    "<span>FLEX_ALIGN_SPACE_BETWEEN</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>FLEX_ALIGN_SPACE_BETWEEN</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flex_align_space_evenly",
+    "koutla-swiss/src/mixins/flex/index.js~flex_align_space_evenly",
     "variable/index.html#static-variable-FLEX_ALIGN_SPACE_EVENLY",
-    "<span>FLEX_ALIGN_SPACE_EVENLY</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>FLEX_ALIGN_SPACE_EVENLY</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flex_align_start",
+    "koutla-swiss/src/mixins/flex/index.js~flex_align_start",
     "variable/index.html#static-variable-FLEX_ALIGN_START",
-    "<span>FLEX_ALIGN_START</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>FLEX_ALIGN_START</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flex_align_stretch",
+    "koutla-swiss/src/mixins/flex/index.js~flex_align_stretch",
     "variable/index.html#static-variable-FLEX_ALIGN_STRETCH",
-    "<span>FLEX_ALIGN_STRETCH</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>FLEX_ALIGN_STRETCH</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flex_direction_column",
+    "koutla-swiss/src/mixins/flex/index.js~flex_direction_column",
     "variable/index.html#static-variable-FLEX_DIRECTION_COLUMN",
-    "<span>FLEX_DIRECTION_COLUMN</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>FLEX_DIRECTION_COLUMN</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flex_direction_column_revers",
+    "koutla-swiss/src/mixins/flex/index.js~flex_direction_column_revers",
     "variable/index.html#static-variable-FLEX_DIRECTION_COLUMN_REVERS",
-    "<span>FLEX_DIRECTION_COLUMN_REVERS</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>FLEX_DIRECTION_COLUMN_REVERS</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flex_direction_row",
+    "koutla-swiss/src/mixins/flex/index.js~flex_direction_row",
     "variable/index.html#static-variable-FLEX_DIRECTION_ROW",
-    "<span>FLEX_DIRECTION_ROW</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>FLEX_DIRECTION_ROW</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flex_direction_row_reverse",
+    "koutla-swiss/src/mixins/flex/index.js~flex_direction_row_reverse",
     "variable/index.html#static-variable-FLEX_DIRECTION_ROW_REVERSE",
-    "<span>FLEX_DIRECTION_ROW_REVERSE</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>FLEX_DIRECTION_ROW_REVERSE</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flex_nowrap",
+    "koutla-swiss/src/mixins/flex/index.js~flex_nowrap",
     "variable/index.html#static-variable-FLEX_NOWRAP",
-    "<span>FLEX_NOWRAP</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>FLEX_NOWRAP</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flex_wrap",
+    "koutla-swiss/src/mixins/flex/index.js~flex_wrap",
     "variable/index.html#static-variable-FLEX_WRAP",
-    "<span>FLEX_WRAP</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>FLEX_WRAP</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flex_wrap_reverse",
+    "koutla-swiss/src/mixins/flex/index.js~flex_wrap_reverse",
     "variable/index.html#static-variable-FLEX_WRAP_REVERSE",
-    "<span>FLEX_WRAP_REVERSE</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>FLEX_WRAP_REVERSE</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/utils/units.js~hz",
-    "variable/index.html#static-variable-Hz",
-    "<span>Hz</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/utils/units.js~q",
-    "variable/index.html#static-variable-Q",
-    "<span>Q</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/utils/units.js~attr",
-    "variable/index.html#static-variable-attr",
-    "<span>attr</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/mixins/background.js~background",
-    "variable/index.html#static-variable-background",
-    "<span>background</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/background.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/mixins/filter.js~blur",
-    "variable/index.html#static-variable-blur",
-    "<span>blur</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/filter.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/mixins/borders.js~border",
-    "variable/index.html#static-variable-border",
-    "<span>border</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/borders.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/mixins/borders.js~borderbottom",
-    "variable/index.html#static-variable-borderBottom",
-    "<span>borderBottom</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/borders.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/mixins/borders.js~borderleft",
-    "variable/index.html#static-variable-borderLeft",
-    "<span>borderLeft</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/borders.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/mixins/borders.js~borderradius",
-    "variable/index.html#static-variable-borderRadius",
-    "<span>borderRadius</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/borders.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/mixins/borders.js~borderright",
-    "variable/index.html#static-variable-borderRight",
-    "<span>borderRight</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/borders.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/mixins/borders.js~bordertop",
-    "variable/index.html#static-variable-borderTop",
-    "<span>borderTop</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/borders.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/mixins/filter.js~brightness",
-    "variable/index.html#static-variable-brightness",
-    "<span>brightness</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/filter.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/utils/units.js~calc",
-    "variable/index.html#static-variable-calc",
-    "<span>calc</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/utils/units.js~cap",
-    "variable/index.html#static-variable-cap",
-    "<span>cap</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/utils/units.js~ch",
-    "variable/index.html#static-variable-ch",
-    "<span>ch</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/utils/units.js~clamp",
-    "variable/index.html#static-variable-clamp",
-    "<span>clamp</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/utils/units.js~cm",
-    "variable/index.html#static-variable-cm",
-    "<span>cm</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/commons/utils.js~concatprop",
-    "function/index.html#static-function-concatProp",
-    "<span>concatProp</span> <span class=\"search-result-import-path\">koutla-swiss/src/commons/utils.js</span>",
+    "koutla-swiss/src/utils/units/index.js~hz",
+    "function/index.html#static-function-Hz",
+    "<span>Hz</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
     "function"
   ],
   [
-    "koutla-swiss/src/mixins/background.js~conicgradient",
-    "variable/index.html#static-variable-conicGradient",
-    "<span>conicGradient</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/background.js</span>",
+    "koutla-swiss/src/mixins/position/index.js~position_absolute",
+    "variable/index.html#static-variable-POSITION_ABSOLUTE",
+    "<span>POSITION_ABSOLUTE</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/position/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/mixins/filter.js~contrast",
-    "variable/index.html#static-variable-contrast",
-    "<span>contrast</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/filter.js</span>",
+    "koutla-swiss/src/mixins/position/index.js~position_fixed",
+    "variable/index.html#static-variable-POSITION_FIXED",
+    "<span>POSITION_FIXED</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/position/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/utils/units.js~deg",
-    "variable/index.html#static-variable-deg",
-    "<span>deg</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
+    "koutla-swiss/src/mixins/position/index.js~position_relative",
+    "variable/index.html#static-variable-POSITION_RELATIVE",
+    "<span>POSITION_RELATIVE</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/position/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/utils/units.js~dpcm",
-    "variable/index.html#static-variable-dpcm",
-    "<span>dpcm</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
+    "koutla-swiss/src/mixins/position/index.js~position_static",
+    "variable/index.html#static-variable-POSITION_STATIC",
+    "<span>POSITION_STATIC</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/position/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/utils/units.js~dpi",
-    "variable/index.html#static-variable-dpi",
-    "<span>dpi</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
+    "koutla-swiss/src/mixins/position/index.js~position_sticky",
+    "variable/index.html#static-variable-POSITION_STICKY",
+    "<span>POSITION_STICKY</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/position/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/utils/units.js~dppx",
-    "variable/index.html#static-variable-dppx",
-    "<span>dppx</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~q",
+    "function/index.html#static-function-Q",
+    "<span>Q</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/filter.js~dropshadow",
-    "variable/index.html#static-variable-dropShadow",
-    "<span>dropShadow</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/filter.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/position/index.js~absolute",
+    "function/index.html#static-function-absolute",
+    "<span>absolute</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/position/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~em",
-    "variable/index.html#static-variable-em",
-    "<span>em</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~attr",
+    "function/index.html#static-function-attr",
+    "<span>attr</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~ex",
-    "variable/index.html#static-variable-ex",
-    "<span>ex</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/background/index.js~background",
+    "function/index.html#static-function-background",
+    "<span>background</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/background/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/filter.js~filter",
+    "koutla-swiss/src/mixins/filter/index.js~blur",
+    "function/index.html#static-function-blur",
+    "<span>blur</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/filter/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/borders/index.js~border",
+    "function/index.html#static-function-border",
+    "<span>border</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/borders/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/borders/index.js~borderbottom",
+    "function/index.html#static-function-borderBottom",
+    "<span>borderBottom</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/borders/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/borders/index.js~borderleft",
+    "function/index.html#static-function-borderLeft",
+    "<span>borderLeft</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/borders/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/borders/index.js~borderradius",
+    "function/index.html#static-function-borderRadius",
+    "<span>borderRadius</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/borders/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/borders/index.js~borderright",
+    "function/index.html#static-function-borderRight",
+    "<span>borderRight</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/borders/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/borders/index.js~bordertop",
+    "function/index.html#static-function-borderTop",
+    "<span>borderTop</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/borders/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/filter/index.js~brightness",
+    "function/index.html#static-function-brightness",
+    "<span>brightness</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/filter/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/utils/units/index.js~calc",
+    "function/index.html#static-function-calc",
+    "<span>calc</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/utils/units/index.js~cap",
+    "function/index.html#static-function-cap",
+    "<span>cap</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/utils/units/index.js~ch",
+    "function/index.html#static-function-ch",
+    "<span>ch</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/utils/units/index.js~clamp",
+    "function/index.html#static-function-clamp",
+    "<span>clamp</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/utils/units/index.js~cm",
+    "function/index.html#static-function-cm",
+    "<span>cm</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/background/index.js~conicgradient",
+    "function/index.html#static-function-conicGradient",
+    "<span>conicGradient</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/background/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/filter/index.js~contrast",
+    "function/index.html#static-function-contrast",
+    "<span>contrast</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/filter/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/utils/units/index.js~deg",
+    "function/index.html#static-function-deg",
+    "<span>deg</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/utils/units/index.js~dpcm",
+    "function/index.html#static-function-dpcm",
+    "<span>dpcm</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/utils/units/index.js~dpi",
+    "function/index.html#static-function-dpi",
+    "<span>dpi</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/utils/units/index.js~dppx",
+    "function/index.html#static-function-dppx",
+    "<span>dppx</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/filter/index.js~dropshadow",
+    "function/index.html#static-function-dropShadow",
+    "<span>dropShadow</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/filter/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/utils/units/index.js~em",
+    "function/index.html#static-function-em",
+    "<span>em</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/utils/units/index.js~ex",
+    "function/index.html#static-function-ex",
+    "<span>ex</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/filter/index.js~filter",
     "function/index.html#static-function-filter",
-    "<span>filter</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/filter.js</span>",
+    "<span>filter</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/filter/index.js</span>",
     "function"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flex",
+    "koutla-swiss/src/mixins/position/index.js~fixed",
+    "function/index.html#static-function-fixed",
+    "<span>fixed</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/position/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/flex/index.js~flex",
     "variable/index.html#static-variable-flex",
-    "<span>flex</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>flex</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "variable"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flexbox",
+    "koutla-swiss/src/mixins/flex/index.js~flexbox",
     "function/index.html#static-function-flexbox",
-    "<span>flexbox</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>flexbox</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "function"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flexcolumn",
+    "koutla-swiss/src/mixins/flex/index.js~flexcolumn",
     "function/index.html#static-function-flexcolumn",
-    "<span>flexcolumn</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>flexcolumn</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "function"
   ],
   [
-    "koutla-swiss/src/mixins/flex.js~flexrow",
+    "koutla-swiss/src/mixins/flex/index.js~flexrow",
     "function/index.html#static-function-flexrow",
-    "<span>flexrow</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex.js</span>",
+    "<span>flexrow</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/flex/index.js</span>",
     "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~fr",
-    "variable/index.html#static-variable-fr",
-    "<span>fr</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~fr",
+    "function/index.html#static-function-fr",
+    "<span>fr</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~grad",
-    "variable/index.html#static-variable-grad",
-    "<span>grad</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~grad",
+    "function/index.html#static-function-grad",
+    "<span>grad</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/filter.js~grayscale",
-    "variable/index.html#static-variable-grayscale",
-    "<span>grayscale</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/filter.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/filter/index.js~grayscale",
+    "function/index.html#static-function-grayscale",
+    "<span>grayscale</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/filter/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/filter.js~huerotate",
-    "variable/index.html#static-variable-hueRotate",
-    "<span>hueRotate</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/filter.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/filter/index.js~huerotate",
+    "function/index.html#static-function-hueRotate",
+    "<span>hueRotate</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/filter/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~ic",
-    "variable/index.html#static-variable-ic",
-    "<span>ic</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~ic",
+    "function/index.html#static-function-ic",
+    "<span>ic</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/utils/important.js~important",
+    "koutla-swiss/src/utils/important/index.js~important",
     "function/index.html#static-function-important",
-    "<span>important</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/important.js</span>",
+    "<span>important</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/important/index.js</span>",
     "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~inch",
-    "variable/index.html#static-variable-inch",
-    "<span>inch</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~inch",
+    "function/index.html#static-function-inch",
+    "<span>inch</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/filter.js~invert",
-    "variable/index.html#static-variable-invert",
-    "<span>invert</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/filter.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/filter/index.js~invert",
+    "function/index.html#static-function-invert",
+    "<span>invert</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/filter/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~khz",
-    "variable/index.html#static-variable-kHz",
-    "<span>kHz</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~khz",
+    "function/index.html#static-function-kHz",
+    "<span>kHz</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~lh",
-    "variable/index.html#static-variable-lh",
-    "<span>lh</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~lh",
+    "function/index.html#static-function-lh",
+    "<span>lh</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/background.js~lineargradient",
-    "variable/index.html#static-variable-linearGradient",
-    "<span>linearGradient</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/background.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/background/index.js~lineargradient",
+    "function/index.html#static-function-linearGradient",
+    "<span>linearGradient</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/background/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/box-model.js~margin",
-    "variable/index.html#static-variable-margin",
-    "<span>margin</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/box-model.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/box-model/index.js~margin",
+    "function/index.html#static-function-margin",
+    "<span>margin</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/box-model/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/transform.js~matrix3d",
-    "variable/index.html#static-variable-matrix3d",
-    "<span>matrix3d</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/transform/index.js~matrix3d",
+    "function/index.html#static-function-matrix3d",
+    "<span>matrix3d</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/transform.js~matrix",
-    "variable/index.html#static-variable-matrix",
-    "<span>matrix</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/transform/index.js~matrix",
+    "function/index.html#static-function-matrix",
+    "<span>matrix</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~max",
-    "variable/index.html#static-variable-max",
-    "<span>max</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~max",
+    "function/index.html#static-function-max",
+    "<span>max</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/size.js~maxsize",
+    "koutla-swiss/src/mixins/size/index.js~maxsize",
     "function/index.html#static-function-maxSize",
-    "<span>maxSize</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/size.js</span>",
+    "<span>maxSize</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/size/index.js</span>",
     "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~min",
-    "variable/index.html#static-variable-min",
-    "<span>min</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~min",
+    "function/index.html#static-function-min",
+    "<span>min</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/size.js~minsize",
+    "koutla-swiss/src/mixins/size/index.js~minsize",
     "function/index.html#static-function-minSize",
-    "<span>minSize</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/size.js</span>",
+    "<span>minSize</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/size/index.js</span>",
     "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~mm",
-    "variable/index.html#static-variable-mm",
-    "<span>mm</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~mm",
+    "function/index.html#static-function-mm",
+    "<span>mm</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/utils/media.js~mq",
+    "koutla-swiss/src/utils/media/index.js~mq",
     "function/index.html#static-function-mq",
-    "<span>mq</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/media.js</span>",
+    "<span>mq</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/media/index.js</span>",
     "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~ms",
-    "variable/index.html#static-variable-ms",
-    "<span>ms</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~ms",
+    "function/index.html#static-function-ms",
+    "<span>ms</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/filter.js~opacity",
-    "variable/index.html#static-variable-opacity",
-    "<span>opacity</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/filter.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/filter/index.js~opacity",
+    "function/index.html#static-function-opacity",
+    "<span>opacity</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/filter/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/box-model.js~padding",
-    "variable/index.html#static-variable-padding",
-    "<span>padding</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/box-model.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/box-model/index.js~padding",
+    "function/index.html#static-function-padding",
+    "<span>padding</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/box-model/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~pc",
-    "variable/index.html#static-variable-pc",
-    "<span>pc</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~pc",
+    "function/index.html#static-function-pc",
+    "<span>pc</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~percent",
+    "koutla-swiss/src/utils/units/index.js~percent",
     "function/index.html#static-function-percent",
-    "<span>percent</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
+    "<span>percent</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
     "function"
   ],
   [
-    "koutla-swiss/src/mixins/transform.js~perspective",
-    "variable/index.html#static-variable-perspective",
-    "<span>perspective</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/transform/index.js~perspective",
+    "function/index.html#static-function-perspective",
+    "<span>perspective</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~pt",
-    "variable/index.html#static-variable-pt",
-    "<span>pt</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/position/index.js~position",
+    "function/index.html#static-function-position",
+    "<span>position</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/position/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~px",
-    "variable/index.html#static-variable-px",
-    "<span>px</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~pt",
+    "function/index.html#static-function-pt",
+    "<span>pt</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~rad",
-    "variable/index.html#static-variable-rad",
-    "<span>rad</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~px",
+    "function/index.html#static-function-px",
+    "<span>px</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/background.js~radialgradient",
-    "variable/index.html#static-variable-radialGradient",
-    "<span>radialGradient</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/background.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~rad",
+    "function/index.html#static-function-rad",
+    "<span>rad</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~rem",
-    "variable/index.html#static-variable-rem",
-    "<span>rem</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/background/index.js~radialgradient",
+    "function/index.html#static-function-radialGradient",
+    "<span>radialGradient</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/background/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/background.js~repeatinglineargradient",
-    "variable/index.html#static-variable-repeatingLinearGradient",
-    "<span>repeatingLinearGradient</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/background.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/position/index.js~relative",
+    "function/index.html#static-function-relative",
+    "<span>relative</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/position/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/background.js~repeatingradialgradient",
-    "variable/index.html#static-variable-repeatingRadialGradient",
-    "<span>repeatingRadialGradient</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/background.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~rem",
+    "function/index.html#static-function-rem",
+    "<span>rem</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/utils/colors.js~rgb",
+    "koutla-swiss/src/mixins/background/index.js~repeatinglineargradient",
+    "function/index.html#static-function-repeatingLinearGradient",
+    "<span>repeatingLinearGradient</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/background/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/background/index.js~repeatingradialgradient",
+    "function/index.html#static-function-repeatingRadialGradient",
+    "<span>repeatingRadialGradient</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/background/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/utils/colors/index.js~rgb",
     "function/index.html#static-function-rgb",
-    "<span>rgb</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/colors.js</span>",
+    "<span>rgb</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/colors/index.js</span>",
     "function"
   ],
   [
-    "koutla-swiss/src/utils/colors.js~rgba",
+    "koutla-swiss/src/utils/colors/index.js~rgba",
     "function/index.html#static-function-rgba",
-    "<span>rgba</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/colors.js</span>",
+    "<span>rgba</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/colors/index.js</span>",
     "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~rlh",
-    "variable/index.html#static-variable-rlh",
-    "<span>rlh</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/mixins/transform.js~rotate3d",
-    "variable/index.html#static-variable-rotate3d",
-    "<span>rotate3d</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/mixins/transform.js~rotate",
-    "variable/index.html#static-variable-rotate",
-    "<span>rotate</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/mixins/transform.js~rotatex",
-    "variable/index.html#static-variable-rotateX",
-    "<span>rotateX</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/mixins/transform.js~rotatey",
-    "variable/index.html#static-variable-rotateY",
-    "<span>rotateY</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/mixins/transform.js~rotatez",
-    "variable/index.html#static-variable-rotateZ",
-    "<span>rotateZ</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/utils/units.js~s",
-    "variable/index.html#static-variable-s",
-    "<span>s</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/mixins/filter.js~saturate",
-    "variable/index.html#static-variable-saturate",
-    "<span>saturate</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/filter.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/mixins/transform.js~scale3d",
-    "variable/index.html#static-variable-scale3d",
-    "<span>scale3d</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/mixins/transform.js~scale",
-    "variable/index.html#static-variable-scale",
-    "<span>scale</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/mixins/transform.js~scalex",
-    "variable/index.html#static-variable-scaleX",
-    "<span>scaleX</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/mixins/transform.js~scaley",
-    "variable/index.html#static-variable-scaleY",
-    "<span>scaleY</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/mixins/transform.js~scalez",
-    "variable/index.html#static-variable-scaleZ",
-    "<span>scaleZ</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform.js</span>",
-    "variable"
-  ],
-  [
-    "koutla-swiss/src/commons/utils.js~selffunction",
-    "function/index.html#static-function-selfFunction",
-    "<span>selfFunction</span> <span class=\"search-result-import-path\">koutla-swiss/src/commons/utils.js</span>",
+    "koutla-swiss/src/utils/units/index.js~rlh",
+    "function/index.html#static-function-rlh",
+    "<span>rlh</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
     "function"
   ],
   [
-    "koutla-swiss/src/mixins/filter.js~sepia",
-    "variable/index.html#static-variable-sepia",
-    "<span>sepia</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/filter.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/transform/index.js~rotate3d",
+    "function/index.html#static-function-rotate3d",
+    "<span>rotate3d</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/size.js~size",
+    "koutla-swiss/src/mixins/transform/index.js~rotate",
+    "function/index.html#static-function-rotate",
+    "<span>rotate</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/transform/index.js~rotatex",
+    "function/index.html#static-function-rotateX",
+    "<span>rotateX</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/transform/index.js~rotatey",
+    "function/index.html#static-function-rotateY",
+    "<span>rotateY</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/transform/index.js~rotatez",
+    "function/index.html#static-function-rotateZ",
+    "<span>rotateZ</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/utils/units/index.js~s",
+    "function/index.html#static-function-s",
+    "<span>s</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/filter/index.js~saturate",
+    "function/index.html#static-function-saturate",
+    "<span>saturate</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/filter/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/transform/index.js~scale3d",
+    "function/index.html#static-function-scale3d",
+    "<span>scale3d</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/transform/index.js~scale",
+    "function/index.html#static-function-scale",
+    "<span>scale</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/transform/index.js~scalex",
+    "function/index.html#static-function-scaleX",
+    "<span>scaleX</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/transform/index.js~scaley",
+    "function/index.html#static-function-scaleY",
+    "<span>scaleY</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/transform/index.js~scalez",
+    "function/index.html#static-function-scaleZ",
+    "<span>scaleZ</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/filter/index.js~sepia",
+    "function/index.html#static-function-sepia",
+    "<span>sepia</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/filter/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/size/index.js~size",
     "function/index.html#static-function-size",
-    "<span>size</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/size.js</span>",
+    "<span>size</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/size/index.js</span>",
     "function"
   ],
   [
-    "koutla-swiss/src/mixins/transform.js~skew",
-    "variable/index.html#static-variable-skew",
-    "<span>skew</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/transform/index.js~skew",
+    "function/index.html#static-function-skew",
+    "<span>skew</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/transform.js~skewx",
-    "variable/index.html#static-variable-skewX",
-    "<span>skewX</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/transform/index.js~skewx",
+    "function/index.html#static-function-skewX",
+    "<span>skewX</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/transform.js~skewy",
-    "variable/index.html#static-variable-skewY",
-    "<span>skewY</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/transform/index.js~skewy",
+    "function/index.html#static-function-skewY",
+    "<span>skewY</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/transform.js~transform",
+    "koutla-swiss/src/mixins/position/index.js~sticky",
+    "function/index.html#static-function-sticky",
+    "<span>sticky</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/position/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/transform/index.js~transform",
     "function/index.html#static-function-transform",
-    "<span>transform</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform.js</span>",
+    "<span>transform</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
     "function"
   ],
   [
-    "koutla-swiss/src/mixins/transform.js~translate3d",
-    "variable/index.html#static-variable-translate3d",
-    "<span>translate3d</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/transform/index.js~translate3d",
+    "function/index.html#static-function-translate3d",
+    "<span>translate3d</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/transform.js~translate",
-    "variable/index.html#static-variable-translate",
-    "<span>translate</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/transform/index.js~translate",
+    "function/index.html#static-function-translate",
+    "<span>translate</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/transform.js~translatex",
-    "variable/index.html#static-variable-translateX",
-    "<span>translateX</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/transform/index.js~translatex",
+    "function/index.html#static-function-translateX",
+    "<span>translateX</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/transform.js~translatey",
-    "variable/index.html#static-variable-translateY",
-    "<span>translateY</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/transform/index.js~translatey",
+    "function/index.html#static-function-translateY",
+    "<span>translateY</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/transform.js~translatez",
-    "variable/index.html#static-variable-translateZ",
-    "<span>translateZ</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/transform/index.js~translatez",
+    "function/index.html#static-function-translateZ",
+    "<span>translateZ</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~turn",
-    "variable/index.html#static-variable-turn",
-    "<span>turn</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~turn",
+    "function/index.html#static-function-turn",
+    "<span>turn</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/mixins/background.js~url",
-    "variable/index.html#static-variable-url",
-    "<span>url</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/background.js</span>",
-    "variable"
+    "koutla-swiss/src/mixins/background/index.js~url",
+    "function/index.html#static-function-url",
+    "<span>url</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/background/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~vb",
-    "variable/index.html#static-variable-vb",
-    "<span>vb</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~vb",
+    "function/index.html#static-function-vb",
+    "<span>vb</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~vh",
-    "variable/index.html#static-variable-vh",
-    "<span>vh</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~vh",
+    "function/index.html#static-function-vh",
+    "<span>vh</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~vi",
-    "variable/index.html#static-variable-vi",
-    "<span>vi</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~vi",
+    "function/index.html#static-function-vi",
+    "<span>vi</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~vmax",
-    "variable/index.html#static-variable-vmax",
-    "<span>vmax</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~vmax",
+    "function/index.html#static-function-vmax",
+    "<span>vmax</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~vmin",
-    "variable/index.html#static-variable-vmin",
-    "<span>vmin</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~vmin",
+    "function/index.html#static-function-vmin",
+    "<span>vmin</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
-    "koutla-swiss/src/utils/units.js~vw",
-    "variable/index.html#static-variable-vw",
-    "<span>vw</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units.js</span>",
-    "variable"
+    "koutla-swiss/src/utils/units/index.js~vw",
+    "function/index.html#static-function-vw",
+    "<span>vw</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
+    "function"
   ],
   [
     "src/.external-ecmascript.js~array",
@@ -1026,81 +1074,75 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/mixins/background.js",
-    "file/src/mixins/background.js.html",
-    "src/mixins/background.js",
+    "src/mixins/background/index.js",
+    "file/src/mixins/background/index.js.html",
+    "src/mixins/background/index.js",
     "file"
   ],
   [
-    "src/mixins/borders.js",
-    "file/src/mixins/borders.js.html",
-    "src/mixins/borders.js",
+    "src/mixins/borders/index.js",
+    "file/src/mixins/borders/index.js.html",
+    "src/mixins/borders/index.js",
     "file"
   ],
   [
-    "src/mixins/box-model.js",
-    "file/src/mixins/box-model.js.html",
-    "src/mixins/box-model.js",
+    "src/mixins/box-model/index.js",
+    "file/src/mixins/box-model/index.js.html",
+    "src/mixins/box-model/index.js",
     "file"
   ],
   [
-    "src/mixins/filter.js",
-    "file/src/mixins/filter.js.html",
-    "src/mixins/filter.js",
+    "src/mixins/filter/index.js",
+    "file/src/mixins/filter/index.js.html",
+    "src/mixins/filter/index.js",
     "file"
   ],
   [
-    "src/mixins/flex.js",
-    "file/src/mixins/flex.js.html",
-    "src/mixins/flex.js",
+    "src/mixins/flex/index.js",
+    "file/src/mixins/flex/index.js.html",
+    "src/mixins/flex/index.js",
     "file"
   ],
   [
-    "src/mixins/index.js",
-    "file/src/mixins/index.js.html",
-    "src/mixins/index.js",
+    "src/mixins/position/index.js",
+    "file/src/mixins/position/index.js.html",
+    "src/mixins/position/index.js",
     "file"
   ],
   [
-    "src/mixins/size.js",
-    "file/src/mixins/size.js.html",
-    "src/mixins/size.js",
+    "src/mixins/size/index.js",
+    "file/src/mixins/size/index.js.html",
+    "src/mixins/size/index.js",
     "file"
   ],
   [
-    "src/mixins/transform.js",
-    "file/src/mixins/transform.js.html",
-    "src/mixins/transform.js",
+    "src/mixins/transform/index.js",
+    "file/src/mixins/transform/index.js.html",
+    "src/mixins/transform/index.js",
     "file"
   ],
   [
-    "src/utils/colors.js",
-    "file/src/utils/colors.js.html",
-    "src/utils/colors.js",
+    "src/utils/colors/index.js",
+    "file/src/utils/colors/index.js.html",
+    "src/utils/colors/index.js",
     "file"
   ],
   [
-    "src/utils/important.js",
-    "file/src/utils/important.js.html",
-    "src/utils/important.js",
+    "src/utils/important/index.js",
+    "file/src/utils/important/index.js.html",
+    "src/utils/important/index.js",
     "file"
   ],
   [
-    "src/utils/index.js",
-    "file/src/utils/index.js.html",
-    "src/utils/index.js",
+    "src/utils/media/index.js",
+    "file/src/utils/media/index.js.html",
+    "src/utils/media/index.js",
     "file"
   ],
   [
-    "src/utils/media.js",
-    "file/src/utils/media.js.html",
-    "src/utils/media.js",
-    "file"
-  ],
-  [
-    "src/utils/units.js",
-    "file/src/utils/units.js.html",
-    "src/utils/units.js",
+    "src/utils/units/index.js",
+    "file/src/utils/units/index.js.html",
+    "src/utils/units/index.js",
     "file"
   ]
 ]
