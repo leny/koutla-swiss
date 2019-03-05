@@ -6,10 +6,16 @@
  * started at 09/02/2018
  */
 
+/**
+ * @ignore
+ */
 export const concatProp = (prop, glue = " ") => (...args) => {
     return args.length ? {[prop]: args.join(glue)} : {};
 };
 
+/**
+ * @ignore
+ */
 export const selfFunction = (
     name,
     glue = ", ",

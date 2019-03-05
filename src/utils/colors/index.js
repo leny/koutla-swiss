@@ -1,6 +1,6 @@
 /* leny/koutla-swiss
  *
- * ~/utils/colors.js - Colors utils
+ * ~/utils/colors/index.js - Colors utils
  *
  * coded by leny@flatLand!
  * started at 12/01/2018
@@ -43,41 +43,53 @@ const getRGBValuesFromColor = sColor => {
     );
 };
 
-export const rgb = (...aParts) => {
-    if (aParts.length === 3) {
-        if (aParts.every(isValidRGBInt)) {
-            return `rgb(${aParts.join(",")})`;
+/**
+ * Take all the arguments and return a string with the rgb channels definition
+ * @abstract
+ * @param {...string|...number} args parts of the color definition (if only one arg is given, it will be converted)
+ * @return {string} `"rgb(arg1, arg2, arg...)"`
+ */
+export const rgb = (...args) => {
+    if (args.length === 3) {
+        if (args.every(isValidRGBInt)) {
+            return `rgb(${args.join(",")})`;
         }
     }
 
-    if (aParts.length === 1) {
-        return `rgb(${getRGBValuesFromColor(aParts[0]).join(",")})`;
+    if (args.length === 1) {
+        return `rgb(${getRGBValuesFromColor(args[0]).join(",")})`;
     }
 
     throw new TypeError("Invalid arguments format");
 };
 
-export const rgba = (...aParts) => {
-    if (aParts.length === 4) {
+/**
+ * Take all the arguments and return a string with the rgba channels definition
+ * @abstract
+ * @param {...string|...number} args parts of the color definition (if only one arg is given, it will be converted)
+ * @return {string} `"rgba(arg1, arg2, arg...)"`
+ */
+export const rgba = (...args) => {
+    if (args.length === 4) {
         if (
-            aParts.every((iValue, iIndex) => {
+            args.every((iValue, iIndex) => {
                 return iIndex < 3
                     ? isValidRGBInt(iValue)
                     : isValidAlphaNumber(iValue);
             })
         ) {
-            return `rgba(${aParts.join(",")})`;
+            return `rgba(${args.join(",")})`;
         }
     }
 
-    if (aParts.length === 2) {
-        let aColorParts = getRGBValuesFromColor(aParts[0]);
+    if (args.length === 2) {
+        let aColorParts = getRGBValuesFromColor(args[0]);
 
-        if (!isValidAlphaNumber(aParts[1])) {
+        if (!isValidAlphaNumber(args[1])) {
             throw new TypeError("Invalid alpha value");
         }
 
-        return `rgba(${aColorParts.join(",")},${aParts[1]})`;
+        return `rgba(${aColorParts.join(",")},${args[1]})`;
     }
 
     throw new TypeError("Invalid arguments format");
