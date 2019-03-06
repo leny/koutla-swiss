@@ -18,6 +18,7 @@
     "email": "info@flatland.be",
     "url": "http://leny.me"
   },
+  "homepage":"https://koutla-swiss.js.org",
   "repository": {
     "type": "git",
     "url": "git://github.com/leny/koutla-swiss.git"
@@ -36,7 +37,7 @@
   ],
   "main": "lib/index.js",
   "scripts": {
-    "docs": "npx rimraf ./docs && npx esdoc",
+    "docs": "npx rimraf ./docs && npx esdoc && npx cname docs",
     "pretest": "npm run lint && npm run build",
     "test": "npx mocha --require @babel/register",
     "test:coverage": "npx nyc mocha --require @babel/register",
@@ -51,6 +52,7 @@
     "@babel/register": "^7.0.0",
     "assert": "^1.4.1",
     "babel-eslint": "^10.0.1",
+    "cname": "0.0.2",
     "esdoc": "^1.1.0",
     "esdoc-ecmascript-proposal-plugin": "^1.0.0",
     "esdoc-standard-plugin": "^1.0.0",
