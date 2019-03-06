@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../../../">
-  <title data-ice="title">src/utils/important/index.js | koutla-swiss</title>
+  <title data-ice="title">src/mixins/animation/index.js | koutla-swiss</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -168,34 +168,50 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">src/utils/important/index.js</h1>
+<div class="content" data-ice="content"><h1 data-ice="title">src/mixins/animation/index.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/* leny/koutla-swiss
  *
- * ~/utils/important/index.js - !important util
+ * ~/mixins/animation/index.js - Animation Mixins
  *
  * coded by leny@flatLand!
- * started at 23/02/2019
+ * started at 06/02/2019
  */
 
-import fromEntries from &quot;lodash.frompairs&quot;;
+import {concatProp, selfFunction} from &quot;../../commons/utils&quot;;
 
 /**
- * Take the given value and add !important to it
+ * Take all the arguments and return an object with a animation property
  * @abstract
- * @param {string|object} target value to add important to
- * @return {string|object}
+ * @param {...string} args
+ * @return {object} `{animation: &quot;arg1 arg2 arg...&quot;}`
  */
-export const important = target =&gt; {
-    if (typeof target === &quot;string&quot;) {
-        return `${target} !important`;
-    }
-    return fromEntries(
-        Object.entries(target).map(([key, value]) =&gt; [
-            key,
-            `${value} !important`,
-        ]),
-    );
-};
+export const animation = (...args) =&gt; concatProp(&quot;animation&quot;)(...args);
+
+/**
+ * Take all the arguments and return an object with a animationTimingFunction property
+ * @abstract
+ * @param {...string} args
+ * @return {object} `{animationTimingFunction: &quot;arg1, arg2, arg...&quot;}` - **note:** the args are separated by commas
+ */
+export const animationTimingFunction = (...args) =&gt;
+    concatProp(&quot;animationTimingFunction&quot;, &quot;, &quot;)(...args);
+
+/**
+ * Take all the arguments and return a string with the appropriate syntax
+ * @abstract
+ * @param {...string} args
+ * @return {string} `&quot;cubic-bezier(arg1, arg2, arg...)&quot;`
+ */
+export const cubicBezier = (...args) =&gt;
+    selfFunction(&quot;cubic-bezier&quot;, &quot;, &quot;, 4, 4)(...args);
+
+/**
+ * Take all the arguments and return a string with the appropriate syntax
+ * @abstract
+ * @param {...string} args
+ * @return {string} `&quot;steps(arg1, arg2, arg...)&quot;`
+ */
+export const steps = (...args) =&gt; selfFunction(&quot;steps&quot;)(...args);
 </code></pre>
 
 </div>

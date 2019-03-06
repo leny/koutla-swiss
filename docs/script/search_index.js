@@ -180,6 +180,18 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "koutla-swiss/src/mixins/animation/index.js~animation",
+    "function/index.html#static-function-animation",
+    "<span>animation</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/animation/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/animation/index.js~animationtimingfunction",
+    "function/index.html#static-function-animationTimingFunction",
+    "<span>animationTimingFunction</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/animation/index.js</span>",
+    "function"
+  ],
+  [
     "koutla-swiss/src/utils/units/index.js~attr",
     "function/index.html#static-function-attr",
     "<span>attr</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",
@@ -279,6 +291,12 @@ window.esdocSearchIndex = [
     "koutla-swiss/src/mixins/filter/index.js~contrast",
     "function/index.html#static-function-contrast",
     "<span>contrast</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/filter/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/animation/index.js~cubicbezier",
+    "function/index.html#static-function-cubicBezier",
+    "<span>cubicBezier</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/animation/index.js</span>",
     "function"
   ],
   [
@@ -690,6 +708,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "koutla-swiss/src/mixins/animation/index.js~steps",
+    "function/index.html#static-function-steps",
+    "<span>steps</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/animation/index.js</span>",
+    "function"
+  ],
+  [
     "koutla-swiss/src/mixins/position/index.js~sticky",
     "function/index.html#static-function-sticky",
     "<span>sticky</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/position/index.js</span>",
@@ -1077,6 +1101,12 @@ window.esdocSearchIndex = [
     "src/index.js",
     "file/src/index.js.html",
     "src/index.js",
+    "file"
+  ],
+  [
+    "src/mixins/animation/index.js",
+    "file/src/mixins/animation/index.js.html",
+    "src/mixins/animation/index.js",
     "file"
   ],
   [

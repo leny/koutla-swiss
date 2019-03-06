@@ -13,6 +13,7 @@ export * from "./utils/media";
 export * from "./utils/units";
 
 // mixins
+export * from "./mixins/animation";
 export * from "./mixins/background";
 export * from "./mixins/borders";
 export * from "./mixins/box-model";
