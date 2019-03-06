@@ -180,6 +180,58 @@
 <h2 id="usage">Usage</h2><p><strong>koutla-swiss</strong> is a serie of useful, functional utilities to make <em>CSS-in-JS</em> (with librairies like <a href="https://github.com/threepointone/glamor">glamor</a>).</p>
 <p>All the documented functions are accessibles from the root of the lib, like <code>import {px, padding} from &quot;koutla-swiss&quot;;</code>.</p>
 <p>Documentation is generated with <a href="https://doc.esdoc.org">ESDoc</a> and hosted in <a href="https://leny.github.io/koutla-swiss">leny.github.io/koutla-swiss</a>.</p>
+<h3 id="example">Example</h3><pre><code class="lang-javascript"><code class="source-code prettyprint">import React from &quot;react&quot;;
+import {css} from &quot;@emotion/core&quot;;
+import {rem, margin, flexrow, borderBottom, size, important, mq} from &quot;koutla-swiss&quot;;
+import {FontAwesomeIcon} from &quot;@fortawesome/react-fontawesome&quot;;
+
+import {BORDER_COLOR, MQ_TABLET, MQ_SMALL_DESKTOP} from &quot;../../core/constants&quot;;
+
+const styles = {
+    container: css({
+        ...margin(0, &quot;auto&quot;, rem(3.6)),
+        ...mq(MQ_TABLET, {
+            marginBottom: rem(19.2),
+        }),
+        ...mq(MQ_SMALL_DESKTOP, {
+            breakInside: &quot;avoid&quot;,
+            marginBottom: rem(9.6),
+        }),
+    }),
+    title: css({
+        ...flexrow(&quot;space-between&quot;, &quot;center&quot;),
+        ...margin(0, &quot;auto&quot;, rem(3.2)),
+        paddingBottom: rem(0.25),
+        ...borderBottom(rem(0.1), &quot;solid&quot;, BORDER_COLOR),
+        fontSize: rem(2.4),
+        textAlign: &quot;right&quot;,
+    }),
+    titleContent: {flex: 1},
+    hideTitle: css({display: &quot;none&quot;}),
+    icon: css({
+        ...important(size(rem(2.4))),
+    }),
+};
+
+export default ({className, title, hideTitle = false, children, icon}) =&gt; {
+    let $icon;
+
+    icon &amp;&amp; ($icon = &lt;FontAwesomeIcon icon={icon} css={styles.icon} /&gt;);
+
+    return (
+        &lt;section css={styles.container} className={className}&gt;
+            &lt;h2 css={[styles.title, hideTitle &amp;&amp; styles.hideTitle]}&gt;
+                {$icon}
+                &lt;span css={styles.titleContent}&gt;{title}&lt;/span&gt;
+            &lt;/h2&gt;
+            {children}
+        &lt;/section&gt;
+    );
+};</code>
+</code></pre>
+<blockquote>
+<p>&#x1F449; <strong>NOTE:</strong> this sample component is taken from <a href="https://github.com/leny/kourikoulom">my resume</a>, which relies on koutla-swiss.</p>
+</blockquote>
 <hr>
 <h2 id="license">License</h2><p>Copyright (c) 2018 <a href="http://leny.me">leny.me</a>
 Licensed under the MIT license.</p>

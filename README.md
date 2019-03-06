@@ -24,6 +24,61 @@ All the documented functions are accessibles from the root of the lib, like `imp
 
 Documentation is generated with [ESDoc](https://doc.esdoc.org) and hosted in [leny.github.io/koutla-swiss](https://leny.github.io/koutla-swiss).
 
+### Example
+
+```javascript
+import React from "react";
+import {css} from "@emotion/core";
+import {rem, margin, flexrow, borderBottom, size, important, mq} from "koutla-swiss";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+
+import {BORDER_COLOR, MQ_TABLET, MQ_SMALL_DESKTOP} from "../../core/constants";
+
+const styles = {
+    container: css({
+        ...margin(0, "auto", rem(3.6)),
+        ...mq(MQ_TABLET, {
+            marginBottom: rem(19.2),
+        }),
+        ...mq(MQ_SMALL_DESKTOP, {
+            breakInside: "avoid",
+            marginBottom: rem(9.6),
+        }),
+    }),
+    title: css({
+        ...flexrow("space-between", "center"),
+        ...margin(0, "auto", rem(3.2)),
+        paddingBottom: rem(0.25),
+        ...borderBottom(rem(0.1), "solid", BORDER_COLOR),
+        fontSize: rem(2.4),
+        textAlign: "right",
+    }),
+    titleContent: {flex: 1},
+    hideTitle: css({display: "none"}),
+    icon: css({
+        ...important(size(rem(2.4))),
+    }),
+};
+
+export default ({className, title, hideTitle = false, children, icon}) => {
+    let $icon;
+
+    icon && ($icon = <FontAwesomeIcon icon={icon} css={styles.icon} />);
+
+    return (
+        <section css={styles.container} className={className}>
+            <h2 css={[styles.title, hideTitle && styles.hideTitle]}>
+                {$icon}
+                <span css={styles.titleContent}>{title}</span>
+            </h2>
+            {children}
+        </section>
+    );
+};
+```
+
+> 👉 **NOTE:** this sample component is taken from [my resume](https://github.com/leny/kourikoulom), which relies on koutla-swiss.
+
 * * *
 
 ## License
