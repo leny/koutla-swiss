@@ -22,7 +22,7 @@ $ npm install --save-dev koutla-swiss
 
 All the documented functions are accessibles from the root of the lib, like `import {px, padding} from "koutla-swiss";`.
 
-Documentation is generated with [ESDoc](https://doc.esdoc.org) and hosted in [leny.github.io/koutla-swiss](https://leny.github.io/koutla-swiss).
+Documentation is generated with [ESDoc](https://doc.esdoc.org) and hosted in [koutla-swiss.js.org](https://koutla-swiss.js.org).
 
 ### Example
 
