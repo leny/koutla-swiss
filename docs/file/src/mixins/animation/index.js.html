@@ -35,6 +35,9 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-animationTimingFunction">animationTimingFunction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-cubicBezier">cubicBezier</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-steps">steps</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-transition">transition</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-transitionProperty">transitionProperty</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-transitionTimingFunction">transitionTimingFunction</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#mixins-background">mixins/background</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-background">background</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-conicGradient">conicGradient</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-linearGradient">linearGradient</a></span></span></li>
@@ -182,7 +185,7 @@
 import {concatProp, selfFunction} from &quot;../../commons/utils&quot;;
 
 /**
- * Take all the arguments and return an object with a animation property
+ * Take all the arguments and return an object with an animation property
  * @abstract
  * @param {...string} args
  * @return {object} `{animation: &quot;arg1 arg2 arg...&quot;}`
@@ -197,6 +200,32 @@ export const animation = (...args) =&gt; concatProp(&quot;animation&quot;)(...ar
  */
 export const animationTimingFunction = (...args) =&gt;
     concatProp(&quot;animationTimingFunction&quot;, &quot;, &quot;)(...args);
+
+/**
+ * Take all the arguments and return an object with a transition property
+ * @abstract
+ * @param {...string} args
+ * @return {object} `{transition: &quot;arg1 arg2 arg...&quot;}`
+ */
+export const transition = (...args) =&gt; concatProp(&quot;transition&quot;)(...args);
+
+/**
+ * Take all the arguments and return an object with a transitionTimingFunction property
+ * @abstract
+ * @param {...string} args
+ * @return {object} `{transitionTimingFunction: &quot;arg1, arg2, arg...&quot;}` - **note:** the args are separated by commas
+ */
+export const transitionTimingFunction = (...args) =&gt;
+    concatProp(&quot;transitionTimingFunction&quot;, &quot;, &quot;)(...args);
+
+/**
+ * Take all the arguments and return an object with a transitionProperty property
+ * @abstract
+ * @param {...string} args
+ * @return {object} `{transitionProperty: &quot;arg1, arg2, arg...&quot;}` - **note:** the args are separated by commas
+ */
+export const transitionProperty = (...args) =&gt;
+    concatProp(&quot;transitionProperty&quot;, &quot;, &quot;)(...args);
 
 /**
  * Take all the arguments and return a string with the appropriate syntax

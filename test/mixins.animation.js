@@ -11,6 +11,9 @@ import assert from "assert";
 import {
     animation,
     animationTimingFunction,
+    transition,
+    transitionProperty,
+    transitionTimingFunction,
     cubicBezier,
     steps,
 } from "../lib/mixins/animation";
@@ -73,6 +76,42 @@ describe("Animation methods", () => {
             });
             assert.deepEqual(animationTimingFunction("ease", "step-start"), {
                 animationTimingFunction: "ease, step-start",
+            });
+        });
+    });
+
+    describe("transition()", () => {
+        it("Should return a correct method when any value is given", () => {
+            assert.deepEqual(transition("all", "3s", "ease-in-out"), {
+                transition: "all 3s ease-in-out",
+            });
+            assert.deepEqual(
+                transition("color", "5s", cubicBezier(0, 0.58, 1, 0.1)),
+                {
+                    transition: "color 5s cubic-bezier(0, 0.58, 1, 0.1)",
+                },
+            );
+        });
+    });
+
+    describe("transitionProperty()", () => {
+        it("Should return a correct method when any value is given", () => {
+            assert.deepEqual(transitionProperty("color"), {
+                transitionProperty: "color",
+            });
+            assert.deepEqual(transitionProperty("color", "border-color"), {
+                transitionProperty: "color, border-color",
+            });
+        });
+    });
+
+    describe("transitionTimingFunction()", () => {
+        it("Should return a correct method when any value is given", () => {
+            assert.deepEqual(transitionTimingFunction("ease"), {
+                transitionTimingFunction: "ease",
+            });
+            assert.deepEqual(transitionTimingFunction("ease", "step-start"), {
+                transitionTimingFunction: "ease, step-start",
             });
         });
     });

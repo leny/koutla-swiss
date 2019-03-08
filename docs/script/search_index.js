@@ -744,6 +744,24 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "koutla-swiss/src/mixins/animation/index.js~transition",
+    "function/index.html#static-function-transition",
+    "<span>transition</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/animation/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/animation/index.js~transitionproperty",
+    "function/index.html#static-function-transitionProperty",
+    "<span>transitionProperty</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/animation/index.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/mixins/animation/index.js~transitiontimingfunction",
+    "function/index.html#static-function-transitionTimingFunction",
+    "<span>transitionTimingFunction</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/animation/index.js</span>",
+    "function"
+  ],
+  [
     "koutla-swiss/src/mixins/transform/index.js~translate3d",
     "function/index.html#static-function-translate3d",
     "<span>translate3d</span> <span class=\"search-result-import-path\">koutla-swiss/src/mixins/transform/index.js</span>",
