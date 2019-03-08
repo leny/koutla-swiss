@@ -567,7 +567,7 @@
     "__docId__": 48,
     "kind": "file",
     "name": "src/commons/utils.js",
-    "content": "/* leny/koutla-swiss\n *\n * /src/commons/utils.js - Common utils for koutla\n *\n * coded by leny@flatLand!\n * started at 09/02/2018\n */\n\n/**\n * @ignore\n */\nexport const concatProp = (prop, glue = \" \") => (...args) => {\n    return args.length ? {[prop]: args.join(glue)} : {};\n};\n\n/**\n * @ignore\n */\nexport const selfFunction = (\n    name,\n    glue = \", \",\n    minArgs = 1,\n    maxArgs = Infinity,\n    quoted = false,\n) => (...args) => {\n    if (args.length < minArgs || args.length > maxArgs) {\n        throw new TypeError(`Wrong numbers of arguments in ${name}()`);\n    }\n    const quote = quoted ? '\"' : \"\";\n\n    return `${name}(${quote}${args.join(glue)}${quote})`;\n};\n",
+    "content": "/* leny/koutla-swiss\n *\n * /src/commons/utils.js - Common utils for koutla\n *\n * coded by leny@flatLand!\n * started at 09/02/2018\n */\n\n/**\n * @ignore\n */\nconst glueWith = (glue = \" \", ...args) => args.join(glue);\n\n/**\n * @ignore\n */\nexport const concatProp = (prop, glue = \" \") => (...args) => {\n    return args.length ? {[prop]: glueWith(glue, ...args)} : {};\n};\n\n/**\n * @ignore\n */\nexport const selfFunction = (\n    name,\n    glue = \", \",\n    minArgs = 1,\n    maxArgs = Infinity,\n    quoted = false,\n) => (...args) => {\n    if (args.length < minArgs || args.length > maxArgs) {\n        throw new TypeError(`Wrong numbers of arguments in ${name}()`);\n    }\n    const quote = quoted ? '\"' : \"\";\n\n    return `${name}(${quote}${glueWith(glue, ...args)}${quote})`;\n};\n\n/**\n * Concatanate all the arguments, space-separated\n * @abstract\n * @param {...string} args\n * @return {string} `arg1 arg2 arg3`\n */\nexport const glueWithSpaces = (...args) => glueWith(\" \", ...args);\n\n/**\n * Concatanate all the arguments, comma-separated\n * @abstract\n * @param {...string} args\n * @return {string} `arg1, arg2, arg3`\n */\nexport const glueWithCommas = (...args) => glueWith(\", \", ...args);\n",
     "static": true,
     "longname": "/Users/leny/Works/leny/koutla-swiss/src/commons/utils.js",
     "access": "public",
@@ -576,6 +576,42 @@
   },
   {
     "__docId__": 49,
+    "kind": "function",
+    "name": "glueWith",
+    "memberof": "src/commons/utils.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/commons/utils.js~glueWith",
+    "access": "public",
+    "export": false,
+    "importPath": "koutla-swiss/src/commons/utils.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 12,
+    "ignore": true,
+    "params": [
+      {
+        "name": "glue",
+        "optional": true,
+        "types": [
+          "string"
+        ],
+        "defaultRaw": " ",
+        "defaultValue": " "
+      },
+      {
+        "name": "args",
+        "types": [
+          "...*"
+        ],
+        "spread": true
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 50,
     "kind": "function",
     "name": "concatProp",
     "memberof": "src/commons/utils.js",
@@ -588,7 +624,7 @@
     "importPath": "koutla-swiss/src/commons/utils.js",
     "importStyle": "{concatProp}",
     "description": "",
-    "lineNumber": 12,
+    "lineNumber": 17,
     "ignore": true,
     "params": [
       {
@@ -614,7 +650,7 @@
     }
   },
   {
-    "__docId__": 50,
+    "__docId__": 51,
     "kind": "function",
     "name": "selfFunction",
     "memberof": "src/commons/utils.js",
@@ -627,7 +663,7 @@
     "importPath": "koutla-swiss/src/commons/utils.js",
     "importStyle": "{selfFunction}",
     "description": "",
-    "lineNumber": 19,
+    "lineNumber": 24,
     "ignore": true,
     "params": [
       {
@@ -680,10 +716,84 @@
     }
   },
   {
-    "__docId__": 51,
+    "__docId__": 52,
+    "kind": "function",
+    "name": "glueWithSpaces",
+    "memberof": "src/commons/utils.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/commons/utils.js~glueWithSpaces",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/commons/utils.js",
+    "importStyle": "{glueWithSpaces}",
+    "description": "Concatanate all the arguments, space-separated",
+    "lineNumber": 45,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "...string"
+        ],
+        "spread": true,
+        "optional": false,
+        "name": "args",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": "`arg1 arg2 arg3`"
+    },
+    "abstract": true
+  },
+  {
+    "__docId__": 53,
+    "kind": "function",
+    "name": "glueWithCommas",
+    "memberof": "src/commons/utils.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/commons/utils.js~glueWithCommas",
+    "access": "public",
+    "export": true,
+    "importPath": "koutla-swiss/src/commons/utils.js",
+    "importStyle": "{glueWithCommas}",
+    "description": "Concatanate all the arguments, comma-separated",
+    "lineNumber": 53,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "...string"
+        ],
+        "spread": true,
+        "optional": false,
+        "name": "args",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": "`arg1, arg2, arg3`"
+    },
+    "abstract": true
+  },
+  {
+    "__docId__": 54,
     "kind": "file",
     "name": "src/index.js",
-    "content": "/* leny/koutla-swiss\n *\n * ~/index.js - Main entry point\n *\n * coded by leny@flatLand!\n * started at 12/01/2018\n */\n\n// utils\nexport * from \"./utils/colors\";\nexport * from \"./utils/important\";\nexport * from \"./utils/media\";\nexport * from \"./utils/units\";\n\n// mixins\nexport * from \"./mixins/animation\";\nexport * from \"./mixins/background\";\nexport * from \"./mixins/borders\";\nexport * from \"./mixins/box-model\";\nexport * from \"./mixins/filter\";\nexport * from \"./mixins/flex\";\nexport * from \"./mixins/position\";\nexport * from \"./mixins/size\";\nexport * from \"./mixins/transform\";\n",
+    "content": "/* leny/koutla-swiss\n *\n * ~/index.js - Main entry point\n *\n * coded by leny@flatLand!\n * started at 12/01/2018\n */\n\n// utils\nexport * from \"./commons/utils\";\nexport * from \"./utils/colors\";\nexport * from \"./utils/important\";\nexport * from \"./utils/media\";\nexport * from \"./utils/units\";\n\n// mixins\nexport * from \"./mixins/animation\";\nexport * from \"./mixins/background\";\nexport * from \"./mixins/borders\";\nexport * from \"./mixins/box-model\";\nexport * from \"./mixins/filter\";\nexport * from \"./mixins/flex\";\nexport * from \"./mixins/position\";\nexport * from \"./mixins/size\";\nexport * from \"./mixins/transform\";\n",
     "static": true,
     "longname": "/Users/leny/Works/leny/koutla-swiss/src/index.js",
     "access": "public",
@@ -691,7 +801,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 52,
+    "__docId__": 55,
     "kind": "file",
     "name": "src/mixins/animation/index.js",
     "content": "/* leny/koutla-swiss\n *\n * ~/mixins/animation/index.js - Animation Mixins\n *\n * coded by leny@flatLand!\n * started at 06/02/2019\n */\n\nimport {concatProp, selfFunction} from \"../../commons/utils\";\n\n/**\n * Take all the arguments and return an object with a animation property\n * @abstract\n * @param {...string} args\n * @return {object} `{animation: \"arg1 arg2 arg...\"}`\n */\nexport const animation = (...args) => concatProp(\"animation\")(...args);\n\n/**\n * Take all the arguments and return an object with a animationTimingFunction property\n * @abstract\n * @param {...string} args\n * @return {object} `{animationTimingFunction: \"arg1, arg2, arg...\"}` - **note:** the args are separated by commas\n */\nexport const animationTimingFunction = (...args) =>\n    concatProp(\"animationTimingFunction\", \", \")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"cubic-bezier(arg1, arg2, arg...)\"`\n */\nexport const cubicBezier = (...args) =>\n    selfFunction(\"cubic-bezier\", \", \", 4, 4)(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"steps(arg1, arg2, arg...)\"`\n */\nexport const steps = (...args) => selfFunction(\"steps\")(...args);\n",
@@ -702,7 +812,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 53,
+    "__docId__": 56,
     "kind": "function",
     "name": "animation",
     "memberof": "src/mixins/animation/index.js",
@@ -739,7 +849,7 @@
     "abstract": true
   },
   {
-    "__docId__": 54,
+    "__docId__": 57,
     "kind": "function",
     "name": "animationTimingFunction",
     "memberof": "src/mixins/animation/index.js",
@@ -776,7 +886,7 @@
     "abstract": true
   },
   {
-    "__docId__": 55,
+    "__docId__": 58,
     "kind": "function",
     "name": "cubicBezier",
     "memberof": "src/mixins/animation/index.js",
@@ -813,7 +923,7 @@
     "abstract": true
   },
   {
-    "__docId__": 56,
+    "__docId__": 59,
     "kind": "function",
     "name": "steps",
     "memberof": "src/mixins/animation/index.js",
@@ -850,7 +960,7 @@
     "abstract": true
   },
   {
-    "__docId__": 57,
+    "__docId__": 60,
     "kind": "file",
     "name": "src/mixins/background/index.js",
     "content": "/* leny/koutla-swiss\n *\n * ~/mixins/background/index.js - Background Mixins\n *\n * coded by leny@flatLand!\n * started at 03/02/2019\n */\n\nimport {concatProp, selfFunction} from \"../../commons/utils\";\n\n/**\n * Take all the arguments and return an object with a background property\n * @abstract\n * @param {...string} args\n * @return {object} `{background: \"arg1 arg2 arg...\"}`\n */\nexport const background = (...args) => concatProp(\"background\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"linear-gradient(arg1, arg2, arg...)\"`\n */\nexport const linearGradient = (...args) =>\n    selfFunction(\"linear-gradient\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"radial-gradient(arg1, arg2, arg...)\"`\n */\nexport const radialGradient = (...args) =>\n    selfFunction(\"radial-gradient\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"repeating-linear-gradient(arg1, arg2, arg...)\"`\n */\nexport const repeatingLinearGradient = (...args) =>\n    selfFunction(\"repeating-linear-gradient\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"repeating-radial-gradient(arg1, arg2, arg...)\"`\n */\nexport const repeatingRadialGradient = (...args) =>\n    selfFunction(\"repeating-radial-gradient\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"conic-gradient(arg1, arg2, arg...)\"`\n */\nexport const conicGradient = (...args) =>\n    selfFunction(\"conic-gradient\")(...args);\n\n/**\n * Take the argument and return a string with the appropriate syntax\n * @abstract\n * @param {string} arg URL\n * @return {string} `\"url(arg)\"`\n */\nexport const url = arg => {\n    if (!arg) {\n        throw new TypeError(`Wrong numbers of arguments in url()`);\n    }\n\n    return `url(\"${arg}\")`;\n};\n",
@@ -861,7 +971,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 58,
+    "__docId__": 61,
     "kind": "function",
     "name": "background",
     "memberof": "src/mixins/background/index.js",
@@ -898,7 +1008,7 @@
     "abstract": true
   },
   {
-    "__docId__": 59,
+    "__docId__": 62,
     "kind": "function",
     "name": "linearGradient",
     "memberof": "src/mixins/background/index.js",
@@ -935,7 +1045,7 @@
     "abstract": true
   },
   {
-    "__docId__": 60,
+    "__docId__": 63,
     "kind": "function",
     "name": "radialGradient",
     "memberof": "src/mixins/background/index.js",
@@ -972,7 +1082,7 @@
     "abstract": true
   },
   {
-    "__docId__": 61,
+    "__docId__": 64,
     "kind": "function",
     "name": "repeatingLinearGradient",
     "memberof": "src/mixins/background/index.js",
@@ -1009,7 +1119,7 @@
     "abstract": true
   },
   {
-    "__docId__": 62,
+    "__docId__": 65,
     "kind": "function",
     "name": "repeatingRadialGradient",
     "memberof": "src/mixins/background/index.js",
@@ -1046,7 +1156,7 @@
     "abstract": true
   },
   {
-    "__docId__": 63,
+    "__docId__": 66,
     "kind": "function",
     "name": "conicGradient",
     "memberof": "src/mixins/background/index.js",
@@ -1083,7 +1193,7 @@
     "abstract": true
   },
   {
-    "__docId__": 64,
+    "__docId__": 67,
     "kind": "function",
     "name": "url",
     "memberof": "src/mixins/background/index.js",
@@ -1120,7 +1230,7 @@
     "abstract": true
   },
   {
-    "__docId__": 65,
+    "__docId__": 68,
     "kind": "file",
     "name": "src/mixins/borders/index.js",
     "content": "/* leny/koutla-swiss\n *\n * ~/mixins/borders.js - Border Mixins\n *\n * coded by leny@flatLand!\n * started at 09/02/2018\n */\n\nimport {concatProp} from \"../../commons/utils\";\n\n/**\n * Take all the arguments and return an object with a border property\n * @abstract\n * @param {...string} args\n * @return {object} `{border: \"arg1 arg2 arg...\"}`\n */\nexport const border = (...args) => concatProp(\"border\")(...args);\n\n/**\n * Take all the arguments and return an object with a borderTop property\n * @abstract\n * @param {...string} args\n * @return {object} `{borderTop: \"arg1 arg2 arg...\"}`\n */\nexport const borderTop = (...args) => concatProp(\"borderTop\")(...args);\n\n/**\n * Take all the arguments and return an object with a borderRight property\n * @abstract\n * @param {...string} args\n * @return {object} `{borderRight: \"arg1 arg2 arg...\"}`\n */\nexport const borderRight = (...args) => concatProp(\"borderRight\")(...args);\n\n/**\n * Take all the arguments and return an object with a borderBottom property\n * @abstract\n * @param {...string} args\n * @return {object} `{borderBottom: \"arg1 arg2 arg...\"}`\n */\nexport const borderBottom = (...args) => concatProp(\"borderBottom\")(...args);\n\n/**\n * Take all the arguments and return an object with a borderLeft property\n * @abstract\n * @param {...string} args\n * @return {object} `{borderLeft: \"arg1 arg2 arg...\"}`\n */\nexport const borderLeft = (...args) => concatProp(\"borderLeft\")(...args);\n\n/**\n * Take all the arguments and return an object with a borderRadius property\n * @abstract\n * @param {...string} args\n * @return {object} `{borderRadius: \"arg1 arg2 arg...\"}`\n */\nexport const borderRadius = (...args) => concatProp(\"borderRadius\")(...args);\n",
@@ -1131,7 +1241,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 66,
+    "__docId__": 69,
     "kind": "function",
     "name": "border",
     "memberof": "src/mixins/borders/index.js",
@@ -1168,7 +1278,7 @@
     "abstract": true
   },
   {
-    "__docId__": 67,
+    "__docId__": 70,
     "kind": "function",
     "name": "borderTop",
     "memberof": "src/mixins/borders/index.js",
@@ -1205,7 +1315,7 @@
     "abstract": true
   },
   {
-    "__docId__": 68,
+    "__docId__": 71,
     "kind": "function",
     "name": "borderRight",
     "memberof": "src/mixins/borders/index.js",
@@ -1242,7 +1352,7 @@
     "abstract": true
   },
   {
-    "__docId__": 69,
+    "__docId__": 72,
     "kind": "function",
     "name": "borderBottom",
     "memberof": "src/mixins/borders/index.js",
@@ -1279,7 +1389,7 @@
     "abstract": true
   },
   {
-    "__docId__": 70,
+    "__docId__": 73,
     "kind": "function",
     "name": "borderLeft",
     "memberof": "src/mixins/borders/index.js",
@@ -1316,7 +1426,7 @@
     "abstract": true
   },
   {
-    "__docId__": 71,
+    "__docId__": 74,
     "kind": "function",
     "name": "borderRadius",
     "memberof": "src/mixins/borders/index.js",
@@ -1353,7 +1463,7 @@
     "abstract": true
   },
   {
-    "__docId__": 72,
+    "__docId__": 75,
     "kind": "file",
     "name": "src/mixins/box-model/index.js",
     "content": "/* leny/koutla-swiss\n *\n * ~/mixins/box-model/index.js - Box-model properties mixins\n *\n * coded by leny@flatLand!\n * started at 26/01/2018\n */\n\nimport {concatProp} from \"../../commons/utils\";\n\n/**\n * Take all the arguments and return an object with a margin property\n * @abstract\n * @param {...string} args\n * @return {object} `{margin: \"arg1 arg2 arg...\"}`\n */\nexport const margin = (...args) => concatProp(\"margin\")(...args);\n\n/**\n * Take all the arguments and return an object with a padding property\n * @abstract\n * @param {...string} args\n * @return {object} `{padding: \"arg1 arg2 arg...\"}`\n */\nexport const padding = (...args) => concatProp(\"padding\")(...args);\n",
@@ -1364,7 +1474,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 73,
+    "__docId__": 76,
     "kind": "function",
     "name": "margin",
     "memberof": "src/mixins/box-model/index.js",
@@ -1401,7 +1511,7 @@
     "abstract": true
   },
   {
-    "__docId__": 74,
+    "__docId__": 77,
     "kind": "function",
     "name": "padding",
     "memberof": "src/mixins/box-model/index.js",
@@ -1438,7 +1548,7 @@
     "abstract": true
   },
   {
-    "__docId__": 75,
+    "__docId__": 78,
     "kind": "file",
     "name": "src/mixins/filter/index.js",
     "content": "/* leny/koutla-swiss\n *\n * ~/mixins/filter/index.js - Filter Mixins\n *\n * coded by leny@flatLand!\n * started at 03/02/2019\n */\n\nimport {concatProp, selfFunction} from \"../../commons/utils\";\n\n/**\n * Take all the arguments and return an object with a filter property - returns \"none\" value if no argument is given\n * @abstract\n * @param {...string} args\n * @return {object} `{filter: \"arg1 arg2 arg...\"}`\n */\nexport const filter = (...args) =>\n    concatProp(\"filter\")(...(args.length ? args : [\"none\"]));\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"blur(arg1, arg2, arg...)\"`\n */\nexport const blur = (...args) => selfFunction(\"blur\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"brightness(arg1, arg2, arg...)\"`\n */\nexport const brightness = (...args) => selfFunction(\"brightness\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"contrast(arg1, arg2, arg...)\"`\n */\nexport const contrast = (...args) => selfFunction(\"contrast\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"drop-shadow(arg1, arg2, arg...)\"`\n */\nexport const dropShadow = (...args) => selfFunction(\"drop-shadow\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"grayscale(arg1, arg2, arg...)\"`\n */\nexport const grayscale = (...args) => selfFunction(\"grayscale\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"hue-rotate(arg1, arg2, arg...)\"`\n */\nexport const hueRotate = (...args) => selfFunction(\"hue-rotate\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"invert(arg1, arg2, arg...)\"`\n */\nexport const invert = (...args) => selfFunction(\"invert\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"opacity(arg1, arg2, arg...)\"`\n */\nexport const opacity = (...args) => selfFunction(\"opacity\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"saturate(arg1, arg2, arg...)\"`\n */\nexport const saturate = (...args) => selfFunction(\"saturate\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"sepia(arg1, arg2, arg...)\"`\n */\nexport const sepia = (...args) => selfFunction(\"sepia\")(...args);\n",
@@ -1449,7 +1559,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 76,
+    "__docId__": 79,
     "kind": "function",
     "name": "filter",
     "memberof": "src/mixins/filter/index.js",
@@ -1486,7 +1596,7 @@
     "abstract": true
   },
   {
-    "__docId__": 77,
+    "__docId__": 80,
     "kind": "function",
     "name": "blur",
     "memberof": "src/mixins/filter/index.js",
@@ -1523,7 +1633,7 @@
     "abstract": true
   },
   {
-    "__docId__": 78,
+    "__docId__": 81,
     "kind": "function",
     "name": "brightness",
     "memberof": "src/mixins/filter/index.js",
@@ -1560,7 +1670,7 @@
     "abstract": true
   },
   {
-    "__docId__": 79,
+    "__docId__": 82,
     "kind": "function",
     "name": "contrast",
     "memberof": "src/mixins/filter/index.js",
@@ -1597,7 +1707,7 @@
     "abstract": true
   },
   {
-    "__docId__": 80,
+    "__docId__": 83,
     "kind": "function",
     "name": "dropShadow",
     "memberof": "src/mixins/filter/index.js",
@@ -1634,7 +1744,7 @@
     "abstract": true
   },
   {
-    "__docId__": 81,
+    "__docId__": 84,
     "kind": "function",
     "name": "grayscale",
     "memberof": "src/mixins/filter/index.js",
@@ -1671,7 +1781,7 @@
     "abstract": true
   },
   {
-    "__docId__": 82,
+    "__docId__": 85,
     "kind": "function",
     "name": "hueRotate",
     "memberof": "src/mixins/filter/index.js",
@@ -1708,7 +1818,7 @@
     "abstract": true
   },
   {
-    "__docId__": 83,
+    "__docId__": 86,
     "kind": "function",
     "name": "invert",
     "memberof": "src/mixins/filter/index.js",
@@ -1745,7 +1855,7 @@
     "abstract": true
   },
   {
-    "__docId__": 84,
+    "__docId__": 87,
     "kind": "function",
     "name": "opacity",
     "memberof": "src/mixins/filter/index.js",
@@ -1782,7 +1892,7 @@
     "abstract": true
   },
   {
-    "__docId__": 85,
+    "__docId__": 88,
     "kind": "function",
     "name": "saturate",
     "memberof": "src/mixins/filter/index.js",
@@ -1819,7 +1929,7 @@
     "abstract": true
   },
   {
-    "__docId__": 86,
+    "__docId__": 89,
     "kind": "function",
     "name": "sepia",
     "memberof": "src/mixins/filter/index.js",
@@ -1856,7 +1966,7 @@
     "abstract": true
   },
   {
-    "__docId__": 87,
+    "__docId__": 90,
     "kind": "file",
     "name": "src/mixins/flex/index.js",
     "content": "/* leny/koutla-swiss\n *\n * ~/mixins/flex/index.js - Flex Mixins\n *\n * coded by leny@flatLand!\n * started at 13/01/2018\n */\n\nimport {concatProp} from \"../../commons/utils\";\n\nexport const FLEX_DIRECTION_ROW = \"row\";\nexport const FLEX_DIRECTION_ROW_REVERSE = \"row-reverse\";\nexport const FLEX_DIRECTION_COLUMN = \"column\";\nexport const FLEX_DIRECTION_COLUMN_REVERS = \"column-reverse\";\n\nexport const FLEX_WRAP = \"wrap\";\nexport const FLEX_NOWRAP = \"nowrap\";\nexport const FLEX_WRAP_REVERSE = \"wrap-reverse\";\n\nexport const FLEX_ALIGN_CENTER = \"center\";\nexport const FLEX_ALIGN_START = \"start\";\nexport const FLEX_ALIGN_END = \"end\";\nexport const FLEX_ALIGN_FLEX_START = \"flex-start\";\nexport const FLEX_ALIGN_FLEX_END = \"flex-end\";\nexport const FLEX_ALIGN_LEFT = \"left\";\nexport const FLEX_ALIGN_RIGHT = \"right\";\nexport const FLEX_ALIGN_BASELINE = \"baseline\";\nexport const FLEX_ALIGN_SPACE_BETWEEN = \"space-between\";\nexport const FLEX_ALIGN_SPACE_AROUND = \"space-around\";\nexport const FLEX_ALIGN_SPACE_EVENLY = \"space-evenly\";\nexport const FLEX_ALIGN_NORMAL = \"normal\";\nexport const FLEX_ALIGN_STRETCH = \"stretch\";\nexport const FLEX_ALIGN_SELF_START = \"self-start\";\nexport const FLEX_ALIGN_SELF_END = \"self-end\";\n\n/**\n * Mixin to generate a flex box\n * @abstract\n * @param {string} direction direction of the flex box\n * @param {string} mainAxis alignment of the main axis (justify-content property)\n * @param {string} secondaryAxis alignment of the secondary axis (align-items property)\n * @param {string} wrap value of the flex-wrap property\n * @return {object} `{display: \"flex\", flexDirection: \"...\", flexWrap: \"...\", justifyContent: \"...\", alignItems: \"...\"}`\n */\nexport const flexbox = (direction, mainAxis, secondaryAxis, wrap) => {\n    let oFlexStyles = {\n        display: \"flex\",\n    };\n\n    direction && (oFlexStyles.flexDirection = direction);\n    wrap && (oFlexStyles.flexWrap = wrap);\n    mainAxis && (oFlexStyles.justifyContent = mainAxis);\n    secondaryAxis && (oFlexStyles.alignItems = secondaryAxis);\n\n    return oFlexStyles;\n};\n\n/**\n * Mixin to generate a flex row\n * @abstract\n * @param {string} mainAxis alignment of the main axis (justify-content property)\n * @param {string} secondaryAxis alignment of the secondary axis (align-items property)\n * @param {string} wrap value of the flex-wrap property\n * @return {object} `{display: \"flex\", flexDirection: \"row\", flexWrap: \"...\", justifyContent: \"...\", alignItems: \"...\"}`\n */\nexport const flexrow = (mainAxis, secondaryAxis, wrap) =>\n    flexbox(FLEX_DIRECTION_ROW, mainAxis, secondaryAxis, wrap);\n\n/**\n * Mixin to generate a flex column\n * @abstract\n * @param {string} mainAxis alignment of the main axis (justify-content property)\n * @param {string} secondaryAxis alignment of the secondary axis (align-items property)\n * @param {string} wrap value of the flex-wrap property\n * @return {object} `{display: \"flex\", flexDirection: \"column\", flexWrap: \"...\", justifyContent: \"...\", alignItems: \"...\"}`\n */\nexport const flexcolumn = (mainAxis, secondaryAxis, wrap) =>\n    flexbox(FLEX_DIRECTION_COLUMN, mainAxis, secondaryAxis, wrap);\n\n/**\n * Take all the arguments and return an object with a flex property\n * @abstract\n * @param {...string} args\n * @return {object} `{flex: \"arg1 arg2 arg...\"}`\n */\nexport const flex = concatProp(\"flex\");\n",
@@ -1867,7 +1977,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 88,
+    "__docId__": 91,
     "kind": "variable",
     "name": "FLEX_DIRECTION_ROW",
     "memberof": "src/mixins/flex/index.js",
@@ -1887,7 +1997,7 @@
     }
   },
   {
-    "__docId__": 89,
+    "__docId__": 92,
     "kind": "variable",
     "name": "FLEX_DIRECTION_ROW_REVERSE",
     "memberof": "src/mixins/flex/index.js",
@@ -1907,7 +2017,7 @@
     }
   },
   {
-    "__docId__": 90,
+    "__docId__": 93,
     "kind": "variable",
     "name": "FLEX_DIRECTION_COLUMN",
     "memberof": "src/mixins/flex/index.js",
@@ -1927,7 +2037,7 @@
     }
   },
   {
-    "__docId__": 91,
+    "__docId__": 94,
     "kind": "variable",
     "name": "FLEX_DIRECTION_COLUMN_REVERS",
     "memberof": "src/mixins/flex/index.js",
@@ -1947,7 +2057,7 @@
     }
   },
   {
-    "__docId__": 92,
+    "__docId__": 95,
     "kind": "variable",
     "name": "FLEX_WRAP",
     "memberof": "src/mixins/flex/index.js",
@@ -1967,7 +2077,7 @@
     }
   },
   {
-    "__docId__": 93,
+    "__docId__": 96,
     "kind": "variable",
     "name": "FLEX_NOWRAP",
     "memberof": "src/mixins/flex/index.js",
@@ -1987,7 +2097,7 @@
     }
   },
   {
-    "__docId__": 94,
+    "__docId__": 97,
     "kind": "variable",
     "name": "FLEX_WRAP_REVERSE",
     "memberof": "src/mixins/flex/index.js",
@@ -2007,7 +2117,7 @@
     }
   },
   {
-    "__docId__": 95,
+    "__docId__": 98,
     "kind": "variable",
     "name": "FLEX_ALIGN_CENTER",
     "memberof": "src/mixins/flex/index.js",
@@ -2027,7 +2137,7 @@
     }
   },
   {
-    "__docId__": 96,
+    "__docId__": 99,
     "kind": "variable",
     "name": "FLEX_ALIGN_START",
     "memberof": "src/mixins/flex/index.js",
@@ -2047,7 +2157,7 @@
     }
   },
   {
-    "__docId__": 97,
+    "__docId__": 100,
     "kind": "variable",
     "name": "FLEX_ALIGN_END",
     "memberof": "src/mixins/flex/index.js",
@@ -2067,7 +2177,7 @@
     }
   },
   {
-    "__docId__": 98,
+    "__docId__": 101,
     "kind": "variable",
     "name": "FLEX_ALIGN_FLEX_START",
     "memberof": "src/mixins/flex/index.js",
@@ -2087,7 +2197,7 @@
     }
   },
   {
-    "__docId__": 99,
+    "__docId__": 102,
     "kind": "variable",
     "name": "FLEX_ALIGN_FLEX_END",
     "memberof": "src/mixins/flex/index.js",
@@ -2107,7 +2217,7 @@
     }
   },
   {
-    "__docId__": 100,
+    "__docId__": 103,
     "kind": "variable",
     "name": "FLEX_ALIGN_LEFT",
     "memberof": "src/mixins/flex/index.js",
@@ -2127,7 +2237,7 @@
     }
   },
   {
-    "__docId__": 101,
+    "__docId__": 104,
     "kind": "variable",
     "name": "FLEX_ALIGN_RIGHT",
     "memberof": "src/mixins/flex/index.js",
@@ -2147,7 +2257,7 @@
     }
   },
   {
-    "__docId__": 102,
+    "__docId__": 105,
     "kind": "variable",
     "name": "FLEX_ALIGN_BASELINE",
     "memberof": "src/mixins/flex/index.js",
@@ -2167,7 +2277,7 @@
     }
   },
   {
-    "__docId__": 103,
+    "__docId__": 106,
     "kind": "variable",
     "name": "FLEX_ALIGN_SPACE_BETWEEN",
     "memberof": "src/mixins/flex/index.js",
@@ -2187,7 +2297,7 @@
     }
   },
   {
-    "__docId__": 104,
+    "__docId__": 107,
     "kind": "variable",
     "name": "FLEX_ALIGN_SPACE_AROUND",
     "memberof": "src/mixins/flex/index.js",
@@ -2207,7 +2317,7 @@
     }
   },
   {
-    "__docId__": 105,
+    "__docId__": 108,
     "kind": "variable",
     "name": "FLEX_ALIGN_SPACE_EVENLY",
     "memberof": "src/mixins/flex/index.js",
@@ -2227,7 +2337,7 @@
     }
   },
   {
-    "__docId__": 106,
+    "__docId__": 109,
     "kind": "variable",
     "name": "FLEX_ALIGN_NORMAL",
     "memberof": "src/mixins/flex/index.js",
@@ -2247,7 +2357,7 @@
     }
   },
   {
-    "__docId__": 107,
+    "__docId__": 110,
     "kind": "variable",
     "name": "FLEX_ALIGN_STRETCH",
     "memberof": "src/mixins/flex/index.js",
@@ -2267,7 +2377,7 @@
     }
   },
   {
-    "__docId__": 108,
+    "__docId__": 111,
     "kind": "variable",
     "name": "FLEX_ALIGN_SELF_START",
     "memberof": "src/mixins/flex/index.js",
@@ -2287,7 +2397,7 @@
     }
   },
   {
-    "__docId__": 109,
+    "__docId__": 112,
     "kind": "variable",
     "name": "FLEX_ALIGN_SELF_END",
     "memberof": "src/mixins/flex/index.js",
@@ -2307,7 +2417,7 @@
     }
   },
   {
-    "__docId__": 110,
+    "__docId__": 113,
     "kind": "function",
     "name": "flexbox",
     "memberof": "src/mixins/flex/index.js",
@@ -2374,7 +2484,7 @@
     "abstract": true
   },
   {
-    "__docId__": 111,
+    "__docId__": 114,
     "kind": "function",
     "name": "flexrow",
     "memberof": "src/mixins/flex/index.js",
@@ -2431,7 +2541,7 @@
     "abstract": true
   },
   {
-    "__docId__": 112,
+    "__docId__": 115,
     "kind": "function",
     "name": "flexcolumn",
     "memberof": "src/mixins/flex/index.js",
@@ -2488,7 +2598,7 @@
     "abstract": true
   },
   {
-    "__docId__": 113,
+    "__docId__": 116,
     "kind": "variable",
     "name": "flex",
     "memberof": "src/mixins/flex/index.js",
@@ -2528,7 +2638,7 @@
     }
   },
   {
-    "__docId__": 114,
+    "__docId__": 117,
     "kind": "file",
     "name": "src/mixins/position/index.js",
     "content": "/* leny/koutla-swiss\n *\n * ~/mixins/position/index.js - Position mixins\n *\n * coded by leny@flatLand!\n * started at 13/01/2018\n */\n\nexport const POSITION_STATIC = \"static\";\nexport const POSITION_RELATIVE = \"relative\";\nexport const POSITION_ABSOLUTE = \"absolute\";\nexport const POSITION_STICKY = \"sticky\";\nexport const POSITION_FIXED = \"fixed\";\n\n/**\n * Mixin to generate a positionned box\n * @abstract\n * @param {string} type position name\n * @param {...string} args values for top, right, bottom, left - treated like for margin or padding properties\n * @return {object} `{position: \"...\", top: \"...\", right: \"...\", bottom: \"...\", left: \"...\"}`\n */\nexport const position = (type, ...args) => {\n    if (\n        ![\n            POSITION_STATIC,\n            POSITION_RELATIVE,\n            POSITION_ABSOLUTE,\n            POSITION_FIXED,\n            POSITION_STICKY,\n        ].includes(type)\n    ) {\n        throw new TypeError(\"Invalid position type\");\n    }\n\n    let oPosition = {\n            position: type,\n        },\n        aPositionArgs;\n\n    if (!args.length) {\n        return oPosition;\n    }\n\n    // check object type, cf. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Description\n    if (args[0] === Object(args[0])) {\n        return {\n            ...oPosition,\n            ...args[0],\n        };\n    }\n\n    aPositionArgs = args.map(mValue => `${mValue}`);\n\n    switch (aPositionArgs.length) {\n        case 0:\n            return oPosition;\n        case 1:\n            return {\n                ...oPosition,\n                top: aPositionArgs[0],\n                right: aPositionArgs[0],\n                bottom: aPositionArgs[0],\n                left: aPositionArgs[0],\n            };\n        case 2:\n            return {\n                ...oPosition,\n                top: aPositionArgs[0],\n                right: aPositionArgs[1],\n                bottom: aPositionArgs[0],\n                left: aPositionArgs[1],\n            };\n        case 3:\n            return {\n                ...oPosition,\n                top: aPositionArgs[0],\n                right: aPositionArgs[1],\n                bottom: aPositionArgs[2],\n                left: aPositionArgs[1],\n            };\n        case 4:\n            return {\n                ...oPosition,\n                top: aPositionArgs[0],\n                right: aPositionArgs[1],\n                bottom: aPositionArgs[2],\n                left: aPositionArgs[3],\n            };\n        default:\n            throw new TypeError(\"Invalid argument amount\");\n    }\n};\n\n/**\n * Mixin to generate a relative positionned box\n * @abstract\n * @param {...string} args values for top, right, bottom, left - treated like for margin or padding properties\n * @return {object} `{position: \"relative\", top: \"...\", right: \"...\", bottom: \"...\", left: \"...\"}`\n */\nexport const relative = (...args) => position(POSITION_RELATIVE, ...args);\n\n/**\n * Mixin to generate a absolute positionned box\n * @abstract\n * @param {...string} args values for top, right, bottom, left - treated like for margin or padding properties\n * @return {object} `{position: \"absolute\", top: \"...\", right: \"...\", bottom: \"...\", left: \"...\"}`\n */\nexport const absolute = (...args) => position(POSITION_ABSOLUTE, ...args);\n\n/**\n * Mixin to generate a fixed positionned box\n * @abstract\n * @param {...string} args values for top, right, bottom, left - treated like for margin or padding properties\n * @return {object} `{position: \"fixed\", top: \"...\", right: \"...\", bottom: \"...\", left: \"...\"}`\n */\nexport const fixed = (...args) => position(POSITION_FIXED, ...args);\n\n/**\n * Mixin to generate a sticky positionned box\n * @abstract\n * @param {...string} args values for top, right, bottom, left - treated like for margin or padding properties\n * @return {object} `{position: \"sticky\", top: \"...\", right: \"...\", bottom: \"...\", left: \"...\"}`\n */\nexport const sticky = (...args) => position(POSITION_STICKY, ...args);\n",
@@ -2539,7 +2649,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 115,
+    "__docId__": 118,
     "kind": "variable",
     "name": "POSITION_STATIC",
     "memberof": "src/mixins/position/index.js",
@@ -2559,7 +2669,7 @@
     }
   },
   {
-    "__docId__": 116,
+    "__docId__": 119,
     "kind": "variable",
     "name": "POSITION_RELATIVE",
     "memberof": "src/mixins/position/index.js",
@@ -2579,7 +2689,7 @@
     }
   },
   {
-    "__docId__": 117,
+    "__docId__": 120,
     "kind": "variable",
     "name": "POSITION_ABSOLUTE",
     "memberof": "src/mixins/position/index.js",
@@ -2599,7 +2709,7 @@
     }
   },
   {
-    "__docId__": 118,
+    "__docId__": 121,
     "kind": "variable",
     "name": "POSITION_STICKY",
     "memberof": "src/mixins/position/index.js",
@@ -2619,7 +2729,7 @@
     }
   },
   {
-    "__docId__": 119,
+    "__docId__": 122,
     "kind": "variable",
     "name": "POSITION_FIXED",
     "memberof": "src/mixins/position/index.js",
@@ -2639,7 +2749,7 @@
     }
   },
   {
-    "__docId__": 120,
+    "__docId__": 123,
     "kind": "function",
     "name": "position",
     "memberof": "src/mixins/position/index.js",
@@ -2686,7 +2796,7 @@
     "abstract": true
   },
   {
-    "__docId__": 121,
+    "__docId__": 124,
     "kind": "function",
     "name": "relative",
     "memberof": "src/mixins/position/index.js",
@@ -2723,7 +2833,7 @@
     "abstract": true
   },
   {
-    "__docId__": 122,
+    "__docId__": 125,
     "kind": "function",
     "name": "absolute",
     "memberof": "src/mixins/position/index.js",
@@ -2760,7 +2870,7 @@
     "abstract": true
   },
   {
-    "__docId__": 123,
+    "__docId__": 126,
     "kind": "function",
     "name": "fixed",
     "memberof": "src/mixins/position/index.js",
@@ -2797,7 +2907,7 @@
     "abstract": true
   },
   {
-    "__docId__": 124,
+    "__docId__": 127,
     "kind": "function",
     "name": "sticky",
     "memberof": "src/mixins/position/index.js",
@@ -2834,7 +2944,7 @@
     "abstract": true
   },
   {
-    "__docId__": 125,
+    "__docId__": 128,
     "kind": "file",
     "name": "src/mixins/size/index.js",
     "content": "/* leny/koutla-swiss\n *\n * ~/mixins/size/index.js - Size mixin\n *\n * coded by leny@flatLand!\n * started at 13/01/2018\n */\n\n/**\n * @ignore\n */\nconst _size = (width, height, prefix = \"\") => ({\n    [`${prefix}${prefix !== \"\" ? \"Width\" : \"width\"}`]: width,\n    [`${prefix}${prefix !== \"\" ? \"Height\" : \"height\"}`]: height,\n});\n\n/**\n * Mixin to for sizing (width/height)\n * @abstract\n * @param {string|number} width\n * @param {string|number} height - if missing, the value of width will be used\n * @return {object} `{width: \"...\", height: \"...\"}`\n */\nexport const size = (width = 0, height = width) => _size(width, height);\n\n/**\n * Mixin to for minimal sizing (min-width/min-height)\n * @abstract\n * @param {string|number} width\n * @param {string|number} height - if missing, the value of width will be used\n * @return {object} `{minWidth: \"...\", minHeight: \"...\"}`\n */\nexport const minSize = (width = 0, height = width) =>\n    _size(width, height, \"min\");\n\n/**\n * Mixin to for maximal sizing (max-width/max-height)\n * @abstract\n * @param {string|number} width\n * @param {string|number} height - if missing, the value of width will be used\n * @return {object} `{maxWidth: \"...\", maxHeight: \"...\"}`\n */\nexport const maxSize = (width = 0, height = width) =>\n    _size(width, height, \"max\");\n",
@@ -2845,7 +2955,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 126,
+    "__docId__": 129,
     "kind": "function",
     "name": "_size",
     "memberof": "src/mixins/size/index.js",
@@ -2886,7 +2996,7 @@
     "return": null
   },
   {
-    "__docId__": 127,
+    "__docId__": 130,
     "kind": "function",
     "name": "size",
     "memberof": "src/mixins/size/index.js",
@@ -2935,7 +3045,7 @@
     "abstract": true
   },
   {
-    "__docId__": 128,
+    "__docId__": 131,
     "kind": "function",
     "name": "minSize",
     "memberof": "src/mixins/size/index.js",
@@ -2984,7 +3094,7 @@
     "abstract": true
   },
   {
-    "__docId__": 129,
+    "__docId__": 132,
     "kind": "function",
     "name": "maxSize",
     "memberof": "src/mixins/size/index.js",
@@ -3033,7 +3143,7 @@
     "abstract": true
   },
   {
-    "__docId__": 130,
+    "__docId__": 133,
     "kind": "file",
     "name": "src/mixins/transform/index.js",
     "content": "/* leny/koutla-swiss\n *\n * ~/mixins/transform/index.js - Transform Mixins\n *\n * coded by leny@flatLand!\n * started at 03/02/2019\n */\n\nimport {concatProp, selfFunction} from \"../../commons/utils\";\n\n/**\n * Take all the arguments and return an object with a transform property - returns \"none\" value if no argument is given\n * @abstract\n * @param {...string} args\n * @return {object} `{transform: \"arg1 arg2 arg...\"}`\n */\nexport const transform = (...args) =>\n    concatProp(\"transform\")(...(args.length ? args : [\"none\"]));\n\n/**\n * Take all the arguments and return an object with a transformOrigin property\n * @abstract\n * @param {...string} args\n * @return {object} `{transformOrigin: \"arg1 arg2 arg...\"}`\n */\nexport const transformOrigin = (...args) =>\n    concatProp(\"transformOrigin\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"matrix(arg1, arg2, arg...)\"`\n */\nexport const matrix = (...args) => selfFunction(\"matrix\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"matrix3d(arg1, arg2, arg...)\"`\n */\nexport const matrix3d = (...args) => selfFunction(\"matrix3d\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"perspective(arg1, arg2, arg...)\"`\n */\nexport const perspective = (...args) => selfFunction(\"perspective\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"rotate(arg1, arg2, arg...)\"`\n */\nexport const rotate = (...args) => selfFunction(\"rotate\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"rotate3d(arg1, arg2, arg...)\"`\n */\nexport const rotate3d = (...args) => selfFunction(\"rotate3d\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"rotateX(arg1, arg2, arg...)\"`\n */\nexport const rotateX = (...args) => selfFunction(\"rotateX\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"rotateY(arg1, arg2, arg...)\"`\n */\nexport const rotateY = (...args) => selfFunction(\"rotateY\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"rotateZ(arg1, arg2, arg...)\"`\n */\nexport const rotateZ = (...args) => selfFunction(\"rotateZ\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"scale(arg1, arg2, arg...)\"`\n */\nexport const scale = (...args) => selfFunction(\"scale\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"scale3d(arg1, arg2, arg...)\"`\n */\nexport const scale3d = (...args) => selfFunction(\"scale3d\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"scaleX(arg1, arg2, arg...)\"`\n */\nexport const scaleX = (...args) => selfFunction(\"scaleX\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"scaleY(arg1, arg2, arg...)\"`\n */\nexport const scaleY = (...args) => selfFunction(\"scaleY\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"scaleZ(arg1, arg2, arg...)\"`\n */\nexport const scaleZ = (...args) => selfFunction(\"scaleZ\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"skew(arg1, arg2, arg...)\"`\n */\nexport const skew = (...args) => selfFunction(\"skew\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"skewX(arg1, arg2, arg...)\"`\n */\nexport const skewX = (...args) => selfFunction(\"skewX\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"skewY(arg1, arg2, arg...)\"`\n */\nexport const skewY = (...args) => selfFunction(\"skewY\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"translate(arg1, arg2, arg...)\"`\n */\nexport const translate = (...args) => selfFunction(\"translate\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"translate3d(arg1, arg2, arg...)\"`\n */\nexport const translate3d = (...args) => selfFunction(\"translate3d\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"translateX(arg1, arg2, arg...)\"`\n */\nexport const translateX = (...args) => selfFunction(\"translateX\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"translateY(arg1, arg2, arg...)\"`\n */\nexport const translateY = (...args) => selfFunction(\"translateY\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"translateZ(arg1, arg2, arg...)\"`\n */\nexport const translateZ = (...args) => selfFunction(\"translateZ\")(...args);\n",
@@ -3044,7 +3154,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 131,
+    "__docId__": 134,
     "kind": "function",
     "name": "transform",
     "memberof": "src/mixins/transform/index.js",
@@ -3081,7 +3191,7 @@
     "abstract": true
   },
   {
-    "__docId__": 132,
+    "__docId__": 135,
     "kind": "function",
     "name": "transformOrigin",
     "memberof": "src/mixins/transform/index.js",
@@ -3118,7 +3228,7 @@
     "abstract": true
   },
   {
-    "__docId__": 133,
+    "__docId__": 136,
     "kind": "function",
     "name": "matrix",
     "memberof": "src/mixins/transform/index.js",
@@ -3155,7 +3265,7 @@
     "abstract": true
   },
   {
-    "__docId__": 134,
+    "__docId__": 137,
     "kind": "function",
     "name": "matrix3d",
     "memberof": "src/mixins/transform/index.js",
@@ -3192,7 +3302,7 @@
     "abstract": true
   },
   {
-    "__docId__": 135,
+    "__docId__": 138,
     "kind": "function",
     "name": "perspective",
     "memberof": "src/mixins/transform/index.js",
@@ -3229,7 +3339,7 @@
     "abstract": true
   },
   {
-    "__docId__": 136,
+    "__docId__": 139,
     "kind": "function",
     "name": "rotate",
     "memberof": "src/mixins/transform/index.js",
@@ -3266,7 +3376,7 @@
     "abstract": true
   },
   {
-    "__docId__": 137,
+    "__docId__": 140,
     "kind": "function",
     "name": "rotate3d",
     "memberof": "src/mixins/transform/index.js",
@@ -3303,7 +3413,7 @@
     "abstract": true
   },
   {
-    "__docId__": 138,
+    "__docId__": 141,
     "kind": "function",
     "name": "rotateX",
     "memberof": "src/mixins/transform/index.js",
@@ -3340,7 +3450,7 @@
     "abstract": true
   },
   {
-    "__docId__": 139,
+    "__docId__": 142,
     "kind": "function",
     "name": "rotateY",
     "memberof": "src/mixins/transform/index.js",
@@ -3377,7 +3487,7 @@
     "abstract": true
   },
   {
-    "__docId__": 140,
+    "__docId__": 143,
     "kind": "function",
     "name": "rotateZ",
     "memberof": "src/mixins/transform/index.js",
@@ -3414,7 +3524,7 @@
     "abstract": true
   },
   {
-    "__docId__": 141,
+    "__docId__": 144,
     "kind": "function",
     "name": "scale",
     "memberof": "src/mixins/transform/index.js",
@@ -3451,7 +3561,7 @@
     "abstract": true
   },
   {
-    "__docId__": 142,
+    "__docId__": 145,
     "kind": "function",
     "name": "scale3d",
     "memberof": "src/mixins/transform/index.js",
@@ -3488,7 +3598,7 @@
     "abstract": true
   },
   {
-    "__docId__": 143,
+    "__docId__": 146,
     "kind": "function",
     "name": "scaleX",
     "memberof": "src/mixins/transform/index.js",
@@ -3525,7 +3635,7 @@
     "abstract": true
   },
   {
-    "__docId__": 144,
+    "__docId__": 147,
     "kind": "function",
     "name": "scaleY",
     "memberof": "src/mixins/transform/index.js",
@@ -3562,7 +3672,7 @@
     "abstract": true
   },
   {
-    "__docId__": 145,
+    "__docId__": 148,
     "kind": "function",
     "name": "scaleZ",
     "memberof": "src/mixins/transform/index.js",
@@ -3599,7 +3709,7 @@
     "abstract": true
   },
   {
-    "__docId__": 146,
+    "__docId__": 149,
     "kind": "function",
     "name": "skew",
     "memberof": "src/mixins/transform/index.js",
@@ -3636,7 +3746,7 @@
     "abstract": true
   },
   {
-    "__docId__": 147,
+    "__docId__": 150,
     "kind": "function",
     "name": "skewX",
     "memberof": "src/mixins/transform/index.js",
@@ -3673,7 +3783,7 @@
     "abstract": true
   },
   {
-    "__docId__": 148,
+    "__docId__": 151,
     "kind": "function",
     "name": "skewY",
     "memberof": "src/mixins/transform/index.js",
@@ -3710,7 +3820,7 @@
     "abstract": true
   },
   {
-    "__docId__": 149,
+    "__docId__": 152,
     "kind": "function",
     "name": "translate",
     "memberof": "src/mixins/transform/index.js",
@@ -3747,7 +3857,7 @@
     "abstract": true
   },
   {
-    "__docId__": 150,
+    "__docId__": 153,
     "kind": "function",
     "name": "translate3d",
     "memberof": "src/mixins/transform/index.js",
@@ -3784,7 +3894,7 @@
     "abstract": true
   },
   {
-    "__docId__": 151,
+    "__docId__": 154,
     "kind": "function",
     "name": "translateX",
     "memberof": "src/mixins/transform/index.js",
@@ -3821,7 +3931,7 @@
     "abstract": true
   },
   {
-    "__docId__": 152,
+    "__docId__": 155,
     "kind": "function",
     "name": "translateY",
     "memberof": "src/mixins/transform/index.js",
@@ -3858,7 +3968,7 @@
     "abstract": true
   },
   {
-    "__docId__": 153,
+    "__docId__": 156,
     "kind": "function",
     "name": "translateZ",
     "memberof": "src/mixins/transform/index.js",
@@ -3895,7 +4005,7 @@
     "abstract": true
   },
   {
-    "__docId__": 154,
+    "__docId__": 157,
     "kind": "file",
     "name": "src/utils/colors/index.js",
     "content": "/* leny/koutla-swiss\n *\n * ~/utils/colors/index.js - Colors utils\n *\n * coded by leny@flatLand!\n * started at 12/01/2018\n */\n\nimport cssColors from \"css-color-names\";\n\nconst HEX_COLOR = /^#((?:[0-9a-f](?=[0-9a-f]{2}\\b))|(?:[0-9a-f]{2}(?=[0-9a-f]{4}\\b)))((?:[0-9a-f](?=[0-9a-f]{1}\\b))|(?:[0-9a-f]{2}(?=[0-9a-f]{2}\\b)))([0-9a-f]{1,2})\\b/i;\n\nconst isValidRGBInt = mValue => {\n    const iValue = +mValue;\n\n    return !(isNaN(iValue) || iValue % 1 !== 0 || (iValue < 0 || iValue > 255));\n};\n\nconst isValidAlphaNumber = mValue => {\n    const iValue = +mValue;\n\n    return !(isNaN(iValue) || (iValue < 0 || iValue > 1));\n};\n\nconst getRGBValuesFromColor = sColor => {\n    let sColorName, sHexColor, aColorParts;\n\n    if (\n        Object.keys(cssColors).includes(\n            (sColorName = `${sColor}`.toLowerCase().trim()),\n        )\n    ) {\n        sHexColor = cssColors[sColorName];\n    } else if (HEX_COLOR.test(sColor)) {\n        sHexColor = sColor;\n    } else {\n        throw new TypeError(\"Invalid color\");\n    }\n\n    (aColorParts = sHexColor.match(HEX_COLOR)).shift();\n    return aColorParts.map(sValue =>\n        parseInt(sValue.length === 1 ? `${sValue}${sValue}` : sValue, 16),\n    );\n};\n\n/**\n * Take all the arguments and return a string with the rgb channels definition\n * @abstract\n * @param {...string|...number} args parts of the color definition (if only one arg is given, it will be converted)\n * @return {string} `\"rgb(arg1, arg2, arg...)\"`\n */\nexport const rgb = (...args) => {\n    if (args.length === 3) {\n        if (args.every(isValidRGBInt)) {\n            return `rgb(${args.join(\",\")})`;\n        }\n    }\n\n    if (args.length === 1) {\n        return `rgb(${getRGBValuesFromColor(args[0]).join(\",\")})`;\n    }\n\n    throw new TypeError(\"Invalid arguments format\");\n};\n\n/**\n * Take all the arguments and return a string with the rgba channels definition\n * @abstract\n * @param {...string|...number} args parts of the color definition (if only one arg is given, it will be converted)\n * @return {string} `\"rgba(arg1, arg2, arg...)\"`\n */\nexport const rgba = (...args) => {\n    if (args.length === 4) {\n        if (\n            args.every((iValue, iIndex) => {\n                return iIndex < 3\n                    ? isValidRGBInt(iValue)\n                    : isValidAlphaNumber(iValue);\n            })\n        ) {\n            return `rgba(${args.join(\",\")})`;\n        }\n    }\n\n    if (args.length === 2) {\n        let aColorParts = getRGBValuesFromColor(args[0]);\n\n        if (!isValidAlphaNumber(args[1])) {\n            throw new TypeError(\"Invalid alpha value\");\n        }\n\n        return `rgba(${aColorParts.join(\",\")},${args[1]})`;\n    }\n\n    throw new TypeError(\"Invalid arguments format\");\n};\n",
@@ -3906,7 +4016,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 155,
+    "__docId__": 158,
     "kind": "variable",
     "name": "HEX_COLOR",
     "memberof": "src/utils/colors/index.js",
@@ -3927,7 +4037,7 @@
     "ignore": true
   },
   {
-    "__docId__": 156,
+    "__docId__": 159,
     "kind": "function",
     "name": "isValidRGBInt",
     "memberof": "src/utils/colors/index.js",
@@ -3958,7 +4068,7 @@
     "ignore": true
   },
   {
-    "__docId__": 157,
+    "__docId__": 160,
     "kind": "function",
     "name": "isValidAlphaNumber",
     "memberof": "src/utils/colors/index.js",
@@ -3989,7 +4099,7 @@
     "ignore": true
   },
   {
-    "__docId__": 158,
+    "__docId__": 161,
     "kind": "function",
     "name": "getRGBValuesFromColor",
     "memberof": "src/utils/colors/index.js",
@@ -4020,7 +4130,7 @@
     "ignore": true
   },
   {
-    "__docId__": 159,
+    "__docId__": 162,
     "kind": "function",
     "name": "rgb",
     "memberof": "src/utils/colors/index.js",
@@ -4058,7 +4168,7 @@
     "abstract": true
   },
   {
-    "__docId__": 160,
+    "__docId__": 163,
     "kind": "function",
     "name": "rgba",
     "memberof": "src/utils/colors/index.js",
@@ -4096,7 +4206,7 @@
     "abstract": true
   },
   {
-    "__docId__": 161,
+    "__docId__": 164,
     "kind": "file",
     "name": "src/utils/important/index.js",
     "content": "/* leny/koutla-swiss\n *\n * ~/utils/important/index.js - !important util\n *\n * coded by leny@flatLand!\n * started at 23/02/2019\n */\n\nimport fromEntries from \"lodash.frompairs\";\n\n/**\n * Take the given value and add !important to it\n * @abstract\n * @param {string|object} target value to add important to\n * @return {string|object}\n */\nexport const important = target => {\n    if (typeof target === \"string\") {\n        return `${target} !important`;\n    }\n    return fromEntries(\n        Object.entries(target).map(([key, value]) => [\n            key,\n            `${value} !important`,\n        ]),\n    );\n};\n",
@@ -4107,7 +4217,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 162,
+    "__docId__": 165,
     "kind": "function",
     "name": "important",
     "memberof": "src/utils/important/index.js",
@@ -4146,7 +4256,7 @@
     "abstract": true
   },
   {
-    "__docId__": 163,
+    "__docId__": 166,
     "kind": "file",
     "name": "src/utils/media/index.js",
     "content": "/* leny/koutla-swiss\n *\n * ~/utils/media/index.js - MediaQueries utils\n *\n * coded by leny@flatLand!\n * started at 13/01/2018\n */\n\n/**\n * Prepare a media query and returns it as an object\n * @abstract\n * @param {string} query media query definition\n * @param {object} props properties related to the media query\n * @return {object} `{\"@media(...)\": {\"prop\": \"...\"}}`\n */\nexport const mq = (query, props = {}) => {\n    if (typeof query !== \"string\") {\n        throw new TypeError(\"Invalid query type\");\n    }\n\n    return {\n        [`@media(${query})`]: props,\n    };\n};\n",
@@ -4157,7 +4267,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 164,
+    "__docId__": 167,
     "kind": "function",
     "name": "mq",
     "memberof": "src/utils/media/index.js",
@@ -4204,7 +4314,7 @@
     "abstract": true
   },
   {
-    "__docId__": 165,
+    "__docId__": 168,
     "kind": "file",
     "name": "src/utils/units/index.js",
     "content": "/* leny/koutla-swiss\n *\n * ~/utils/units/index.js - Units utils\n *\n * coded by leny@flatLand!\n * started at 12/01/2018\n */\n\nimport {selfFunction} from \"../../commons/utils\";\n\nconst checkNumber = mValue => {\n    if (isNaN(+mValue)) {\n        throw new TypeError(\"Expect a Number\");\n    }\n    return true;\n};\n\nconst checkZero = value => {\n    return value === 0 ? \"0\" : false;\n};\n\nconst unit = suffix => (value = 0) =>\n    checkNumber(value) && (checkZero(value) || `${value}${suffix}`);\n\n/**\n * Return the value with the rem suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]rem\"`\n */\nexport const rem = value => unit(\"rem\")(value);\n\n/**\n * Return the value with the em suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]em\"`\n */\nexport const em = value => unit(\"em\")(value);\n\n/**\n * Return the value with the ex suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]ex\"`\n */\nexport const ex = value => unit(\"ex\")(value);\n\n/**\n * Return the value with the cap suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]cap\"`\n */\nexport const cap = value => unit(\"cap\")(value);\n\n/**\n * Return the value with the ic suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]ic\"`\n */\nexport const ic = value => unit(\"ic\")(value);\n\n/**\n * Return the value with the lh suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]lh\"`\n */\nexport const lh = value => unit(\"lh\")(value);\n\n/**\n * Return the value with the rlh suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]rlh\"`\n */\nexport const rlh = value => unit(\"rlh\")(value);\n\n/**\n * Return the value with the ch suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]ch\"`\n */\nexport const ch = value => unit(\"ch\")(value);\n\n/**\n * Return the value with the vw suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]vw\"`\n */\nexport const vw = value => unit(\"vw\")(value);\n\n/**\n * Return the value with the vh suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]vh\"`\n */\nexport const vh = value => unit(\"vh\")(value);\n\n/**\n * Return the value with the vi suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]vi\"`\n */\nexport const vi = value => unit(\"vi\")(value);\n\n/**\n * Return the value with the vb suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]vb\"`\n */\nexport const vb = value => unit(\"vb\")(value);\n\n/**\n * Return the value with the vmin suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]vmin\"`\n */\nexport const vmin = value => unit(\"vmin\")(value);\n\n/**\n * Return the value with the vmax suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]vmax\"`\n */\nexport const vmax = value => unit(\"vmax\")(value);\n\n/**\n * Return the value with the cm suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]cm\"`\n */\nexport const cm = value => unit(\"cm\")(value);\n\n/**\n * Return the value with the mm suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]mm\"`\n */\nexport const mm = value => unit(\"mm\")(value);\n\n/**\n * Return the value with the Q suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]Q\"`\n */\nexport const Q = value => unit(\"Q\")(value);\n\n/**\n * Return the value with the in suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]in\"`\n */\nexport const inch = value => unit(\"in\")(value);\n\n/**\n * Return the value with the pc suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]pc\"`\n */\nexport const pc = value => unit(\"pc\")(value);\n\n/**\n * Return the value with the pt suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]pt\"`\n */\nexport const pt = value => unit(\"pt\")(value);\n\n/**\n * Return the value with the deg suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]deg\"`\n */\nexport const deg = value => unit(\"deg\")(value);\n\n/**\n * Return the value with the grad suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]grad\"`\n */\nexport const grad = value => unit(\"grad\")(value);\n\n/**\n * Return the value with the rad suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]rad\"`\n */\nexport const rad = value => unit(\"rad\")(value);\n\n/**\n * Return the value with the turn suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]turn\"`\n */\nexport const turn = value => unit(\"turn\")(value);\n\n/**\n * Return the value with the s suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]s\"`\n */\nexport const s = value => unit(\"s\")(value);\n\n/**\n * Return the value with the ms suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]ms\"`\n */\nexport const ms = value => unit(\"ms\")(value);\n\n/**\n * Return the value with the Hz suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]Hz\"`\n */\nexport const Hz = value => unit(\"Hz\")(value);\n\n/**\n * Return the value with the kHz suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]kHz\"`\n */\nexport const kHz = value => unit(\"kHz\")(value);\n\n/**\n * Return the value with the dpi suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]dpi\"`\n */\nexport const dpi = value => unit(\"dpi\")(value);\n\n/**\n * Return the value with the dpcm suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]dpcm\"`\n */\nexport const dpcm = value => unit(\"dpcm\")(value);\n\n/**\n * Return the value with the dppx suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]dppx\"`\n */\nexport const dppx = value => unit(\"dppx\")(value);\n\n/**\n * Return the value with the px suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]px\"`\n */\nexport const px = value => unit(\"px\")(value);\n\n/**\n * Return the value with the fr suffix\n * @abstract\n * @param {number} value\n * @return {string} `\"[value]fr\"`\n */\nexport const fr = value => unit(\"fr\")(value);\n\n/**\n * Return the value with the percent suffix\n * @abstract\n * @param {number} value\n * @param {boolean} withDecimal treat the value as a decimal value between 0 and 1\n * @return {string} `\"[value]%\"`\n */\nexport const percent = (value = 0, withDecimal) =>\n    unit(\"%\")(value * (withDecimal ? 100 : 1));\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"calc(arg1, arg2, arg...)\"`\n */\nexport const calc = (...args) => selfFunction(\"calc\", \" \")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"attr(arg1, arg2, arg...)\"`\n */\nexport const attr = (...args) => selfFunction(\"attr\")(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"clamp(arg1, arg2, arg...)\"`\n */\nexport const clamp = (...args) => selfFunction(\"clamp\", \", \", 3, 3)(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"min(arg1, arg2, arg...)\"`\n */\nexport const min = (...args) => selfFunction(\"min\", \", \", 2)(...args);\n\n/**\n * Take all the arguments and return a string with the appropriate syntax\n * @abstract\n * @param {...string} args\n * @return {string} `\"max(arg1, arg2, arg...)\"`\n */\nexport const max = (...args) => selfFunction(\"max\", \", \", 2)(...args);\n",
@@ -4215,7 +4325,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 166,
+    "__docId__": 169,
     "kind": "function",
     "name": "checkNumber",
     "memberof": "src/utils/units/index.js",
@@ -4246,7 +4356,7 @@
     "ignore": true
   },
   {
-    "__docId__": 167,
+    "__docId__": 170,
     "kind": "function",
     "name": "checkZero",
     "memberof": "src/utils/units/index.js",
@@ -4277,7 +4387,7 @@
     "ignore": true
   },
   {
-    "__docId__": 168,
+    "__docId__": 171,
     "kind": "function",
     "name": "unit",
     "memberof": "src/utils/units/index.js",
@@ -4304,7 +4414,7 @@
     "ignore": true
   },
   {
-    "__docId__": 169,
+    "__docId__": 172,
     "kind": "function",
     "name": "rem",
     "memberof": "src/utils/units/index.js",
@@ -4341,7 +4451,7 @@
     "abstract": true
   },
   {
-    "__docId__": 170,
+    "__docId__": 173,
     "kind": "function",
     "name": "em",
     "memberof": "src/utils/units/index.js",
@@ -4378,7 +4488,7 @@
     "abstract": true
   },
   {
-    "__docId__": 171,
+    "__docId__": 174,
     "kind": "function",
     "name": "ex",
     "memberof": "src/utils/units/index.js",
@@ -4415,7 +4525,7 @@
     "abstract": true
   },
   {
-    "__docId__": 172,
+    "__docId__": 175,
     "kind": "function",
     "name": "cap",
     "memberof": "src/utils/units/index.js",
@@ -4452,7 +4562,7 @@
     "abstract": true
   },
   {
-    "__docId__": 173,
+    "__docId__": 176,
     "kind": "function",
     "name": "ic",
     "memberof": "src/utils/units/index.js",
@@ -4489,7 +4599,7 @@
     "abstract": true
   },
   {
-    "__docId__": 174,
+    "__docId__": 177,
     "kind": "function",
     "name": "lh",
     "memberof": "src/utils/units/index.js",
@@ -4526,7 +4636,7 @@
     "abstract": true
   },
   {
-    "__docId__": 175,
+    "__docId__": 178,
     "kind": "function",
     "name": "rlh",
     "memberof": "src/utils/units/index.js",
@@ -4563,7 +4673,7 @@
     "abstract": true
   },
   {
-    "__docId__": 176,
+    "__docId__": 179,
     "kind": "function",
     "name": "ch",
     "memberof": "src/utils/units/index.js",
@@ -4600,7 +4710,7 @@
     "abstract": true
   },
   {
-    "__docId__": 177,
+    "__docId__": 180,
     "kind": "function",
     "name": "vw",
     "memberof": "src/utils/units/index.js",
@@ -4637,7 +4747,7 @@
     "abstract": true
   },
   {
-    "__docId__": 178,
+    "__docId__": 181,
     "kind": "function",
     "name": "vh",
     "memberof": "src/utils/units/index.js",
@@ -4674,7 +4784,7 @@
     "abstract": true
   },
   {
-    "__docId__": 179,
+    "__docId__": 182,
     "kind": "function",
     "name": "vi",
     "memberof": "src/utils/units/index.js",
@@ -4711,7 +4821,7 @@
     "abstract": true
   },
   {
-    "__docId__": 180,
+    "__docId__": 183,
     "kind": "function",
     "name": "vb",
     "memberof": "src/utils/units/index.js",
@@ -4748,7 +4858,7 @@
     "abstract": true
   },
   {
-    "__docId__": 181,
+    "__docId__": 184,
     "kind": "function",
     "name": "vmin",
     "memberof": "src/utils/units/index.js",
@@ -4785,7 +4895,7 @@
     "abstract": true
   },
   {
-    "__docId__": 182,
+    "__docId__": 185,
     "kind": "function",
     "name": "vmax",
     "memberof": "src/utils/units/index.js",
@@ -4822,7 +4932,7 @@
     "abstract": true
   },
   {
-    "__docId__": 183,
+    "__docId__": 186,
     "kind": "function",
     "name": "cm",
     "memberof": "src/utils/units/index.js",
@@ -4859,7 +4969,7 @@
     "abstract": true
   },
   {
-    "__docId__": 184,
+    "__docId__": 187,
     "kind": "function",
     "name": "mm",
     "memberof": "src/utils/units/index.js",
@@ -4896,7 +5006,7 @@
     "abstract": true
   },
   {
-    "__docId__": 185,
+    "__docId__": 188,
     "kind": "function",
     "name": "Q",
     "memberof": "src/utils/units/index.js",
@@ -4933,7 +5043,7 @@
     "abstract": true
   },
   {
-    "__docId__": 186,
+    "__docId__": 189,
     "kind": "function",
     "name": "inch",
     "memberof": "src/utils/units/index.js",
@@ -4970,7 +5080,7 @@
     "abstract": true
   },
   {
-    "__docId__": 187,
+    "__docId__": 190,
     "kind": "function",
     "name": "pc",
     "memberof": "src/utils/units/index.js",
@@ -5007,7 +5117,7 @@
     "abstract": true
   },
   {
-    "__docId__": 188,
+    "__docId__": 191,
     "kind": "function",
     "name": "pt",
     "memberof": "src/utils/units/index.js",
@@ -5044,7 +5154,7 @@
     "abstract": true
   },
   {
-    "__docId__": 189,
+    "__docId__": 192,
     "kind": "function",
     "name": "deg",
     "memberof": "src/utils/units/index.js",
@@ -5081,7 +5191,7 @@
     "abstract": true
   },
   {
-    "__docId__": 190,
+    "__docId__": 193,
     "kind": "function",
     "name": "grad",
     "memberof": "src/utils/units/index.js",
@@ -5118,7 +5228,7 @@
     "abstract": true
   },
   {
-    "__docId__": 191,
+    "__docId__": 194,
     "kind": "function",
     "name": "rad",
     "memberof": "src/utils/units/index.js",
@@ -5155,7 +5265,7 @@
     "abstract": true
   },
   {
-    "__docId__": 192,
+    "__docId__": 195,
     "kind": "function",
     "name": "turn",
     "memberof": "src/utils/units/index.js",
@@ -5192,7 +5302,7 @@
     "abstract": true
   },
   {
-    "__docId__": 193,
+    "__docId__": 196,
     "kind": "function",
     "name": "s",
     "memberof": "src/utils/units/index.js",
@@ -5229,7 +5339,7 @@
     "abstract": true
   },
   {
-    "__docId__": 194,
+    "__docId__": 197,
     "kind": "function",
     "name": "ms",
     "memberof": "src/utils/units/index.js",
@@ -5266,7 +5376,7 @@
     "abstract": true
   },
   {
-    "__docId__": 195,
+    "__docId__": 198,
     "kind": "function",
     "name": "Hz",
     "memberof": "src/utils/units/index.js",
@@ -5303,7 +5413,7 @@
     "abstract": true
   },
   {
-    "__docId__": 196,
+    "__docId__": 199,
     "kind": "function",
     "name": "kHz",
     "memberof": "src/utils/units/index.js",
@@ -5340,7 +5450,7 @@
     "abstract": true
   },
   {
-    "__docId__": 197,
+    "__docId__": 200,
     "kind": "function",
     "name": "dpi",
     "memberof": "src/utils/units/index.js",
@@ -5377,7 +5487,7 @@
     "abstract": true
   },
   {
-    "__docId__": 198,
+    "__docId__": 201,
     "kind": "function",
     "name": "dpcm",
     "memberof": "src/utils/units/index.js",
@@ -5414,7 +5524,7 @@
     "abstract": true
   },
   {
-    "__docId__": 199,
+    "__docId__": 202,
     "kind": "function",
     "name": "dppx",
     "memberof": "src/utils/units/index.js",
@@ -5451,7 +5561,7 @@
     "abstract": true
   },
   {
-    "__docId__": 200,
+    "__docId__": 203,
     "kind": "function",
     "name": "px",
     "memberof": "src/utils/units/index.js",
@@ -5488,7 +5598,7 @@
     "abstract": true
   },
   {
-    "__docId__": 201,
+    "__docId__": 204,
     "kind": "function",
     "name": "fr",
     "memberof": "src/utils/units/index.js",
@@ -5525,7 +5635,7 @@
     "abstract": true
   },
   {
-    "__docId__": 202,
+    "__docId__": 205,
     "kind": "function",
     "name": "percent",
     "memberof": "src/utils/units/index.js",
@@ -5572,7 +5682,7 @@
     "abstract": true
   },
   {
-    "__docId__": 203,
+    "__docId__": 206,
     "kind": "function",
     "name": "calc",
     "memberof": "src/utils/units/index.js",
@@ -5609,7 +5719,7 @@
     "abstract": true
   },
   {
-    "__docId__": 204,
+    "__docId__": 207,
     "kind": "function",
     "name": "attr",
     "memberof": "src/utils/units/index.js",
@@ -5646,7 +5756,7 @@
     "abstract": true
   },
   {
-    "__docId__": 205,
+    "__docId__": 208,
     "kind": "function",
     "name": "clamp",
     "memberof": "src/utils/units/index.js",
@@ -5683,7 +5793,7 @@
     "abstract": true
   },
   {
-    "__docId__": 206,
+    "__docId__": 209,
     "kind": "function",
     "name": "min",
     "memberof": "src/utils/units/index.js",
@@ -5720,7 +5830,7 @@
     "abstract": true
   },
   {
-    "__docId__": 207,
+    "__docId__": 210,
     "kind": "function",
     "name": "max",
     "memberof": "src/utils/units/index.js",

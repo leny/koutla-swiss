@@ -7,6 +7,7 @@
  */
 
 // utils
+export * from "./commons/utils";
 export * from "./utils/colors";
 export * from "./utils/important";
 export * from "./utils/media";

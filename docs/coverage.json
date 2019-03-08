@@ -1,11 +1,11 @@
 {
-  "coverage": "76.55%",
-  "expectCount": 145,
-  "actualCount": 111,
+  "coverage": "77.02%",
+  "expectCount": 148,
+  "actualCount": 114,
   "files": {
     "src/commons/utils.js": {
-      "expectCount": 2,
-      "actualCount": 2,
+      "expectCount": 5,
+      "actualCount": 5,
       "undocumentLines": []
     },
     "src/mixins/animation/index.js": {

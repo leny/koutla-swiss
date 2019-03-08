@@ -9,8 +9,13 @@
 /**
  * @ignore
  */
+const glueWith = (glue = " ", ...args) => args.join(glue);
+
+/**
+ * @ignore
+ */
 export const concatProp = (prop, glue = " ") => (...args) => {
-    return args.length ? {[prop]: args.join(glue)} : {};
+    return args.length ? {[prop]: glueWith(glue, ...args)} : {};
 };
 
 /**
@@ -28,5 +33,21 @@ export const selfFunction = (
     }
     const quote = quoted ? '"' : "";
 
-    return `${name}(${quote}${args.join(glue)}${quote})`;
+    return `${name}(${quote}${glueWith(glue, ...args)}${quote})`;
 };
+
+/**
+ * Concatanate all the arguments, space-separated
+ * @abstract
+ * @param {...string} args
+ * @return {string} `arg1 arg2 arg3`
+ */
+export const glueWithSpaces = (...args) => glueWith(" ", ...args);
+
+/**
+ * Concatanate all the arguments, comma-separated
+ * @abstract
+ * @param {...string} args
+ * @return {string} `arg1, arg2, arg3`
+ */
+export const glueWithCommas = (...args) => glueWith(", ", ...args);

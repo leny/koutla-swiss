@@ -384,6 +384,18 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "koutla-swiss/src/commons/utils.js~gluewithcommas",
+    "function/index.html#static-function-glueWithCommas",
+    "<span>glueWithCommas</span> <span class=\"search-result-import-path\">koutla-swiss/src/commons/utils.js</span>",
+    "function"
+  ],
+  [
+    "koutla-swiss/src/commons/utils.js~gluewithspaces",
+    "function/index.html#static-function-glueWithSpaces",
+    "<span>glueWithSpaces</span> <span class=\"search-result-import-path\">koutla-swiss/src/commons/utils.js</span>",
+    "function"
+  ],
+  [
     "koutla-swiss/src/utils/units/index.js~grad",
     "function/index.html#static-function-grad",
     "<span>grad</span> <span class=\"search-result-import-path\">koutla-swiss/src/utils/units/index.js</span>",

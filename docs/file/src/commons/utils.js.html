@@ -29,7 +29,9 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#mixins-animation">mixins/animation</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-animation">animation</a></span></span></li>
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#commons">commons</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-glueWithCommas">glueWithCommas</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-glueWithSpaces">glueWithSpaces</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#mixins-animation">mixins/animation</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-animation">animation</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-animationTimingFunction">animationTimingFunction</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-cubicBezier">cubicBezier</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-steps">steps</a></span></span></li>
@@ -180,8 +182,13 @@
 /**
  * @ignore
  */
+const glueWith = (glue = &quot; &quot;, ...args) =&gt; args.join(glue);
+
+/**
+ * @ignore
+ */
 export const concatProp = (prop, glue = &quot; &quot;) =&gt; (...args) =&gt; {
-    return args.length ? {[prop]: args.join(glue)} : {};
+    return args.length ? {[prop]: glueWith(glue, ...args)} : {};
 };
 
 /**
@@ -199,8 +206,24 @@ export const selfFunction = (
     }
     const quote = quoted ? &apos;&quot;&apos; : &quot;&quot;;
 
-    return `${name}(${quote}${args.join(glue)}${quote})`;
+    return `${name}(${quote}${glueWith(glue, ...args)}${quote})`;
 };
+
+/**
+ * Concatanate all the arguments, space-separated
+ * @abstract
+ * @param {...string} args
+ * @return {string} `arg1 arg2 arg3`
+ */
+export const glueWithSpaces = (...args) =&gt; glueWith(&quot; &quot;, ...args);
+
+/**
+ * Concatanate all the arguments, comma-separated
+ * @abstract
+ * @param {...string} args
+ * @return {string} `arg1, arg2, arg3`
+ */
+export const glueWithCommas = (...args) =&gt; glueWith(&quot;, &quot;, ...args);
 </code></pre>
 
 </div>
