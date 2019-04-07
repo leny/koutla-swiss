@@ -18,7 +18,7 @@
     "email": "info@flatland.be",
     "url": "http://leny.me"
   },
-  "homepage":"https://koutla-swiss.js.org",
+  "homepage": "https://koutla-swiss.js.org",
   "repository": {
     "type": "git",
     "url": "git://github.com/leny/koutla-swiss.git"
@@ -46,17 +46,17 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.3.3",
-    "@babel/preset-env": "^7.3.1",
-    "@babel/register": "^7.0.0",
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/register": "^7.4.0",
     "assert": "^1.4.1",
     "babel-eslint": "^10.0.1",
     "cname": "0.0.2",
     "esdoc": "^1.1.0",
     "esdoc-ecmascript-proposal-plugin": "^1.0.0",
     "esdoc-standard-plugin": "^1.0.0",
-    "eslint": "^5.15.0",
+    "eslint": "^5.16.0",
     "eslint-plugin-prettier": "^3.0.1",
     "mocha": "^6.0.2",
     "nyc": "^13.3.0",
