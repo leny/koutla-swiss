@@ -13,8 +13,10 @@
 ## Installation
 
 ```bash
-$ npm install --save-dev koutla-swiss
+$ npm install --save koutla-swiss
 ```
+
+> ☝️ **NOTE:** koutla-swiss exports `cjs` _and_ `esm` modules.
 
 ## Usage
 
