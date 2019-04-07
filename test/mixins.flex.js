@@ -19,7 +19,7 @@ import {
     flexrow,
     flexcolumn,
     flex,
-} from "../lib/mixins/flex";
+} from "../lib/cjs/mixins/flex";
 
 describe("Flex Mixins", () => {
     describe("flexbox()", () => {

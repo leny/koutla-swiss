@@ -16,7 +16,7 @@ import {
     transitionTimingFunction,
     cubicBezier,
     steps,
-} from "../lib/mixins/animation";
+} from "../lib/cjs/mixins/animation";
 
 describe("Animation methods", () => {
     describe(`steps()`, () => {

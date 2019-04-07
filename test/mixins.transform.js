@@ -8,7 +8,7 @@
 
 import assert from "assert";
 
-import * as transformMethods from "../lib/mixins/transform";
+import * as transformMethods from "../lib/cjs/mixins/transform";
 
 describe("Transform methods", () => {
     [

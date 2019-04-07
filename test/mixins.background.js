@@ -8,7 +8,7 @@
 
 import assert from "assert";
 
-import * as backgroundMethods from "../lib/mixins/background";
+import * as backgroundMethods from "../lib/cjs/mixins/background";
 
 describe("Gradient methods", () => {
     Object.entries({

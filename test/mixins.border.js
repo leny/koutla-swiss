@@ -8,7 +8,7 @@
 
 import assert from "assert";
 
-import * as borderMethods from "../lib/mixins/borders";
+import * as borderMethods from "../lib/cjs/mixins/borders";
 
 describe("Border Mixins", () => {
     [

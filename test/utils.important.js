@@ -8,7 +8,7 @@
 
 import assert from "assert";
 
-import {size} from "../lib/mixins/size";
+import {size} from "../lib/cjs/mixins/size";
 import {
     flexbox,
     FLEX_DIRECTION_ROW,
@@ -20,9 +20,9 @@ import {
     flexrow,
     flexcolumn,
     flex,
-} from "../lib/mixins/flex";
-import {important} from "../lib/utils/important";
-import {percent} from "../lib/utils/units";
+} from "../lib/cjs/mixins/flex";
+import {important} from "../lib/cjs/utils/important";
+import {percent} from "../lib/cjs/utils/units";
 
 describe("!important util", () => {
     describe("important(size())", () => {

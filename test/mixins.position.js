@@ -19,7 +19,7 @@ import {
     POSITION_FIXED,
     POSITION_ABSOLUTE,
     POSITION_RELATIVE,
-} from "../lib/mixins/position";
+} from "../lib/cjs/mixins/position";
 
 describe("Position Mixins", () => {
     describe("position()", () => {

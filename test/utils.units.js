@@ -8,7 +8,7 @@
 
 import assert from "assert";
 
-import * as unitsMethods from "../lib/utils/units";
+import * as unitsMethods from "../lib/cjs/utils/units";
 
 describe("Units Utils", () => {
     Object.entries({

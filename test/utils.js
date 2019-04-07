@@ -8,7 +8,7 @@
 
 import assert from "assert";
 
-import * as utilsMethod from "../lib/commons/utils";
+import * as utilsMethod from "../lib/cjs/commons/utils";
 
 describe("Utils methods", () => {
     describe("glueWithSpaces()", () => {

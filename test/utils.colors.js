@@ -8,7 +8,7 @@
 
 import assert from "assert";
 
-import {rgb, rgba} from "../lib/utils/colors";
+import {rgb, rgba} from "../lib/cjs/utils/colors";
 
 describe("Colors Utils", () => {
     describe("rgb()", () => {

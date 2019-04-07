@@ -8,7 +8,7 @@
 
 import assert from "assert";
 
-import {margin, padding} from "../lib/mixins/box-model";
+import {margin, padding} from "../lib/cjs/mixins/box-model";
 
 describe("Box-model Mixins", () => {
     describe("margin()", () => {

@@ -8,7 +8,7 @@
 
 import assert from "assert";
 
-import * as filterMethods from "../lib/mixins/filter";
+import * as filterMethods from "../lib/cjs/mixins/filter";
 
 describe("Filter methods", () => {
     Object.entries({
