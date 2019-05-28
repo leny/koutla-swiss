@@ -64,7 +64,7 @@
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
     "@babel/register": "^7.4.0",
-    "assert": "^1.4.1",
+    "assert": "^2.0.0",
     "babel-eslint": "^10.0.1",
     "cname": "0.0.2",
     "esdoc": "^1.1.0",
